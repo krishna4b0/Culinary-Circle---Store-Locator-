@@ -1,0 +1,2543 @@
+.off-canvas-wrap,
+.inner-wrap {
+     height:100%;
+    height:100vh;
+    
+}
+
+// Also make sure that the .tab-bar is on top of the .main-section
+.tab-bar {
+     z-index: 1;
+}
+.master-section {
+    
+  margin:0 auto;
+  max-width:1200px;    
+    
+     overflow-y: auto;
+     float:none;
+     height:100%;
+}
+
+
+//Make sure that the toggle stacks correctly!
+.right-small {
+     z-index: 100;
+}
+
+
+.selectBoxIe {
+    background-color: #282828;
+    border: 2px solid #535353;
+    color: #ddd;
+
+    background-repeat: no-repeat;
+    background-position: 100% -4px;
+    padding-right: 46px;
+    text-align: left;
+    position: relative;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #282828 inset;
+    -webkit-text-fill-color: #ddd !important;
+}
+
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #282828 inset;
+    -webkit-text-fill-color: #ddd !important;
+}
+
+// above css is for off-canvas
+
+
+.homePageWrap {
+    padding-top: 96px !important;
+}
+
+
+
+
+.container {
+    min-height: 605px;
+}
+
+figcaption {
+     padding-top: 7px;
+}
+.item-podcast a:hover {
+     text-decoration: underline;
+}
+
+
+/* Angular directive to stop flickering on load */
+
+
+.mobile-searchIcon{
+        position: absolute;
+  
+   
+    right: 33px;
+       color:transparent;
+       
+        cursor: pointer;
+
+}
+
+
+.ng-cloak {
+    display: none;
+}
+
+.pageWrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: auto;
+    background-color: #000000;
+}
+
+.row {
+    max-width: 72.5rem;
+}
+
+.margin-right-15 {
+    margin-right: 15px
+}
+
+.margin-left-15 {
+    margin-left: 15px
+}
+
+
+/* font */
+
+@font-face {
+    font-family: "Cabrito W01 Nml Bd";
+    src: url("Fonts/a7045961-96a2-429b-b566-29033697b1a0.eot?#iefix");
+    src: url("Fonts/a7045961-96a2-429b-b566-29033697b1a0.eot?#iefix") format("eot"), url("Fonts/c767d2e4-74dd-4a90-ad94-418e69be6f21.woff2") format("woff2"), url("Fonts/40a33969-3856-4231-bd42-b61c4f121ce1.woff") format("woff"), url("Fonts/28992ee9-0ae5-4aab-9293-a276d85afa9a.ttf") format("truetype"), url("Fonts/fe29da71-9908-4fc4-8ae4-aa733dfdd9b9.svg#fe29da71-9908-4fc4-8ae4-aa733dfdd9b9") format("svg");
+}
+
+@font-face {
+    font-family: "HelveticaNeueW01-45Ligh";
+    src: url("Fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix");
+    src: url("Fonts/ae1656aa-5f8f-4905-aed0-93e667bd6e4a.eot?#iefix") format("eot"), url("Fonts/5a13f7d1-b615-418e-bc3a-525001b9a671.woff2") format("woff2"), url("Fonts/530dee22-e3c1-4e9f-bf62-c31d510d9656.woff") format("woff"), url("Fonts/688ab72b-4deb-4e15-a088-89166978d469.ttf") format("truetype"), url("Fonts/7816f72f-f47e-4715-8cd7-960e3723846a.svg#7816f72f-f47e-4715-8cd7-960e3723846a") format("svg");
+}
+
+
+/*   Font        */
+
+.font-helv {
+    font-family: "HelveticaNeueW01-45Ligh" !important;
+}
+
+.font-cab {
+    font-family: "Cabrito W01 Nml bd" !important;
+}
+
+.font-helv-color {
+    font-family: "HelveticaNeueW01-45Ligh";
+    color: #898484;
+}
+
+.font-cab-color {
+    font-family: "Cabrito W01 Nml bd";
+    color: #cccccc;
+}
+
+span.newproduct {
+    font-family: "Cabrito W01 Nml bd" !important;
+    font-size: small !important;
+    text-transform: capitalize;
+    padding-left: 2px;
+    vertical-align: bottom;
+}
+
+.right-off-canvas-menu {
+   
+    background: #100E0E;
+}
+
+.img-space{
+padding-bottom:15px;
+
+}
+
+/* Terms of USE */
+
+
+/*//////////////*/
+
+div.terms-privacy {
+    padding: 15px;
+}
+
+div.terms-privacy a {
+    color: #DBAB15;
+    text-decoration: underline;
+}
+
+div.terms-privacy a:hover {
+    text-decoration: underline;
+}
+
+div.terms-privacy p {
+    font-family: "HelveticaNeueW01-45Ligh";
+    color: #898484;
+}
+
+div.terms-privacy h4 {
+    font-family: "HelveticaNeueW01-45Ligh";
+    color: #cccccc;
+}
+
+div.terms-privacy h3 {
+    font-family: "HelveticaNeueW01-45Ligh";
+    color: #cccccc;
+}
+
+#bookmarkme {
+    cursor: pointer;
+}
+
+
+/*Terms of use*/
+
+
+/*Privacy statement*/
+
+div.privacy-statement p {
+    font-family: "HelveticaNeueW01-45Ligh";
+    color: #898484;
+}
+
+div.terms-privacy h5 {
+    font-family: "HelveticaNeueW01-45Ligh";
+    color: #cccccc;
+}
+
+span.rec-searchicon {
+    float: right;
+    margin-top: -48px;
+    margin-right: 46px !important;
+    color: transparent;
+    cursor: pointer;
+}
+   
+/*Privacy statement*/
+
+
+/*Main*/
+
+div.CenterWrap h3 {
+    font-family: "Cabrito W01 Nml bd";
+    text-align: center !important;
+    max-width: 542px;
+    margin: auto;
+    letter-spacing: 4.2px;
+    font-size: 200%;
+}
+
+div.CenterWrap img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.CenterWrap p {
+    color: #828282;
+    text-align: center;
+    font-family: "HelveticaNeueW01-45Ligh";
+    font-size: 22px;
+    margin-bottom: 24px;
+}
+
+div.CenterWrap h4 {
+    font-family: "Cabrito W01 Nml bd";
+    text-align: center !important;
+    color: #D8B068;
+    letter-spacing: 4.2px;
+}
+
+.CenterWrap {
+    padding: 30px;
+    margin: auto;
+}
+
+.main-para-text {
+    color: #828282;
+    text-align: center;
+    font-family: "HelveticaNeueW01-45Ligh";
+}
+
+.color-cream {
+    color: #D8B068;
+}
+
+hr.middle {
+    max-width: 282px;
+    margin: 25px auto 25px auto;
+    border-top: 6px solid #DAAE6B;
+}
+
+
+
+
+/*** custom styles ***/
+
+body {
+    background-color: #000;
+    color: #ddd;
+    font-family: "HelveticaNeueW01-45Ligh";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ddd;
+    font-family: "Cabrito W01 Nml bd";
+}
+
+
+/*foundation overdies*/
+
+.move-left .exit-off-canvas,
+.move-left .exit-off-canvas:hover {
+    background: transparent;
+}
+
+.tab-bar {
+    border-bottom: 0.6rem solid #DBAB15;
+    height: 6.0rem;
+    background-color: #000;
+    padding: 25px 30px 0px 30px;
+}
+
+.move-left .exit-off-canvas {
+    top: 8em;
+    box-shadow: none;
+}
+
+.menu-close {
+    color: #DBAB15;
+    font-size: 2em;
+    top: 6px;
+    position: relative;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.closeWrap {
+    float: right;
+}
+
+.tab-bar .menu-icon span {
+    position: absolute;
+    top: 18px;
+    font-size: 0.75rem;
+    right: -3em;
+}
+
+.tab-bar .menu-icon span::after {
+    box-shadow: -17px 0px 0 1px #DBAB15, 0 0px 0 1px #DBAB15, 16px 0px 0px 1px hsl(45, 83%, 47%);
+    width: 10px;
+    border-radius: 6px;
+    height: 10px;
+    top: 10%;
+    left: 3.5rem;
+    background-color: #DBAB15;
+}
+
+.tab-bar .menu-icon span:hover:after {
+    box-shadow: -17px 0px 0 1px #DBAB15, 0 0px 0 1px #DBAB15, 16px 0px 0px 1px #DBAB15;
+}
+
+.mainContentWrap {
+    margin-top: 96px !important;
+    background-image: url('/content/dam/privatebrands/culinarycircle/Misc-Ghosted-BG.jpg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+
+/*foundation overdies*/
+
+
+/* to make foundation defalut row full width*/
+
+.row-fullwidth {
+    max-width: 100%;
+}
+
+.sticky-nav {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 3;
+    transition: transform 50ms ease;
+}
+
+.move-left > .inner-wrap {
+    left: -15.625rem;
+    transform: none;
+}
+
+.inner-wrap {
+    left: 0;
+    transition: left 500ms ease;
+    transform: none;
+}
+
+#siteSearch {
+    width: 274px;
+    border: 2px solid #535353;
+    border-radius: 25px;
+    background-color: #000;
+    color: #535353;
+    background-image: url('../images/smallicons/mag.png');
+    background-repeat: no-repeat;
+    background-position: 94% 52%;
+    padding-right: 25px;
+    height: 34px;
+    letter-spacing: 2px;
+}
+
+input#siteSearch::-webkit-input-placeholder{
+    color: #535353 !important;
+}
+
+input#siteSearch:-moz-placeholder{
+    color: #535353 !important;
+}
+
+input#siteSearch::-moz-placeholder{
+    color: #535353 !important;
+}
+
+input#siteSearch:-ms-input-placeholder {
+    color: #535353 !important;
+}
+
+ul.pagination {
+    display: block;
+    margin-left: -0.3125rem;
+    min-height: 1.5rem;
+    margin-bottom: 0;
+    padding-bottom: 46px;
+}
+
+#recipeSearch {
+    width: 275px;
+    border: 2px solid #535353;
+    border-radius: 25px;
+    background-color: transparent;
+    color: #CFCFCF;
+    letter-spacing: 3px;
+    background-image: url('../images/smallicons/mag.png');
+    background-repeat: no-repeat;
+    background-position: 94% 52%;
+    padding-right: 25px;
+    font-family: "HelveticaNeueW01-45Ligh";
+}
+
+.searchWrapMed #siteSearch {
+    width: 90%;
+}
+
+.magnifying-glass {
+    position: relative;
+    display: inline-block;
+    background: #000;
+    border-radius: 30px;
+    height: 10px;
+    width: 10px;
+    border: 3px solid #909090;
+}
+
+.searchWrap {
+    margin: 0 10px -5px 0;
+    float: right;
+    overflow:hidden;
+}
+
+
+/*Main*/
+
+
+/*Products*/
+
+.main-menu li> a:hover {
+    color: #dbab15 !important;
+}
+
+.main-menu li.current > a {
+    color: #dbab15 !important;
+}
+
+.productDrpdown {
+    position: relative;
+    padding-bottom: 1.7em;
+}
+
+.productDrpdown:hover .product-dropdown-main {
+    display: block !important;
+}
+
+.product-dropdown-off-canvas {
+    list-style: none;
+    margin-left: 25px;
+    color: orange;
+}
+
+.main-menu li {
+    float: left;
+}
+
+.main-menu li > a {
+    display: block;
+    text-transform: capitalize;
+    padding: 0 0.937em;
+    color: #eee;
+    font-family: "Cabrito W01 Nml bd";
+    letter-spacing: 3px;
+}
+
+.main-menu > .divider {
+    border-bottom: none;
+    border-top: none;
+    border-right: solid 2px #eee;
+    clear: none;
+    height: 0.8125rem;
+    width: 0;
+    position: relative;
+    top: 7px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.product-dropdown-main,
+.main-menu {
+    list-style: none;
+    margin: 0;
+}
+
+.product-dropdown-main {
+    position: absolute;
+    clear: both;
+    background: #DBAB15;
+    padding: 12px 0;
+    margin-top: 27px;
+    left: -46px;
+}
+
+.product-dropdown-main:after {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: 41%;
+    border-bottom: 13px solid #DBAB15;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    width: 0;
+    height: 0;
+}
+
+.product-dropdown-main li {
+    clear: both;
+    width: 100%;
+}
+
+.product-dropdown-main li > a {
+    width: 100%;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+    padding: 3px 0.937em;
+    position: relative;
+    transition: left 0.15s linear;
+    left: 0;
+    font-family: "HelveticaNeueW01-45Ligh" !important;
+}
+
+.product-dropdown-main li:hover {
+    background-color: #C37E09;
+}
+
+.product-dropdown-main li:hover > a {
+    left: 10px;
+    color: #eee !important;
+}
+
+
+/*Products*/
+
+.customRight.right-small {
+    width: 6.8125rem;
+    border-left: 0;
+    margin-top: 1em;
+}
+
+.heroBanner {
+    width: 100%;
+    height: 15em;
+    background: url('../images/desktop/heroBanner.jpg') no-repeat;
+    background-size: cover;
+}
+
+
+/*.heroBanner img {*/
+
+
+/*  width: 100%;*/
+
+
+/*}*/
+
+.handPoint {
+    cursor: pointer;
+}
+
+.logotitle {
+    top: 0.2rem;
+    left: -1.6rem;
+    background-image: url("/content/dam/privatebrands/culinarycircle/logo-mobile.png");
+    background-repeat: no-repeat;
+    display: block;
+    width: 132px;
+    height: 132px;
+    margin-top: 35px;
+    position: relative;
+}
+
+.main-section {
+    padding-top: 125px;
+}
+
+
+/*lading page category*/
+
+.product-mini-show {
+    position: relative;
+}
+
+.product-mini-show:after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+}
+
+.product-mini-show:hover:after {
+    opacity: 1;
+}
+
+.item-img {
+    /*height: 240px;*/
+    overflow: hidden;
+}
+
+.item-img img {
+    position: relative;
+    width: 100%;
+}
+
+.info-wrap {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#4c4c4c+0,2c2c2c+0,2c2c2c+0,595959+12,666666+20,474747+29,000000+34,000000+34 */
+background: #4c4c4c; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #4c4c4c 0%, #2c2c2c 0%, #2c2c2c 0%, #595959 12%, #666666 20%, #474747 29%, #000000 34%, #000000 34%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#4c4c4c), color-stop(0%,#2c2c2c), color-stop(0%,#2c2c2c), color-stop(12%,#595959), color-stop(20%,#666666), color-stop(29%,#474747), color-stop(34%,#000000), color-stop(34%,#000000)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #4c4c4c 0%,#2c2c2c 0%,#2c2c2c 0%,#595959 12%,#666666 20%,#474747 29%,#000000 34%,#000000 34%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #4c4c4c 0%,#2c2c2c 0%,#2c2c2c 0%,#595959 12%,#666666 20%,#474747 29%,#000000 34%,#000000 34%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #4c4c4c 0%,#2c2c2c 0%,#2c2c2c 0%,#595959 12%,#666666 20%,#474747 29%,#000000 34%,#000000 34%); /* IE10+ */
+background: linear-gradient(135deg,  #4c4c4c 0%,#2c2c2c 0%,#2c2c2c 0%,#595959 12%,#666666 20%,#474747 29%,#000000 34%,#000000 34%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    background: linear-gradient(118deg, #46463F,black,black, black);
+    padding: 18px;
+    overflow: hidden;
+    position: relative;
+    text-align: left;
+}
+
+.item-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    font-size: 1.2em;
+    font-family: "Cabrito W01 Nml bd" !important;
+}
+
+.item-desc {
+    font-size: 1em;
+    color: #ABABAB;
+    font-weight: 900;
+    font-family: 'Oswald', sans-serif;
+    text-transform: capitalize;
+}
+
+.item-blue {
+    color: #15BCBA;
+}
+
+.item-green {
+    color: #C1D72E;
+}
+
+.item-cream {
+    color: #D8D068;
+}
+
+.item-dairyorange {
+    color: #F57B20;
+}
+
+.item-delipink {
+    color: #ED1556;
+}
+
+.item-frozenyellow {
+    color: #E6A711;
+}
+
+.item-holidayblue {
+    color: #99D7DB;
+}
+
+.item-pastagreen {
+    color: #9FD5B5;
+}
+
+.item-snackbrown {
+    color: #A4664D;
+}
+
+.item-recipeblue {
+    color: #A3D8F5;
+}
+
+.flip {
+    position: absolute;
+    border-top: 22px solid #D01C1C;
+    border-left: 22px solid transparent;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: 0;
+}
+
+.flip.blue {
+    border-top-color: #15BCBA;
+}
+
+.flip.green {
+    border-top-color: #C1D72E;
+}
+
+.flip.cream {
+    border-top-color: #D8D068;
+}
+
+.flip.dairyorange {
+    border-top-color: #F57B20;
+}
+
+.flip.delipink {
+    border-top-color: #ED1556;
+}
+
+.flip.frozenyellow {
+    border-top-color: #E6A711;
+}
+
+.flip.holidayblue {
+    border-top-color: #99D7DB;
+}
+
+.flip.pastagreen {
+    border-top-color: #9FD5B5;
+}
+
+.flip.snackbrown {
+    border-top-color: #A4664D;
+}
+
+.flip.recipeblue {
+    border-top-color: #A3D8F5;
+}
+
+
+/*lading page category*/
+
+
+/*product main landing*/
+
+.product-hero-show {
+    padding-top: 45px;
+}
+
+.item-hero-show {
+    height: auto;
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.item-hero-show:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 30%;
+    width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 20%);
+}
+
+.item-beverage {
+    background-image: url("../images/desktop/Products/background.jpg");
+}
+
+.item-cooking {
+    background-image: url("../images/desktop/Products/cookingandbaking.jpg");
+}
+
+.item-condiments {
+    background-image: url("../images/desktop/Products/condiments.jpg");
+}
+
+.item-dairy {
+    background-image: url("../images/desktop/Products/dairy.jpg");
+}
+
+.item-deli {
+    background-image: url("../images/desktop/Products/deli.jpg");
+}
+
+.item-frozen {
+    background-image: url("../images/desktop/Products/frozen.jpg");
+}
+
+.item-holiday {
+    background-image: url("../images/desktop/Products/holiday.jpg");
+}
+
+.item-pasta {
+    background-image: url("../images/desktop/Products/pasta.png");
+}
+
+.item-snacks {
+    background-image: url("../images/desktop/Products/snacks.jpg");
+}
+
+
+/* Store Locator*/
+
+.storeLocatorWrapper {
+    padding-top: 165px;
+   
+}
+
+
+.mapPositionCanvas{
+    position:absolute;
+    left:-9999px;
+    top:0;
+}
+.store-locator {
+    padding-top: 40px;
+    margin-left: 0px;
+    padding-bottom: 150px;
+}
+
+.location-search {
+    background-color: #DBAB15;
+    border-color: #DBAB15;
+    color: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-family: "Cabrito W01 Nml bd";
+    letter-spacing: 2.3px;
+}
+
+
+.new-search{
+    border-style: solid;
+    border-width: 1px;
+    cursor: pointer;
+    font-family: 'Cabrito W01 Nml bd';
+    font-weight: bold;
+    line-height: normal;
+    margin: 0 0 1.25em;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 0.75em;
+    padding-right: 1.5em;
+    padding-bottom: 0.8125em;
+    padding-left: 1.5em;
+    font-size: 1em;
+    border-radius: 9px;
+    background-color: #DBAB15;
+    border-color: #DBAB15;
+    color: white;
+}
+.store-results{
+	list-style-type:none;
+	margin-top:68px;
+	border-top: 1px #FFF dotted;
+}
+
+.store-results li{
+	border-bottom: 2px #5D5D5D dotted;
+	cursor:pointer;
+}
+
+
+
+.store-results li .storeName{	
+    color:#CECBCB; 
+    text-transform: uppercase;
+    font-family: 'Cabrito W01 Nml bd';
+	margin-top:-10px;
+	padding-left: 0px;
+	margin-left:10px;
+	display:inline;
+	width:97%;
+}
+.store-results li .storeName .distance{
+	float:right;
+	font-weight:normal;
+	color: #CECBCB;
+    font-family: "HelveticaNeueW01-45Ligh";
+}
+.store-results li .phone span{
+	color:white;
+}
+.simplePagerContainer{
+	overflow:hidden;
+	margin-left: -12px;
+}
+.simplePagerNav {
+	list-style-type:none;
+	float:right;
+}
+.simplePagerNav li{
+	display:inline;
+	padding-right:6px;
+}
+.simplePagerNav li a{
+	text-decoration:none;
+}
+.simplePagerNav .textNav{
+	padding-right: 20px;
+}
+.markerStore{
+	color:#000;
+	border-bottom:1px solid #000;
+}
+.markerStoreAddr{
+	 color:#000;
+}
+
+a.new-search : hover{
+   color:#A5A5A5;
+}
+/*Pagination Styles end*/
+
+
+
+
+
+/* Store locator ends*/
+
+.item-podcast-wrap {
+    width: 100%;
+    height: auto;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.8);
+    margin: 0;
+}
+
+.item-podcast {
+    padding: 40px;
+}
+
+.item-podcast h3 {
+    letter-spacing: 6.3px;
+    text-transform: uppercase;
+    font-family: "Cabrito W01 Nml bd" !important;
+}
+
+.item-podcast a {
+    font-family: "Cabrito W01 Nml bd" !important;
+}
+
+.item-podcast p {
+    color: #DADADA !important;
+    padding-top: 25px;
+    line-height: 19px;
+    font-family: "HelveticaNeueW01-45Ligh";
+    font-weight: 200;
+}
+
+.item-pod-desc {
+    color: white;
+    font-family: 'Oswald', sans-serif !important;
+    letter-spacing: 0.5px;
+    line-height: 1px;
+    font-weight: bold;
+    margin-top: -31px;
+}
+
+.explore {
+    text-transform: uppercase;
+}
+
+
+/*product main landing*/
+
+ul.off-canvas-list {
+    padding: 0 15px;
+}
+
+.close-part {
+    overflow: hidden;
+}
+
+.close-part div {
+    margin: 7px 0 15px 0;
+}
+
+ul.off-canvas-list li a {
+    border-top: 2.8px dotted #A5A5A5;
+    color: #DBAB15;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-bottom: none;
+    letter-spacing: 4.2px;
+    font-family: "Cabrito W01 Nml bd";
+    text-transform:capitalize;
+}
+
+ul.off-canvas-list .product-dropdown-off-canvas li a {
+    border-top: none;
+    color: #eee;
+    font-size: 1.1em;
+    font-weight: normal;
+    border-bottom: none;
+    letter-spacing: 2.3px;
+    font-family: "HelveticaNeueW01-45Ligh";
+    text-transform: capitalize;
+}
+
+ul.off-canvas-list li a:hover {
+    background: transparent;
+}
+
+.right-off-canvas-menu {
+    right: -15.625rem;
+    transform: none;
+    transition: right 500ms ease;
+}
+
+.searchWrapMed.show-for-small-only {
+    padding-left: 13px;
+}
+
+
+/*** custom styles ***/
+
+
+/*** CONTACT US CSS CLASSES AND IDs ***/
+
+
+/***  class to insert * in required feild  ***/
+
+.req-feild {
+    /*background-image:url('../images/smallicons/required.png') ;*/
+    /*background-repeat:no-repeat;*/
+    /*background-position:right; */
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+
+/***  contact us page with background and background  ***/
+
+.contactWrap {
+   
+    padding-bottom: 45px;
+    overflow-x: hidden;
+}
+
+.email-privacy {
+    text-decoration: underline;
+    color: #DBAB15;
+}
+
+.input-background {
+    border: 2px solid #535353;
+    background-color: #282828;
+    color: #CFCFCF;
+}
+
+select option {
+    margin: 40px;
+    background: #282828;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.header-bottom {
+    padding-bottom: 8px;
+    border-bottom: 0.3rem solid #D8B068;
+}
+
+.center-display {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.picShow {
+    height: 280px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.abs1 {
+    background-image: url('../images/desktop/aboutUs/aboutus-1.png');
+}
+
+.abs2 {
+    background-image: url('../images/desktop/aboutUs/aboutus-2.png');
+}
+
+.abs3 {
+    background-image: url('../images/desktop/aboutUs/aboutus-3.png');
+}
+
+.abs-desc {
+    padding: 25px 18px;
+}
+
+ul.about-us {
+    margin-left: 0;
+    list-style-type: none;
+}
+
+
+/*about us page style*/
+
+
+/*change row behaviour for about us*/
+
+.tabular .table {
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+.tabular .makeVCenter {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table.abs-table {
+    height: auto;
+    padding-top: 8px;
+}
+
+.aboutusWrap {
+    padding: 5em 0 1.4em 0;
+}
+
+.aboutusHeading {
+    position: relative;
+    margin: 60px 0px 60px 0px;
+    padding-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    color: #fff;
+}
+
+.aboutusHeading:after {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 3px;
+    background: #DAAE6B;
+    bottom: 0;
+    left: 3%;
+}
+
+.table.abs-table > p > a {
+    text-decoration: underline;
+    color: #DBAB15;
+}
+
+
+/*about us page style*/
+
+
+/*contact us page*/
+
+.contactWrap h4 {
+    color: #A6A6A6;
+    font-family: "HelveticaNeueW01-45Ligh";
+}
+
+.contactWrap hr {    
+margin: 2.5rem 0;              
+     }
+
+.contactWrap h5 {
+    font-weight: bold;
+    font-family: "HelveticaNeueW01-45Ligh";
+    letter-spacing: -0.5px;
+}
+
+.contactWrap h3 {
+    color: #DBAB15;
+    font-family: "Cabrito W01 Nml bd";
+}
+
+#contact {              
+    padding-bottom: 60px;              
+     }
+
+.submit-btn {
+    background-color: #DBAB15;
+    border-color: #DBAB15;
+    color: #fff;
+    border-radius: 5px;
+    font-family: "Cabrito W01 Nml bd";
+    letter-spacing: 1.3px;
+}
+
+
+/*
+.contactus-para {
+    color: #A6A6A6;
+    font-family: "HelveticaNeueW01-45Ligh";
+}*/
+
+.contact-number {
+    color: #DBAB15;
+    font-family: "Cabrito W01 Nml bd";
+}
+
+.contact-by-phone {
+    font-weight: bold;
+    font-family: "HelveticaNeueW01-45Ligh";
+    letter-spacing: -0.5px;
+}
+
+.head-underline {
+    padding-bottom: 12px;
+    letter-spacing: 3.2px;
+    border-bottom: thick solid #DBAB15;
+    color: white;
+    font-weight: bold;
+    font-size: 180%;
+    font-weight: normal !important;
+    font-family: "Cabrito W01 Nml bd";
+    display: block;
+}
+
+input.textboxinput,
+textarea.textareainput,
+.selectBox {
+    background-color: #282828;
+    border: 2px solid #535353;
+    color: #ddd;
+}
+
+input.textboxinput {
+    background-image: url('../images/smallicons/required.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+    padding-right: 24px;
+}
+
+input.textboxinput:focus,
+.selectBox:focus,
+.selectBox:hover {
+    background-color: #282828;
+    border: 2px solid #535353;
+    background-image: url('../images/smallicons/required.png');
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+}
+
+input.non-req {
+    background-color: #282828;
+    border: 2px solid #535353;
+    color: #ddd;
+}
+
+input.non-req:focus {
+    background-color: #282828;
+    border: 2px solid #535353;
+    color: #ddd;
+}
+
+.selectBox,
+.selectBox:focus,
+.selectBox:hover {
+    background-image: url('../images/smallicons/drpdwnarrow.png');
+    background-repeat: no-repeat;
+    background-position: 100% -4px;
+    padding-right: 46px;
+    text-align: left;
+    position: relative;
+}
+
+.line-set-select {
+    line-height: 1px;
+}
+
+.cat-content-block {
+    padding-top: 30px;
+    display: inline-block;
+   
+}
+
+.no-paddin-left {
+    padding-left: 0;
+}
+
+
+/*contact us page*/
+
+
+/*Category-Langing Page */
+
+.cat-header {
+    font-family: "Cabrito W01 Nml bd";
+    color: #cccccc;
+    padding-bottom: 6px;
+    font-size: 32px;
+    letter-spacing: 4.2px;
+    text-transform: uppercase;
+     
+}
+
+.cat-content {
+    font-family: "HelveticaNeueW01-45Ligh";
+    color: #A5A5A5;
+    font-size: 21px;
+    letter-spacing: -0.1px;
+}
+
+.cat-content p {
+    font-family: "HelveticaNeueW01-45Ligh";
+    font-size: 20px;
+}
+
+.row.row-fullwidth.collapse.para-img {
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+    border-bottom: 2px dotted #A5A5A5;
+}
+
+   
+
+.acc-section {
+    margin-top: 15px;
+    margin-bottom: 35px;
+}
+
+.acc-section ul {
+    margin: 0px;
+}
+
+.other-head {
+    border-bottom: 4px solid #daae6b;
+    padding-bottom: 15px;
+    font-family: "Cabrito W01 Nml bd";
+    font-size: 19px;
+    letter-spacing: 3px;
+}
+
+.side-list {
+    margin: 50px 0;
+}
+
+.side-list ul {
+    list-style-type: none;
+}
+
+.side-list ul li a {
+    font-family: "HelveticaNeueW01-45Ligh";
+    color: #A5A5A5;
+    font-size: 21px;
+    letter-spacing: -0.1px;
+    padding-left: 10px;
+    text-transform: capitalize;
+}
+
+.side-list ul li a:hover {
+    color: #daae6b;
+}
+
+
+/*Overriding Foundation Accordion Classes as per docs  */
+
+li a[aria-expanded="true"] span.notActive {
+    display: none;
+}
+
+li a[aria-expanded="false"] span.isActive {
+    display: none;
+}
+
+.accordion .accordion-navigation>a:after,
+.accordion dd>a:after {
+    background: #282828;
+}
+
+.accordion .accordion-navigation.active>a,
+.accordion dd.active>a {
+    background: #282828;
+}
+
+
+/*Extra accoridion code*/
+
+select option {
+    padding: 10px !important;
+    background: #282828 !important;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    margin: 0px !important;
+}
+
+
+/*Extra accoridon code*/
+
+.accordion .accordion-navigation>a,
+.accordion dd>a {
+    background: #282828;
+    color: #fff;
+    display: block;
+    font-family: "Cabrito W01 Nml bd";
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 7px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.accordion .accordion-navigation>a:hover,
+.accordion dd>a:hover {
+    background: #282828;
+}
+
+.accordion .accordion-navigation>.content.active,
+.accordion dd>.content.active {
+    background: transparent;
+    display: block;
+    margin-bottom: 12px;
+    padding-left: 45px;
+}
+
+.panel-content li {
+    color: red;
+    list-style-type: disc;
+    font-size: 26px;
+    line-height: normal;
+}
+
+.panel-content li span {
+    font-family: "HelveticaNeueW01-45Ligh";
+    color: #A5A5A5;
+    font-size: 19px;
+    letter-spacing: -0.1px;
+    position: relative;
+    top: -2px;
+}
+
+.acc-header {}
+
+.acc-drag {
+    background-color: #91BF2F;
+    font-family: "Cabrito W01 Nml bd";
+    border-radius: 1px;
+    font-weight: bolder;
+    height: 26px;
+    width: 25px;
+    text-align: center;
+    font-size: 17px;
+    color: black;
+    border-radius: 7px;
+}
+
+
+/* End of Overriding Foundation Accordion Classes as per docs  */
+
+
+/* End of Category-Langing Page */
+
+
+/*RECIPES*/
+
+p.find-culinary {
+    margin-left: 5px;
+    color: #828282;
+    position: relative;
+    top: 15px;
+}
+
+ul#drop1 {
+    top: 83px !important;
+    left: 15px !important;
+}
+
+.f-dropdown {
+    display: none;
+    left: -9999px;
+    list-style: none;
+    margin-left: 0;
+    position: absolute;
+    background: #fff;
+    border: solid 1px #ccc;
+    font-size: 0.875rem;
+    height: auto;
+    max-height: 0px;
+    width: 0px;
+    z-index: 0;
+    /* margin-top: 2px; */
+    max-width: 2px;
+}
+
+.f-dropdown li {
+    cursor: pointer;
+    font-size: 0.875rem;
+    line-height: 1.125rem;
+    margin: 0;
+    width: 265px;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    border: 1px solid #A5A5A5;
+}
+
+.f-dropdown:after {
+    border: inset 7px;
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-color: transparent transparent #ccc transparent;
+    border-bottom-style: solid;
+    position: absolute;
+    top: -3px;
+    left: 9px;
+    z-index: -1;
+}
+
+.f-dropdown:before {
+    border: inset 7px;
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-color: transparent transparent #ccc transparent;
+    border-bottom-style: solid;
+    position: absolute;
+    top: -3px;
+    left: 9px;
+    z-index: -1;
+}
+
+.f-dropdown {
+    background: transparent;
+}
+
+.recipe-lan-head {
+    font-family: "Cabrito W01 Nml bd";
+    overflow: auto;
+    padding: 9px;
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(219,171,21,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(219,171,21,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(219,171,21,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(219,171,21,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(219,171,21,1) 100%); /* ie10+ */
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(219,171,21,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#DBAB15',GradientType=1 ); /* ie6-9 */
+}
+
+.load-btn {
+    background-color: #DBAB15;
+    border-color: #DBAB15;
+    color: #fff;
+    border-radius: 14px;
+    margin: 5px auto;
+    font-family: "Cabrito W01 Nml bd";
+    letter-spacing: 1.3px;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    background-color: #DBAB15;
+}
+
+.highlight {
+    background-color: #dbab15 !important;
+    cursor: pointer;
+}
+
+.f-dropdown li a {
+    padding: 10px !important;
+    padding-left: 32px !important;
+    background: black;
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+    font-size: 1rem;
+    margin: 0px !important;
+}
+
+button.selectBox {
+    height: 38px;
+    width: 265px;
+}
+
+.move-top {
+    position: relative;
+    top: -6px;
+}
+
+.recipes-grid {
+    padding: 12px;
+}
+
+.ul-grid>li>a {
+    color: #DAAE6B;
+    font-family: "Cabrito W01 Nml bd";
+    letter-spacing: 1.2px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+ul-grid>li{
+margin-bottom: 36px;
+}
+
+
+h3#receipestitle {
+    padding-right: 20px;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    text-align: right;
+    font-size: 26px;
+}
+
+.small-7.medium-4.large-3.columns.float-recipe-left-mobile {
+    float: left;
+}
+
+
+/*RECIPES END*/
+
+
+/*Recipe details page*/
+
+.recipe-desc {
+    padding: 60px 0 100px;
+}
+
+.recipe-desc h3 {
+    text-transform: uppercase;
+    font-family: "Cabrito W01 Nml bd";
+}
+
+.recipe-desc h4 {
+    text-transform: uppercase;
+    font-family: "Cabrito W01 Nml bd";
+}
+
+.recipe-ul {
+    list-style-image: url('/etc/designs/privatebrands/culinarycircle/clientlib-site/images/smallicons/bullet.png');
+}
+
+.recipe-desc p,
+li {
+    font-family: "HelveticaNeueW01-45Ligh";
+    color: #A5A5A5;
+}
+
+.small-img-position {
+    position: relative;
+    top: -2px;
+}
+
+.disabled {
+    display: none !important;
+}
+
+
+
+
+
+/*Recipe details page*/
+
+
+/*Recipe search page*/
+
+.results-list {
+    list-style-type: none;
+    padding-top: 20px;
+    margin-left: 0px;
+}
+
+ul.pagination li:hover a,
+ul.pagination li a:focus,
+ul.pagination li:hover button,
+ul.pagination li button:focus {
+    background: #505450 !important;
+}
+
+.page-no li:hover a {
+    background: white;
+}
+
+.search-para {
+    font-family: "Cabrito W01 Nml bd";
+    padding-top: 10px;
+    border-bottom: thick solid #DBAB15;
+    color: #FFFFFF;
+    padding-bottom: 6px;
+    font-size: 30px;
+    letter-spacing: 4.2px;
+    text-transform: uppercase;
+}
+
+ul.results-list li a {
+    font-family: "Cabrito W01 Nml bd";
+    letter-spacing: 4.2px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #E6E2E2;
+}
+
+ul.results-list li a:hover {
+    color: #DBAB15;
+}
+
+ul.results-list li p {
+    color: #A5A5A5;
+    font-family: "HelveticaNeueW01-45Ligh";
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+
+/* This pagination style */
+
+.page-ul-top {
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+ul.page-ul-top li {
+    display: inline;
+    color: white;
+}
+
+ul.page-no li.current-page {
+    background-color: #F5BB08;
+    border-radius: 31px;
+    width: 28px;
+    height: 23px;
+    color: #000;
+    font-size: 14px;
+    font-weight: bolder;
+    line-height: inherit;
+    padding: 0.0625rem 0.625rem 0.0625rem;
+}
+
+page-ul-top li:hover {
+    background: #505450;
+}
+
+li.pages.show-for-large-up {
+    position: relative;
+    left: -13px;
+}
+
+ul.page-no {
+    list-style-type: none;
+}
+
+ul.page-no li {
+    display: inline;
+}
+
+ul.page-no li a {}
+
+.not-find {
+        font-family: "HelveticaNeueW01-45Ligh";
+    color: #A5A5A5;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    text-transform: capitalize;
+}
+
+.emptyresults {
+    padding-top: 10px;
+}
+
+.emptyresults>h3 {
+    font-family: "Cabrito W01 Nml bd";
+    letter-spacing: 4.2px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #E6E2E2;
+}
+
+.emptyresults p {
+    color: #A5A5A5;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+    margin-top: -14px;
+}
+
+
+/*Recipe search page*/
+
+
+/*Footer*/
+
+.copy-align {
+    max-width: 205px;
+    margin: auto;
+    font-family: "HelveticaNeueW01-45Ligh";
+    padding-bottom: 15px;
+    letter-spacing: 4px;
+    font-size: x-small;
+}
+
+footer {
+    border-top: 7px solid #DAAE6B;
+    position: relative;    
+    bottom: 0px;
+    color: #949494;
+}
+
+.footer-links {
+    padding-right: 19px;
+}
+
+.footer-links ul {
+    margin-top: 25px;
+    list-style-type: none;
+    text-align: center !important;
+}
+
+.footer-links ul li {
+    text-align: center !important;
+}
+
+.footer-links ul li a {
+    padding: 0px 0.7em;
+    color: #ca930f;
+    font-weight: 500;
+}
+
+.fb-img {
+    width: 23px;
+    margin: 10px auto;
+}
+
+
+/*Overriding foundation pagination*/
+
+ul.pagination li a,
+ul.pagination li button {
+    background: #505450;
+    color: #000;
+    border-radius: 12px;
+}
+
+ul.pagination li.current a,
+ul.pagination li.current button {
+    background: #DBAB15;
+    cursor: pointer;
+}
+
+ul.pagination li.current a:hover,
+ul.pagination li.current a:focus,
+ul.pagination li.current button:hover,
+ul.pagination li.current button:focus {
+    background: #DBAB15;
+}
+
+span.miles {
+    background-color: #DBAB15;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+/*Footer End*/
+
+.new-search {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+
+/*NOTE: media queries should be last*/
+
+
+/*media query for TABLET only*/
+
+@media only screen and (min-width: 40.0625em) and (max-width: 64.0625em) {
+    
+    .searchIcon {
+        position: absolute;
+        top: 19px;
+        right: 114px;
+        color: transparent;
+        cursor: pointer;
+    }
+    .small-12.medium-4.large-3.columns.end.float-recipe-left-mobile {
+    position: relative;
+    left: 110px;
+}
+   
+    .recipe-hr {
+    border-top: 1px dotted white;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+   
+   
+    #siteSearch {
+        width: 225px;
+        margin-right: 65px;
+    }
+}
+
+span.miles {
+    background-color: #DBAB15;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.new-search {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*for MEDIA DESLTOP and TABLET*/
+
+@media only screen and (min-width: 40.063em) {
+   
+    
+    span.rec-searchicon {
+    float: right;
+    margin-top: -48px;
+    margin-right: 68px !important;
+    color: transparent;
+    cursor: pointer;
+}
+   
+   
+   
+.cat-content-block {
+    padding-top: 30px;
+    display: inline-block;
+    padding-left:20px;
+}
+   
+   
+.recipe-lan-head {
+    font-family: "Cabrito W01 Nml bd";
+    overflow: auto;
+    padding: 20px;
+    background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(219,171,21,1) 100%); /* ff3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(219,171,21,1))); /* safari4+,chrome */
+background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(219,171,21,1) 100%); /* safari5.1+,chrome10+ */
+background: -o-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(219,171,21,1) 100%); /* opera 11.10+ */
+background: -ms-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(219,171,21,1) 100%); /* ie10+ */
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(219,171,21,1) 100%); /* w3c */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#DBAB15',GradientType=1 ); /* ie6-9 */
+}
+   
+    .recipe-hr {
+    border-top: 1px dotted white;
+    margin-left: 34px;
+    margin-right: 35px;
+}
+    .item-info {
+        float: right !important;
+        text-align: right !important;
+    }
+    .homePageWrap {
+        margin-top: 130px;
+    }
+    #recipeSearch {
+        width: 308px;
+    }
+    .acc-section ul {
+        margin: 0px;
+       
+    }
+    #recipeSearch {
+        width: 308px;
+        margin-left: -5px;
+    }
+    .search-recipes {
+        padding-left: 26px;
+    }
+    div.terms-privacy {
+        padding: 0px 45px 95px;
+    }
+    .CenterWrap {
+        padding: 75px;
+        margin: auto;
+    }
+    .item-hero-show {
+        height: 400px;
+    }
+    .item-podcast-wrap {
+        width: 400px;
+        height: 400px;
+        margin: 0 2.4em;
+    }
+    .table.abs-table {
+        height: 377px;
+    }
+    .picShow {
+        height: 377px;
+        border-radius: 37%;
+    }
+    .aboutusHeading:after {
+        width: 10em;
+        left: 37%;
+    }
+    .head-underline {
+        display: inline-block;
+        margin-bottom: 16px;
+        letter-spacing: 7px;
+    }
+    /*maint-content-wrap*/
+    .mainContentWrap {
+        margin-top: 130px !important;
+        height: auto;
+    }
+    .contepageWrap {
+        padding-top: 45px;
+    }
+    .location-search {
+        margin-top: 85px;
+    }
+    hr.middle {
+        max-width: 261px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        border-top: 6px solid #DAAE6B;
+    }
+    /*logo for tablet and desktop*/
+    .logotitle {
+        top: -0.8rem;
+        left: -1.6rem;
+        background-image: url("/content/dam/privatebrands/culinarycircle/logo.png");
+        background-repeat: no-repeat;
+        display: block;
+        width: 146px;
+        height: 140px;
+        margin-top: 35px;
+        position: relative;
+    }
+    .tab-bar {
+        height: 8.143rem;
+    }
+    /*RECIPES*/
+    /*Overriding foundation pagination*/
+    ul.pagination li a,
+    ul.pagination li button {
+        background: #505450;
+        color: #000;
+        border-radius: 12px;
+    }
+    ul.pagination li.current a,
+    ul.pagination li.current button {
+        background: #DBAB15;
+        cursor: pointer;
+    }
+    ul.pagination li.current a:hover,
+    ul.pagination li.current a:focus,
+    ul.pagination li.current button:hover,
+    ul.pagination li.current button:focus {
+        background: #DBAB15 !important;
+    }
+    /*RECIPES END*/
+    /* Footer for desktop and tablet*/
+    .copy-align {
+        max-width: 100%;
+        margin: auto;
+        letter-spacing: 4px;
+        font-size: x-small;
+    }
+    .footer-menu-wrap {
+        margin: 2.3em auto;
+    }
+    .footer-links {
+        margin: auto;
+        display: table;
+    }
+    .footer-links ul li {
+        float: left;
+    }
+    .footer-links ul li+li a {
+        border-left: 1px solid #949494;
+        line-height: 1px;
+    }
+    .fb-img {
+        position: absolute;
+        bottom: 1.1em;
+        right: 2.4em;
+    }
+    /* Footer Ends*/
+    /*  About US*/
+    .abs-desc {
+        padding: 25px 70px;
+    }
+    div.aboutustext > p > a {
+        text-decoration: underline;
+        color: #DBAB15;
+    }
+    .table.abs-table > p {
+        padding: 23% 10%;
+        display: table-cell;
+        vertical-align: middle;
+        font-family: "HelveticaNeueW01-45Ligh";
+        color: #A5A5A5;
+        font-size: 21px;
+    }
+    .table.abs-table > p > a {
+        text-decoration: underline;
+        color: #DBAB15;
+        font-size: 21px;
+    }
+    li.move-top {
+        margin-top: -108px;
+    }
+    /* About US  END*/
+}
+/* Only for desktop*/
+@media only screen and (min-width: 64.0625em) {
+    
+    
+    .off-canvas-wrap
+ {
+     height:auto;
+    
+    
+}
+    .inner-wrap {
+        height: 100%;
+    width: 100%;
+    overflow: hidden;
+	
+}
+    
+    .tab-bar{
+    position:fixed;
+    top: 0px;
+        
+    }
+     
+    
+    .master-section{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    }
+
+
+    
+    .searchIcon {
+        position: absolute;
+        top: 20px;
+        right: 60px;
+        color: transparent;
+        cursor: pointer;
+    }
+    span.miles {
+        background-color: transparent;
+        border-radius: none;
+        padding: none;
+    }
+    .footer-links {
+        padding-right: none;
+    }
+}
+@media print {
+    .noprint {display:none;}
+   
+    .mainContentWrap {
+        margin-top: -10px !important;}
+    .off-canvas-wrap{
+    height:auto !important;
+    }
+    
+.inner-wrap {
+     height:auto !important;    
+}
+
+.master-section {  
+     height:auto !important;
+}
+  
+}
+/* KRISHNA's */
+ @media only screen and (max-width: 40em) {
+     /* For Mobile Devices */
+     .store-or{
+            display:none;  
+        } 
+	 
+	 h4{
+		 letter-spacing: 3.2px;
+	 }
+     
+     .store-locator{
+         padding-bottom:40px;
+     }
+    .storeLocatorWrapper{
+         padding-top:100px;
+     }
+     
+     #store-twoPages{
+         
+         margin-top:1.5rem;
+         margin-bottom:2rem;
+     }
+     .store-para{
+		 display:none;
+	 }
+}
+/* Added now to test for tablet*/
+@media (max-width:900px)
+/*@media only screen and (min-width:40em) and (max-width:64em)*/{
+     .location-search{
+        margin-left:auto;
+        margin-right:auto;
+        display: inherit;
+        margin-top:30px;
+     }
+	
+	h4{
+		letter-spacing: 3.2px;
+	}
+	.store-results li .address{
+		position: relative;
+		top:-45px;
+		padding-left: 45px;
+	}
+	.store-results li .phone{
+		position: relative;
+		top:-45px;
+		padding-left: 45px;
+		margin-top:-15px;
+		margin-bottom:12px;
+	}
+}
+@media only screen and (min-width: 768px)
+/*@media only screen and (min-width:40em)*/{ 
+    .mobile{
+        display:none;
+           }
+    /* #radius{
+            width:230px;
+            }   */
+    .center-display{
+        position:relative;
+        top:-135px;
+    }
+    }
+@media (max-width: 1027px)
+/*@media only screen and (max-width:64em)*/{
+    
+    .store-or{
+            display:none;
+    }
+    
+   .mobile{
+       display:block;
+            margin-left:auto;
+            margin-right:auto;
+            -moz-transform:rotate(-90deg);
+        -webkit-transform:rotate(-90deg);
+        -ms-transform:rotate(-90deg);
+        transform: rotate(-90deg);
+         position:relative;      
+         top:-20px;
+     }
+    .small-12{
+         top:-15px;
+     }
+}
+/* Media Query for Tablet Devices */
+
+@media (min-width: 640px) and (max-width:1104px)
+
+/*@media only screen and (min-width:40em) and (max-width:64em)*/
+{
+    .storeLocatorWrapper{
+        padding-top:150px;
+    }
+}
+@media (max-width: 1024px){
+ /*Added now for Tablet Configuration */   
+    .center-display{
+        display:block;
+        margin-left: auto;
+        margin-right:auto;
+        position:relative;
+        left:120px;
+        top:-760px;
+    }
+}
+
+/* Media Query for Laptops, Desktops wit >961px */
+@media (min-width: 901px ){
+    .store-or{
+        position:relative;
+        left:15px;
+        top:-5px;
+    }
+    
+    .storeLocatorWrapper{
+        margin-left: 20px;
+    }
+    
+    hr{
+        width:100%;
+    }
+        
+    h4{
+    /*position:relative;
+    top:13px;  */
+    letter-spacing: 3.2px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1375rem;
+    font-weight: normal !important;
+    font-family: "Cabrito W01 Nml bd";
+    display: block;
+    }
+	#radius.selectBox{
+        width:50%;
+    }
+}
+
+/* For Maps page - Desktop View */
+
+@media(max-width:910px)
+{
+    .center-display-maps{
+        display:none;
+    }
+}
+@media (min-width:1024px)
+{
+    .center-display-maps{
+        position:relative;
+        top:-120px;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+    #store-twoPages{
+        padding-bottom:20px;
+    }
+}
+
+/* Changing pagination for Store locator google maps page */
+
+/* For Mobiles */
+@media(min-width:320px) and (max-width:640px){
+	.new-search{
+		display:inherit;
+		margin-left:auto;
+		margin-right:auto;
+		width:60%;
+		letter-spacing:2.2px;
+}
+}
+/* For Tablets */
+@media(min-width:641px) and (max-width:1024px){
+	
+	.new-search{
+		display: inherit;
+		margin-left:auto;
+		margin-right: auto;
+		width:30%;
+		letter-spacing: 4.2px;
+	}
+}
+
+/* For Desktop */
+@media(min-width:900px){
+	#map{
+	margin-top: -25px;
+		
+}
+
+	.simplePagerContainer{
+		margin-left: -15px;
+	}
+	
+	.store-results li .address{
+		position: relative;
+		top:-45px;
+		padding-left: 45px;
+	}
+	
+	.store-results li .phone{
+		position: relative;
+		top:-45px;
+		padding-left: 45px;
+		margin-top: -15px;
+		margin-bottom: :12px;
+	}
+	
+	.store-results li .storeName .distance {
+		margin-top: 10px
+	}
+
+	
+	.new-search{
+	margin-bottom: 70px;
+	border-radius: 3px;
+	font-family: "Cabrito W01 Nml bd" !important;
+	letter-spacing: 3.2px;
+		width:35%;
+}
+
+}
+
+ul.simplePagerNav li a:hover,
+ul.simplePagerNav li button{
+    background: #DBAB15;
+    
+    padding:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+	/*margin-left:-10px;*/
+	text-decoration:none;
+    border-radius:20px;
+    color:white;
+}
+ul.simplePagerNav li a,
+ul.simplePagerNav li button{
+    background: #505450;
+    
+    padding:7px;
+	padding-top:2px;
+	padding-bottom:2px;
+    color: #000;
+    border-radius: 20px;
+}
+
+.simplePagerNav{
+    list-style-type: none;
+    float:right;
+    padding-top:15px;
+    
+}
+
+.simplePagerNav li{
+	display:inline;
+    float:left;
+}
+
+.store-results li .address{
+	line-height:4.1;
+}
+
+.store-results li .phone{
+	line-height: 0.1;
+}
+
+
+
+/*Button Yellow background on store results page */ 
+@media(max-width:1000px){
+	
+.store-results li .storeName .distance {
+    float: right;
+    font-weight: normal;
+    color: white;
+    font-family: "HelveticaNeueW01-45Ligh";
+    background: #DBAB15;
+    border-radius: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-transform: lowercase;
+	margin-top:10px;
+}
+}
+
+.errorWrap hr{
+	border: solid #DBAB15;
+	clear:both;
+	height:0;
+	margin: 1.2rem 0 1.1875rem;
+	border-width:2px;
+}
+
+.pleasecheck{
+	    font-family: "HelveticaNeueW01-45Ligh";
+    color: #A5A5A5;
+    font-size: 21px;
+    letter-spacing: -0.1px;
+}
+
+
+/* Added for numbering of the markers */
+
+ .store-results li span.markerMap{	
+    padding-top: 4px; 
+	background-image:url('../images/common/pinDesired_mod.png');
+	
+    background-repeat: no-repeat;
+	padding-left: 9px;
+	width:42px;
+	display: inline-block;
+	text-align:center;
+	height:72px;
+	color:#eee;
+	font-weight: bold;
+	margin-top: 8px;
+	margin-left:-10px;
+}  
