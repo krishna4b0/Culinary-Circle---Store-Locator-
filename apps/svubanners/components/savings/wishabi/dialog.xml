@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Wishabi Properties"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <properties
+                jcr:primaryType="cq:Panel"
+                title="Wishabi Properties">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <banner
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Banner"
+                        name="./banner"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <cub
+                                jcr:primaryType="cq:Widget"
+                                text="Cub Foods"
+                                value="cub"/>
+                            <farmfresh
+                                jcr:primaryType="cq:Widget"
+                                text="Farm Fresh"
+                                value="farmfreshsupermarkets"/>
+                            <hornbachers
+                                jcr:primaryType="cq:Widget"
+                                text="Hornbacher's"
+                                value="hornbachers"/>
+                            <shopnsave
+                                jcr:primaryType="cq:Widget"
+                                text="Shop N Save"
+                                value="shopnsavesupermarkets"/>
+                            <shoppers
+                                jcr:primaryType="cq:Widget"
+                                text="Shopper's"
+                                value="shoppers"/>
+                            <rainbowfoods
+                                jcr:primaryType="cq:Widget"
+                                text="RainbowFoods"
+                                value="rainbowfoods"/>
+                            <cmwa
+                                jcr:primaryType="cq:Widget"
+                                text="County Market WA"
+                                value="cmwa"/>
+                        </options>
+                    </banner>
+                </items>
+            </properties>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,13 @@
+#base=source
+
+#head
+SVU.widgets.js
+
+#widgets
+widgets/Carousel.js
+widgets/Carousel/Slide.js
+widgets/Carousel/TitlePanel.js
+
+widgets/QuickListProduct.js
+widgets/QuickListProduct/Slide.js
+widgets/QuickListProduct/TitlePanel.js

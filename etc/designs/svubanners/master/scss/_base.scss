@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+}
+
+.button, .button:visited {
+	//background: #EF4035 url('../../master/images/bg-button.gif') 100% 50% no-repeat;
+	color: white !important;
+	display: inline-block;
+	font-size: .92em;
+	padding: 3px 23px 4px 10px;
+	border: none;
+	width: auto;
+	overflow: visible;
+	cursor: pointer;
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Recommended Coupons"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Title"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tooltip
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The text that appears in the tooltip"
+                    fieldLabel="Tool Tip Text: "
+                    name="./tooltip"
+                    xtype="textfield"/>
+                <loginpath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Path to Login Page"
+                    fieldLabel="Location: "
+                    name="./loginpath"
+                    xtype="pathfield"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

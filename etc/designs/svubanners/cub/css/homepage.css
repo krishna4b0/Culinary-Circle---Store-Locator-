@@ -1,0 +1,44 @@
+#homepanel01 ul {
+    margin-left: 0;
+}
+#homepanel01 ul li a, #homepanel01 ul li button {
+    height: 77px;
+    margin-bottom: 10px;
+    width: 289px;
+}
+#homepanel01 ul li.first a {
+    background: url("../img/sprite-secondary-nav.png") repeat scroll 0 0;
+}
+  #homepanel01 ul li.first a:hover {
+      background-position: 0 -77px !important;
+  }
+#homepanel01 ul li.second a {
+    background: url("../img/sprite-secondary-nav.png") repeat scroll 0 -154px;
+}
+  #homepanel01 ul li.second a:hover {
+      background-position: 0 -231px !important;
+  }
+#homepanel01 ul li.third a {
+    background: url("../img/sprite-secondary-nav.png") repeat scroll 0 -308px;
+}
+  #homepanel01 ul li.third a:hover {
+      background-position: 0 -385px !important;
+  }
+#homepanel01 ul li.fourth a {
+    background: url("../img/sprite-secondary-nav.png") repeat scroll 0 -462px;
+}
+  #homepanel01 ul li.fourth a:hover, #homepanel01 ul li.fourth button:hover {
+      background-position: 0 -539px !important;
+  }
+#frm-findstore input {
+    display: none;
+}
+#section1,
+#section2,
+#section3 {
+    display: none;
+}
+
+div.featureImage{
+    padding-top: 0px;
+}

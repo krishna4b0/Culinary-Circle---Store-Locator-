@@ -1,0 +1,1883 @@
+#QAS_Dialog {
+    color: #3f3f3f;
+    text-align: left;
+}
+.QAS_Header {
+    display: block;
+    font-size: 14px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+}
+.QAS_Prompt {
+    float: left;
+    padding-left: 0;
+    padding-top: 20px;
+    width: 295px;
+}
+.QAS_Input {
+    padding: 0 0 0.3em;
+    float: left;
+}
+.QAS_RightDetails {
+    border-left: 1px solid #ef3e42;
+    float: right;
+    margin-top: 20px;
+    padding-left: 20px;
+    width: 294px;
+}
+.QAS_RightDetails.noMatch {
+    border-left: 0;
+    float: left;
+    padding-left: 0;
+}
+.QAS_RightSidePrompt {
+    padding-bottom: .5em;
+}
+.QAS_RightSidePromptText {
+    color: #ef3e42;
+    font-size: 14px;
+}
+.QAS_RightDetails table {
+    font-size: 14px;
+    line-height: 1em;
+    padding-bottom: 10px;
+}
+.QAS_EditLink {
+    color: #719833;
+    font-size: 11px;
+    font-weight: normal;
+    padding-left: 1em;
+}
+.QAS_Picklist {
+    float: left;
+    font-size: 0.9em;
+    width: 295px;
+}
+.QAS_DeliverableWarning {
+    display: none;
+    font-size: .8em;
+    padding-top: .6em;
+}
+.QAS_Pick {
+    font-size: .9em;
+    display: none;
+    width: 450px;
+    height: 200px;
+    overflow: auto;
+}
+.QAS_MultPick {
+    font-size: .9em;
+    display: none;
+    width: 285px;
+    overflow: auto;
+}
+.QAS_ShowPick {
+    display: none;
+    padding-bottom: .6em;
+}
+.QAS_Pick table, .QAS_MultPick table {
+    font-size: .9em;
+}
+.QAS_Pick table td, .QAS_MultPick table td {
+    padding-right: 1.5em;
+}
+.QAS_PromptText {
+    color: #ef3e42;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.banner-cub .QAS_PromptText, .banner-cub .QAS_RightSidePromptText {
+    font-family: "Myriad W01 SmBd", Helvetica, Arial, sans-serif;
+}
+.QAS_PromptData br {
+    display: none;
+}
+.QAS_PromptData table {
+    clear: both;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+#QAS_RefineText {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #A5ACB2;
+    height: 23px;
+    margin-right: 10px;
+    width: 80px;
+}
+#QAS_RefineBtn, #QAS_AcceptOriginal, #QAS_NoApt {
+    color: #666;
+    display: inline-block;
+    font-size: 0.92em;
+    padding: 3px 23px 4px 10px;
+    vertical-align: bottom;
+}
+#QAS_NoApt {
+    margin-top: .5em;
+}
+.ui-dialog {
+    padding: 20px;
+    box-shadow: 0 0 9px 3px gray;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #fff;
+    z-index: 200000;
+}
+.ltie9 .ui-dialog {
+    border: 1px solid #666;
+    overflow: hidden;
+}
+.ui-dialog-titlebar {
+    text-align: center;
+}
+.ui-dialog-title {
+    color: #ef3e42;
+    font-size: 24px;
+}
+.banner-cub .ui-dialog, .banner-shopnsave .ui-dialog {
+    font-family: "Myriad W01 Regular", Helvetica, Arial, sans-serif;
+}
+.banner-cub .ui-dialog-title, .banner-shopnsave .ui-dialog-title {
+    font-family: "Myriad W01 SmBd", Helvetica, Arial, sans-serif;
+}
+.ui-dialog:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+#fancybox-loading {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    width: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1104;
+    display: none;
+}
+* html #fancybox-loading {
+    position: absolute;
+    margin-top: 0;
+}
+#fancybox-loading div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 480px;
+    background-image: url("../../master/fancybox/fancybox.png");
+}
+#fancybox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    z-index: 1100;
+    display: none;
+}
+* html #fancybox-overlay {
+    position: absolute;
+    width: 100%}
+#fancybox-tmp {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: auto;
+    display: none;
+}
+#fancybox-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 20px;
+    z-index: 1101;
+    display: none;
+}
+#fancybox-outer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+}
+#fancybox-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+}
+#fancybox-hide-sel-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+}
+#fancybox-close {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../../master/fancybox/fancybox.png");
+    background-position: -40px 0px;
+    cursor: pointer;
+    z-index: 1103;
+    display: none;
+}
+#fancybox_error {
+    color: #444;
+    font: normal 12px/20px Arial;
+    padding: 7px;
+    margin: 0;
+}
+#fancybox-content {
+    height: auto;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+#fancybox-img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    line-height: 0;
+    vertical-align: top;
+    -ms-interpolation-mode: bicubic;
+}
+#fancybox-frame {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+#fancybox-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: Arial;
+    font-size: 12px;
+    z-index: 1102;
+}
+.fancybox-title-inside {
+    padding: 10px 0;
+    text-align: center;
+    color: #333;
+}
+.fancybox-title-outside {
+    padding-top: 5px;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+}
+.fancybox-title-over {
+    color: #FFF;
+    text-align: left;
+}
+#fancybox-title-over {
+    padding: 10px;
+    background-image: url("../../master/fancybox/fancy_title_over.png");
+    display: block;
+}
+#fancybox-title-wrap {
+    display: inline-block;
+}
+#fancybox-title-wrap span {
+    height: 32px;
+    float: left;
+}
+#fancybox-title-left {
+    padding-left: 15px;
+    background-image: url("../../master/fancybox/fancybox.png");
+    background-position: -40px -90px;
+    background-repeat: no-repeat;
+}
+#fancybox-title-main {
+    font-weight: bold;
+    line-height: 29px;
+    background-image: url("../../master/fancybox/fancybox-x.png");
+    background-position: 0px -40px;
+    color: #FFF;
+}
+#fancybox-title-right {
+    padding-left: 15px;
+    background-image: url("../../master/fancybox/fancybox.png");
+    background-position: -55px -90px;
+    background-repeat: no-repeat;
+}
+#fancybox-left, #fancybox-right {
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    width: 35%;
+    cursor: pointer;
+    outline: none;
+    background-image: url("../../master/fancybox/blank.gif");
+    z-index: 1102;
+    display: none;
+}
+#fancybox-left {
+    left: 0px;
+}
+#fancybox-right {
+    right: 0px;
+}
+#fancybox-left-ico, #fancybox-right-ico {
+    position: absolute;
+    top: 50%;
+    left: -9999px;
+    width: 30px;
+    height: 30px;
+    margin-top: -15px;
+    cursor: pointer;
+    z-index: 1102;
+    display: block;
+}
+#fancybox-left-ico {
+    background-image: url("../../master/fancybox/fancybox.png");
+    background-position: -40px -30px;
+}
+#fancybox-right-ico {
+    background-image: url("../../master/fancybox/fancybox.png");
+    background-position: -40px -60px;
+}
+#fancybox-left:hover, #fancybox-right:hover {
+    visibility: visible;
+}
+#fancybox-left:hover span {
+    left: 20px;
+}
+#fancybox-right:hover span {
+    left: auto;
+    right: 20px;
+}
+.fancy-bg {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    width: 20px;
+    height: 20px;
+    z-index: 1001;
+}
+#fancy-bg-n {
+    top: -20px;
+    left: 0;
+    width: 100%;
+    background-image: url("../../master/fancybox/fancybox-x.png");
+}
+#fancy-bg-ne {
+    top: -20px;
+    right: -20px;
+    background-image: url("../../master/fancybox/fancybox.png");
+    background-position: -40px -162px;
+}
+#fancy-bg-e {
+    top: 0;
+    right: -20px;
+    height: 100%;
+    background-image: url("../../master/fancybox/fancybox-y.png");
+    background-position: -20px 0px;
+}
+#fancy-bg-se {
+    bottom: -20px;
+    right: -20px;
+    background-image: url("../../master/fancybox/fancybox.png");
+    background-position: -40px -182px;
+}
+#fancy-bg-s {
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    background-image: url("../../master/fancybox/fancybox-x.png");
+    background-position: 0px -20px;
+}
+#fancy-bg-sw {
+    bottom: -20px;
+    left: -20px;
+    background-image: url("../../master/fancybox/fancybox.png");
+    background-position: -40px -142px;
+}
+#fancy-bg-w {
+    top: 0;
+    left: -20px;
+    height: 100%;
+    background-image: url("../../master/fancybox/fancybox-y.png");
+}
+#fancy-bg-nw {
+    top: -20px;
+    left: -20px;
+    background-image: url("../../master/fancybox/fancybox.png");
+    background-position: -40px -122px;
+}
+.ltie9 .ss-container .ss-toggle-pass {
+    display: none;
+}
+@-webkit-keyframes spinner {
+    from {
+    -webkit-transform: rotateY(0deg);
+}
+to {
+    -webkit-transform: rotateY(360deg);
+}
+}@keyframes spinner {
+    from {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+to {
+    -moz-transform: rotateY(360deg);
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+}
+}#ss-create-rewards-form .ss-submit-button {
+    float: left;
+}
+#ss-create-rewards-form .ss-not-now {
+    float: left;
+    margin-top: 28px;
+    margin-left: 15px;
+}
+.ss-container, html #ss-page-container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    line-height: 1.2;
+}
+.ss-container p, .ss-container h1, .ss-container h2, .ss-container h3, .ss-container h4, .ss-container label, html #ss-page-container p, html #ss-page-container h1, html #ss-page-container h2, html #ss-page-container h3, html #ss-page-container h4, html #ss-page-container label {
+    color: #424242;
+}
+.ss-container p, .ss-container li, .ss-container ul, .ss-container button, html #ss-page-container p, html #ss-page-container li, html #ss-page-container ul, html #ss-page-container button {
+    margin: 0;
+}
+.ss-container ::-ms-clear, .ss-container ::-ms-reveal, html #ss-page-container ::-ms-clear, html #ss-page-container ::-ms-reveal {
+    width: 0;
+    height: 0;
+}
+.ss-container *, .ss-container *:before, .ss-container *:after, html #ss-page-container *, html #ss-page-container *:before, html #ss-page-container *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.ss-container input, .ss-container a:focus, html #ss-page-container input, html #ss-page-container a:focus {
+    outline-color: #ef3e42;
+}
+.ss-container .ss-overlay, html #ss-page-container .ss-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("/etc/designs/svubanners/master/img/simplesignup/gray-background.png");
+    z-index: 20000;
+}
+.ss-container .ss-close-button, html #ss-page-container .ss-close-button {
+    background: url("/etc/designs/svubanners/master/img/simplesignup/ss-close-button.png");
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    right: -17px;
+    top: -17px;
+}
+.ss-container .ss-popup-anchor, html #ss-page-container .ss-popup-anchor {
+    position: relative;
+}
+.ss-container .ss-inner-container, html #ss-page-container .ss-inner-container {
+    display: none;
+    box-shadow: 0px 0px 9px 4px #4D4D4D;
+    position: absolute;
+    padding: 28px;
+    top: 140px;
+    left: 50%;
+    background: #fff;
+    font-size: 17px;
+    z-index: 20001;
+}
+.ss-container h2, html #ss-page-container h2 {
+    font-family: "Myriad W01 SmBd", Helvetica, Arial, sans-serif !important;
+    font-size: 24px;
+    padding-bottom: 6px;
+    border-bottom: 6px solid #ef3e42;
+    margin-bottom: 12px;
+    color: #ef3e42 !important;
+}
+.ss-container h3, html #ss-page-container h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #424242 !important;
+}
+.ss-container .ss-or-h3, html #ss-page-container .ss-or-h3 {
+    margin: 8px 0 5px;
+}
+.ss-container .ss-clear:after, html #ss-page-container .ss-clear:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.ss-container .ss-submit-button, html #ss-page-container .ss-submit-button {
+    background: #f1575a;
+    background: -moz-linear-gradient(top,  #f1575a 0%,  #f1575a 50%,  #d83f42 51%,  #d83f42 100%);
+    background: -webkit-gradient(linear,  left top,  left bottom,  color-stop(0%,  #f1575a),  color-stop(50%,  #f1575a),  color-stop(51%,  #d83f42),  color-stop(100%,  #d83f42));
+    background: -webkit-linear-gradient(top,  #f1575a 0%,  #f1575a 50%,  #d83f42 51%,  #d83f42 100%);
+    background: -o-linear-gradient(top,  #f1575a 0%,  #f1575a 50%,  #d83f42 51%,  #d83f42 100%);
+    background: -ms-linear-gradient(top,  #f1575a 0%,  #f1575a 50%,  #d83f42 51%,  #d83f42 100%);
+    background: linear-gradient(to bottom,  #f1575a 0%,  #f1575a 50%,  #d83f42 51%,  #d83f42 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1575a',  endColorstr='#d83f42', GradientType=0 );
+    margin-top: 20px;
+    outline: 0;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Myriad W01 Regular", Helvetica, Arial, sans-serif;
+    padding: 3px 24px 3px 11px;
+    position: relative;
+}
+.ss-container .ss-submit-button:active, html #ss-page-container .ss-submit-button:active {
+    outline: 0;
+    border: none;
+    background: #dc3f42;
+    background: -moz-linear-gradient(top,  #dc3f42 0%,  #dc3f42 49%,  #ee575a 50%,  #ee575a 100%);
+    background: -webkit-gradient(linear,  left top,  left bottom,  color-stop(0%,  #dc3f42),  color-stop(49%,  #dc3f42),  color-stop(50%,  #ee575a),  color-stop(100%,  #ee575a));
+    background: -webkit-linear-gradient(top,  #dc3f42 0%,  #dc3f42 49%,  #ee575a 50%,  #ee575a 100%);
+    background: -o-linear-gradient(top,  #dc3f42 0%,  #dc3f42 49%,  #ee575a 50%,  #ee575a 100%);
+    background: -ms-linear-gradient(top,  #dc3f42 0%,  #dc3f42 49%,  #ee575a 50%,  #ee575a 100%);
+    background: linear-gradient(to bottom,  #dc3f42 0%,  #dc3f42 49%,  #ee575a 50%,  #ee575a 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dc3f42',  endColorstr='#ee575a', GradientType=0 );
+}
+.ss-container .ss-submit-button:focus, html #ss-page-container .ss-submit-button:focus {
+    box-shadow: inset 0px 0px 2px 2px #c00c00;
+}
+.ss-container .ss-submit-button:hover, html #ss-page-container .ss-submit-button:hover {
+    background: #be0c00;
+    background: -moz-linear-gradient(top,  #db2b20 0%,  #db2b20 50%,  #be0c00 51%,  #be0c00 100%);
+    background: -webkit-gradient(linear,  left top,  left bottom,  color-stop(0%,  #db2b20),  color-stop(50%,  #db2b20),  color-stop(51%,  #be0c00),  color-stop(100%,  #be0c00));
+    background: -webkit-linear-gradient(top,  #db2b20 0%,  #db2b20 50%,  #be0c00 51%,  #be0c00 100%);
+    background: -o-linear-gradient(top,  #db2b20 0%,  #db2b20 50%,  #be0c00 51%,  #be0c00 100%);
+    background: -ms-linear-gradient(top,  #db2b20 0%,  #db2b20 50%,  #be0c00 51%,  #be0c00 100%);
+    background: linear-gradient(to bottom,  #db2b20 0%,  #db2b20 50%,  #be0c00 51%,  #be0c00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#db2b20',  endColorstr='#be0c00', GradientType=0 );
+}
+.ss-container .ss-submit-button:after, html #ss-page-container .ss-submit-button:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    width: 8px;
+    height: 9px;
+    background: url("/etc/designs/svubanners/master/img/simplesignup/white-right-arrow.png") no-repeat;
+}
+.ss-container .ss-submit-button span, html #ss-page-container .ss-submit-button span {
+    float: right;
+    margin-top: 4px;
+    width: 8px;
+    height: 9px;
+    background: url("/etc/designs/svubanners/master/img/simplesignup/white-right-arrow.png") no-repeat;
+}
+.ss-container .ss-submit-button-disabled, .ss-container .ss-submit-button-disabled:hover, .ss-container .ss-submit-button-disabled:active, html #ss-page-container .ss-submit-button-disabled, html #ss-page-container .ss-submit-button-disabled:hover, html #ss-page-container .ss-submit-button-disabled:active {
+    background: #f8abac;
+    background: -moz-linear-gradient(top,  #f8abac 0%,  #f8abac 50%,  #ec9fa0 51%,  #ec9fa0 100%);
+    background: -webkit-gradient(linear,  left top,  left bottom,  color-stop(0%,  #f8abac),  color-stop(50%,  #f8abac),  color-stop(51%,  #ec9fa0),  color-stop(100%,  #ec9fa0));
+    background: -webkit-linear-gradient(top,  #f8abac 0%,  #f8abac 50%,  #ec9fa0 51%,  #ec9fa0 100%);
+    background: -o-linear-gradient(top,  #f8abac 0%,  #f8abac 50%,  #ec9fa0 51%,  #ec9fa0 100%);
+    background: -ms-linear-gradient(top,  #f8abac 0%,  #f8abac 50%,  #ec9fa0 51%,  #ec9fa0 100%);
+    background: linear-gradient(to bottom,  #f8abac 0%,  #f8abac 50%,  #ec9fa0 51%,  #ec9fa0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8abac',  endColorstr='#ec9fa0', GradientType=0 );
+    color: #eee;
+}
+.ss-container .ss-loading-container, html #ss-page-container .ss-loading-container {
+    display: none;
+    float: left;
+    margin-top: 20px;
+}
+.ss-container .ss-loading-container span, html #ss-page-container .ss-loading-container span {
+    font-size: 12px;
+    color: #999 !important;
+    margin-left: 5px;
+}
+.ss-container .ss-loading-container img, html #ss-page-container .ss-loading-container img {
+    -webkit-animation-name: spinner;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+.ss-container .ss-popup-box, html #ss-page-container .ss-popup-box {
+    display: none;
+    box-shadow: 0px 0px 7px -1px #646464;
+    font-size: 13px;
+    position: absolute;
+    left: 50%;
+    -webkit-transition: top 0.5s, bottom 0.5s;
+    -moz-transition: top 0.5s, bottom 0.5s;
+    -ms-transition: top 0.5s, bottom 0.5s;
+    -o-transition: top 0.5s, bottom 0.5s;
+    transition: top 0.5s, bottom 0.5s;
+}
+.ss-container .ss-popup-box:after, html #ss-page-container .ss-popup-box:after {
+    content: '';
+    position: absolute;
+    left: 50%}
+.ss-container .ss-entry-inline-error, html #ss-page-container .ss-entry-inline-error {
+    display: none;
+    background-color: #fde8e9;
+    padding: 14px;
+    border: 1px solid #db3e42;
+    font-size: 13px;
+    color: #ef3e42;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.ss-container .ss-entry-inline-error a, .ss-container .ss-entry-inline-error p, html #ss-page-container .ss-entry-inline-error a, html #ss-page-container .ss-entry-inline-error p {
+    font-size: 13px;
+    color: #db3e42 !important;
+    text-decoration: none;
+    cursor: default;
+}
+.ss-container .ss-entry-inline-error a:focus, .ss-container .ss-entry-inline-error p:focus, html #ss-page-container .ss-entry-inline-error a:focus, html #ss-page-container .ss-entry-inline-error p:focus {
+    outline: none;
+}
+.ss-container .ss-entry-inline-error a a, .ss-container .ss-entry-inline-error p a, html #ss-page-container .ss-entry-inline-error a a, html #ss-page-container .ss-entry-inline-error p a {
+    text-decoration: underline;
+}
+.ss-container .ss-entry-inline-error span, html #ss-page-container .ss-entry-inline-error span {
+    font-family: "Myriad W01 SmBd", Helvetica, Arial, sans-serif;
+}
+.ss-container .ss-go-back, html #ss-page-container .ss-go-back {
+    float: left;
+    margin-top: 28px;
+    margin-left: 15px;
+}
+.ss-container .ss-invalid-input, html #ss-page-container .ss-invalid-input {
+    background: url("/etc/designs/svubanners/master/img/simplesignup/error-icon.png") 98% 50% no-repeat;
+}
+.ss-container .ss-alt-container, html #ss-page-container .ss-alt-container {
+    width: 296px;
+    margin-left: -148px;
+}
+.ss-container .ss-alt-container form:after, html #ss-page-container .ss-alt-container form:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.ss-container .ss-alt-container .ss-invalid-email-popup, html #ss-page-container .ss-alt-container .ss-invalid-email-popup {
+    background-color: #FDE8E9;
+    color: #db3e42 !important;
+    text-align: center;
+    border: 1px solid #db3e42;
+    padding: 14px 5px;
+    top: 55px;
+    z-index: 20005;
+    width: 260px;
+    margin-left: -130px;
+}
+.ss-container .ss-alt-container .ss-invalid-email-popup:after, html #ss-page-container .ss-alt-container .ss-invalid-email-popup:after {
+    top: -6px;
+    margin-left: -13px;
+    background: url("/etc/designs/svubanners/master/img/simplesignup/bubble-arrow-up-pink.png") no-repeat;
+    width: 26px;
+    height: 7px;
+}
+.ss-container .ss-alt-container .ss-invalid-email-popup span, html #ss-page-container .ss-alt-container .ss-invalid-email-popup span {
+    font-family: "Myriad W01 SmBd", Helvetica, Arial, sans-serif;
+}
+.ss-container .ss-alt-container .ss-invalid-email-popup.ss-popup-low, html #ss-page-container .ss-alt-container .ss-invalid-email-popup.ss-popup-low {
+    top: 80px;
+}
+.ss-container .ss-alt-container .ss-popup-transition, html #ss-page-container .ss-alt-container .ss-popup-transition {
+    top: 35px !important;
+}
+.ss-container .ss-alt-container .ss-popup-low.ss-popup-transition, html #ss-page-container .ss-alt-container .ss-popup-low.ss-popup-transition {
+    top: 60px !important;
+}
+.ss-container .ss-alt-container .ss-invalid-email-popup.ss-popup-cardless, html #ss-page-container .ss-alt-container .ss-invalid-email-popup.ss-popup-cardless {
+    top: 70px;
+}
+.ss-container .ss-alt-container .ss-popup-cardless.ss-popup-transition, html #ss-page-container .ss-alt-container .ss-popup-cardless.ss-popup-transition {
+    top: 50px !important;
+}
+.ss-container .ss-alt-container .ss-password-label, html #ss-page-container .ss-alt-container .ss-password-label {
+    margin-top: 10px;
+}
+.ss-container .ss-alt-container .ss-password-popup, html #ss-page-container .ss-alt-container .ss-password-popup {
+    display: none;
+    box-shadow: 0px 0px 7px -1px #646464;
+    color: #333;
+    font-size: 13px;
+    border: 1px solid #dedede;
+    position: absolute;
+    padding: 14px 25px 10px 0px;
+    top: 55px;
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    -ms-transition: top 1s;
+    -o-transition: top 1s;
+    transition: top 1s;
+    left: 50%;
+    width: 260px;
+    margin-left: -130px;
+    background-color: #FFFFCC;
+    z-index: 30000;
+}
+.ss-container .ss-alt-container .ss-password-popup ul, html #ss-page-container .ss-alt-container .ss-password-popup ul {
+    list-style: none;
+}
+.ss-container .ss-alt-container .ss-password-popup:after, html #ss-page-container .ss-alt-container .ss-password-popup:after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    margin-left: -13px;
+    background: url("/etc/designs/svubanners/master/img/simplesignup/bubble-arrow-up-yellow.png") no-repeat;
+    width: 26px;
+    height: 8px;
+}
+.ss-container .ss-alt-container .ss-password-popup .ss-password-valid, html #ss-page-container .ss-alt-container .ss-password-popup .ss-password-valid {
+    background-image: url("/etc/designs/svubanners/master/img/simplesignup/email-validate-icon-valid.png");
+}
+.ss-container .ss-alt-container .ss-password-popup .ss-password-invalid, html #ss-page-container .ss-alt-container .ss-password-popup .ss-password-invalid {
+    background-image: url("/etc/designs/svubanners/master/img/simplesignup/email-validate-icon-invalid.png");
+}
+.ss-container .ss-alt-container .ss-password-popup li, html #ss-page-container .ss-alt-container .ss-password-popup li {
+    background: url("/etc/designs/svubanners/master/img/simplesignup/email-validate-icon-gray.png") 4% 0% no-repeat;
+    margin-left: 10px;
+    padding-left: 25px;
+    padding-top: 2px;
+}
+.ss-container .ss-alt-container .ss-password-popup li:first-child, html #ss-page-container .ss-alt-container .ss-password-popup li:first-child {
+    margin-bottom: 8px;
+}
+.ss-container .ss-alt-container .ss-password-popup-t, html #ss-page-container .ss-alt-container .ss-password-popup-t {
+    top: 35px;
+}
+.ss-container .ss-alt-container .ss-toggle-pass, html #ss-page-container .ss-alt-container .ss-toggle-pass {
+    float: right;
+    width: auto;
+    font-size: 12px;
+    margin: 12px 0 5px;
+}
+.ss-container .ss-alt-container label, html #ss-page-container .ss-alt-container label {
+    display: block;
+    color: #424242 !important;
+}
+.ss-container .ss-alt-container label.ss-toggle-pass, html #ss-page-container .ss-alt-container label.ss-toggle-pass {
+    margin-left: 6px;
+}
+.ss-container .ss-alt-container input, html #ss-page-container .ss-alt-container input {
+    width: 100%}
+.ss-container .ss-alt-container .ss-remember, html #ss-page-container .ss-alt-container .ss-remember {
+    float: left;
+    width: auto;
+    font-size: 12px;
+    margin: 14px 5px 0 0;
+}
+.ss-container .ss-alt-container .ss-checkbox-container:after, html #ss-page-container .ss-alt-container .ss-checkbox-container:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.ss-container .ss-alt-container .ss-facebook-link, html #ss-page-container .ss-alt-container .ss-facebook-link {
+    display: block;
+    height: 45px;
+    border: 1px solid #324772;
+    background: url("/etc/designs/svubanners/master/img/simplesignup/facebook-logo.png") 50% 50% #45619d no-repeat;
+}
+.ss-container .ss-alt-container .ss-facebook-link:hover, html #ss-page-container .ss-alt-container .ss-facebook-link:hover {
+    border: 1px solid blue;
+}
+.ss-container .ss-alt-container .ss-facebook-link:active, html #ss-page-container .ss-alt-container .ss-facebook-link:active {
+    border: 1px solid black !important;
+}
+.ss-container .ss-alt-container .ss-need-account-prompt, .ss-container .ss-alt-container .ss-have-account-prompt, html #ss-page-container .ss-alt-container .ss-need-account-prompt, html #ss-page-container .ss-alt-container .ss-have-account-prompt {
+    margin-top: 15px;
+    text-align: center;
+}
+.ss-container .ss-alt-container .ss-need-account-prompt a, .ss-container .ss-alt-container .ss-have-account-prompt a, html #ss-page-container .ss-alt-container .ss-need-account-prompt a, html #ss-page-container .ss-alt-container .ss-have-account-prompt a {
+    color: #ef3e42;
+}
+.ss-container .ss-alt-container .ss-need-account-prompt a:hover, .ss-container .ss-alt-container .ss-have-account-prompt a:hover, html #ss-page-container .ss-alt-container .ss-need-account-prompt a:hover, html #ss-page-container .ss-alt-container .ss-have-account-prompt a:hover {
+    color: #b31013;
+}
+.ss-container .ss-signup-associate.ss-signupoverlay-container .ss-submit-button+a, html #ss-page-container .ss-signup-associate.ss-signupoverlay-container .ss-submit-button+a {
+    top: -20px;
+}
+.ss-container .ss-myaccount-contactinfo-container.ss-signupoverlay-container .ss-submit-button+a, html #ss-page-container .ss-myaccount-contactinfo-container.ss-signupoverlay-container .ss-submit-button+a {
+    top: 135px;
+}
+.ss-container .ss-associatesignup-container, html #ss-page-container .ss-associatesignup-container {
+    width: 566px;
+    margin-left: -283px;
+}
+.ss-container .ss-associatesignup-container .ss-signup-content-container, html #ss-page-container .ss-associatesignup-container .ss-signup-content-container {
+    float: left;
+    width: 236px;
+}
+.ss-container .ss-associatesignup-container .ss-associate-info-container, html #ss-page-container .ss-associatesignup-container .ss-associate-info-container {
+    width: 240px;
+    float: right;
+}
+.ss-container .ss-associatesignup-container .ss-associate-info-container h3, html #ss-page-container .ss-associatesignup-container .ss-associate-info-container h3 {
+    text-align: left;
+}
+.ss-container .ss-associatesignup-container .ss-associate-info-container img, html #ss-page-container .ss-associatesignup-container .ss-associate-info-container img {
+    position: absolute;
+    left: 260px;
+    top: 61px;
+}
+.ss-container .ss-associatesignup-container .ss-associate-info-container p, html #ss-page-container .ss-associatesignup-container .ss-associate-info-container p {
+    margin-bottom: 15px;
+}
+.ss-container .ss-associatesignup-container .ss-associate-info-container a, html #ss-page-container .ss-associatesignup-container .ss-associate-info-container a {
+    font-size: 17px;
+    color: #424242;
+    text-decoration: none;
+    padding-right: 30px;
+    background: url("/etc/designs/svubanners/master/img/icn-grey-arrow-round-sm.png") 100% 80% no-repeat;
+}
+.ss-container .ss-welcome-container, html #ss-page-container .ss-welcome-container {
+    width: 320px;
+    margin-left: -160px;
+}
+.ss-container .ss-welcome-container .ss-submit-button, html #ss-page-container .ss-welcome-container .ss-submit-button {
+    font-size: 14px;
+    display: block;
+    margin: 18px auto 0;
+}
+.ss-container .ss-linkaccount-container, html #ss-page-container .ss-linkaccount-container {
+    width: 354px;
+    margin-left: -177px;
+}
+.ss-container .ss-linkaccount-container .ss-link-container, html #ss-page-container .ss-linkaccount-container .ss-link-container {
+    margin-top: 15px;
+    padding: 7px;
+}
+.ss-container .ss-linkaccount-container .ss-link-container a, html #ss-page-container .ss-linkaccount-container .ss-link-container a {
+    text-decoration: none;
+}
+.ss-container .ss-linkaccount-container .ss-link-container p, html #ss-page-container .ss-linkaccount-container .ss-link-container p {
+    color: #fff;
+    font-size: 16px;
+    margin: 7px 0 0 80px;
+}
+.ss-container .ss-linkaccount-container .ss-link-container img, html #ss-page-container .ss-linkaccount-container .ss-link-container img {
+    float: left;
+}
+.ss-container .ss-linkaccount-container .ss-link-container-facebook, html #ss-page-container .ss-linkaccount-container .ss-link-container-facebook {
+    background: #45619D;
+}
+.ss-container .ss-linkaccount-container .ss-link-container-facebook img, html #ss-page-container .ss-linkaccount-container .ss-link-container-facebook img {
+    border-right: 1px solid #324772;
+}
+.ss-container .ss-linkaccount-container .ss-checkbox-container, html #ss-page-container .ss-linkaccount-container .ss-checkbox-container {
+    width: 100%}
+.ss-container .ss-linkaccount-container .ss-skip-step, html #ss-page-container .ss-linkaccount-container .ss-skip-step {
+    margin: 0 15px 0 10px;
+}
+.ss-container .ss-createrewards-container, html #ss-page-container .ss-createrewards-container {
+    width: 340px;
+    margin-left: -170px;
+    padding-right: 20px;
+}
+.ss-container .ss-createrewards-container .ss-submit-button, html #ss-page-container .ss-createrewards-container .ss-submit-button {
+    font-size: 14px;
+}
+.ss-container .ss-createrewards-container p, html #ss-page-container .ss-createrewards-container p {
+    margin-bottom: 10px;
+}
+.ss-container .ss-createrewards-container .ss-altid-inuse-message-lower, .ss-container .ss-createrewards-container .ss-altid-inuse-message-upper, html #ss-page-container .ss-createrewards-container .ss-altid-inuse-message-lower, html #ss-page-container .ss-createrewards-container .ss-altid-inuse-message-upper {
+    display: none;
+}
+.ss-container .ss-createrewards-container .ss-altid-inuse-message-lower, html #ss-page-container .ss-createrewards-container .ss-altid-inuse-message-lower {
+    margin-top: 20px;
+}
+.ss-container .ss-cardconfirm-container, html #ss-page-container .ss-cardconfirm-container {
+    width: 490px;
+    margin-left: -245px;
+    font-size: 14px;
+    text-align: center;
+}
+.ss-container .ss-cardconfirm-container input:focus, html #ss-page-container .ss-cardconfirm-container input:focus {
+    outline-width: 0;
+}
+.ss-container .ss-cardconfirm-container h2, html #ss-page-container .ss-cardconfirm-container h2 {
+    color: #ef3e42 !important;
+}
+.ss-container .ss-cardconfirm-container img, html #ss-page-container .ss-cardconfirm-container img {
+    text-align: center;
+    margin: 10px 0 20px;
+}
+.ss-container .ss-cardconfirm-container form>div, html #ss-page-container .ss-cardconfirm-container form>div {
+    text-align: left;
+    width: 300px;
+    margin: 0 auto;
+}
+.ss-container .ss-cardconfirm-container form p, html #ss-page-container .ss-cardconfirm-container form p {
+    display: none;
+    padding-left: 25px;
+    color: #ef3e42;
+}
+.ss-container .ss-cardconfirm-container span, html #ss-page-container .ss-cardconfirm-container span {
+    font-family: "Myriad W01 SmBd", Helvetica, Arial, sans-serif;
+}
+.ss-container .ss-signupoverlay-container, html #ss-page-container .ss-signupoverlay-container {
+    width: 572px;
+    margin-left: -286px;
+}
+.ss-container .ss-signupoverlay-container [disabled], html #ss-page-container .ss-signupoverlay-container [disabled] {
+    background-color: #EBEBE4;
+}
+.ss-container .ss-signupoverlay-container .ss-entry-inline-error, html #ss-page-container .ss-signupoverlay-container .ss-entry-inline-error {
+    position: absolute;
+    width: 175px;
+    left: 340px;
+    top: 80px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-input-container, html #ss-page-container .ss-signupoverlay-container .ss-signup-input-container {
+    position: relative;
+}
+.ss-container .ss-signupoverlay-container .ss-submit-button+a, html #ss-page-container .ss-signupoverlay-container .ss-submit-button+a {
+    position: relative;
+    top: 205px;
+    left: 235px;
+    color: #ef3e42;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-cardlessinfo, html #ss-page-container .ss-signupoverlay-container .ss-signup-cardlessinfo {
+    position: absolute;
+    border: 1px solid #D6D6D6;
+    box-shadow: 4px 4px 10px 1px #d6d6d6;
+    top: -30px;
+    left: 190px;
+    width: 330px;
+    padding: 10px 10px 0;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-cardlessinfo h2, html #ss-page-container .ss-signupoverlay-container .ss-signup-cardlessinfo h2 {
+    color: #db3e42;
+    font-size: 16px;
+    border: none;
+    font-family: "Myriad W01 Regular", Helvetica, Arial, sans-serif !important;
+    margin-bottom: 0px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-cardlessinfo p, html #ss-page-container .ss-signupoverlay-container .ss-signup-cardlessinfo p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-cardlessinfo:after, html #ss-page-container .ss-signupoverlay-container .ss-signup-cardlessinfo:after {
+    content: '';
+    width: 23px;
+    height: 27px;
+    position: absolute;
+    top: 50px;
+    left: -20px;
+    background: url("/etc/designs/svubanners/master/img/simplesignup/bubble-arrow-left.png");
+}
+.ss-container .ss-signupoverlay-container .ss-loading-container, html #ss-page-container .ss-signupoverlay-container .ss-loading-container {
+    margin-top: 35px;
+}
+.ss-container .ss-signupoverlay-container form, html #ss-page-container .ss-signupoverlay-container form {
+    padding-right: 200px;
+}
+.ss-container .ss-signupoverlay-container form:after, html #ss-page-container .ss-signupoverlay-container form:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.ss-container .ss-signupoverlay-container form>div, .ss-container .ss-signupoverlay-container button, .ss-container .ss-signupoverlay-container select, html #ss-page-container .ss-signupoverlay-container form>div, html #ss-page-container .ss-signupoverlay-container button, html #ss-page-container .ss-signupoverlay-container select {
+    float: left;
+    margin-top: 10px;
+}
+.ss-container .ss-signupoverlay-container input, .ss-container .ss-signupoverlay-container button, html #ss-page-container .ss-signupoverlay-container input, html #ss-page-container .ss-signupoverlay-container button {
+    display: block;
+    margin-right: 10px;
+}
+.ss-container .ss-signupoverlay-container span, html #ss-page-container .ss-signupoverlay-container span {
+    color: #ef3e42;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-firstname-container input, html #ss-page-container .ss-signupoverlay-container .ss-signup-firstname-container input {
+    width: 130px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-lastname-container, html #ss-page-container .ss-signupoverlay-container .ss-signup-lastname-container {
+    margin-right: 0;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-lastname-container input, html #ss-page-container .ss-signupoverlay-container .ss-signup-lastname-container input {
+    width: 160px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-address-container input, html #ss-page-container .ss-signupoverlay-container .ss-signup-address-container input {
+    width: 200px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-apt-container, html #ss-page-container .ss-signupoverlay-container .ss-signup-apt-container {
+    margin-right: 0;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-apt-container input, html #ss-page-container .ss-signupoverlay-container .ss-signup-apt-container input {
+    width: 90px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-city-container input, html #ss-page-container .ss-signupoverlay-container .ss-signup-city-container input {
+    width: 130px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-state-container, html #ss-page-container .ss-signupoverlay-container .ss-signup-state-container {
+    width: 70px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-state-container select, html #ss-page-container .ss-signupoverlay-container .ss-signup-state-container select {
+    margin-top: 2px;
+    width: 60px;
+    line-height: 1;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-zipcode-container, html #ss-page-container .ss-signupoverlay-container .ss-signup-zipcode-container {
+    margin-right: 0;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-zipcode-container input, html #ss-page-container .ss-signupoverlay-container .ss-signup-zipcode-container input {
+    margin-right: 0;
+    width: 90px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-phones-container, html #ss-page-container .ss-signupoverlay-container .ss-signup-phones-container {
+    position: relative;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-phones-container label>span, html #ss-page-container .ss-signupoverlay-container .ss-signup-phones-container label>span {
+    position: relative;
+    top: 0;
+    left: -5px;
+    color: #000;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-phones-container label>p, html #ss-page-container .ss-signupoverlay-container .ss-signup-phones-container label>p {
+    font-size: 16px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-phones-container input, html #ss-page-container .ss-signupoverlay-container .ss-signup-phones-container input {
+    margin-right: 8px;
+    width: 60px;
+    display: inline-block;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-phones-container>span, html #ss-page-container .ss-signupoverlay-container .ss-signup-phones-container>span {
+    color: #666;
+    position: absolute;
+    top: 20px;
+    left: 43px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-phones-container .ss-phone-number-3, html #ss-page-container .ss-signupoverlay-container .ss-signup-phones-container .ss-phone-number-3 {
+    width: 40px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-phones-container .ss-validate-phone-left, html #ss-page-container .ss-signupoverlay-container .ss-signup-phones-container .ss-validate-phone-left {
+    left: 20px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-phones-container .ss-validate-phone-right, html #ss-page-container .ss-signupoverlay-container .ss-signup-phones-container .ss-validate-phone-right {
+    left: 135px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-phones-container label>div, html #ss-page-container .ss-signupoverlay-container .ss-signup-phones-container label>div {
+    display: inline;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-cardless-container label>p, html #ss-page-container .ss-signupoverlay-container .ss-signup-cardless-container label>p {
+    font-size: 16px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-cardless-container input, html #ss-page-container .ss-signupoverlay-container .ss-signup-cardless-container input {
+    display: inline-block;
+    width: 90px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-cardless-container .ss-cardless-4, html #ss-page-container .ss-signupoverlay-container .ss-signup-cardless-container .ss-cardless-4 {
+    width: 60px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-cardless-container .ss-validate-cardless-left, html #ss-page-container .ss-signupoverlay-container .ss-signup-cardless-container .ss-validate-cardless-left {
+    left: 45px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-cardless-container .ss-validate-cardless-right, html #ss-page-container .ss-signupoverlay-container .ss-signup-cardless-container .ss-validate-cardless-right {
+    left: 130px;
+}
+.ss-container .ss-signupoverlay-container .ss-signup-btn, .ss-container .ss-signupoverlay-container .ss-confirm-btn, html #ss-page-container .ss-signupoverlay-container .ss-signup-btn, html #ss-page-container .ss-signupoverlay-container .ss-confirm-btn {
+    margin-right: 230px;
+    margin-top: 20px;
+}
+.ss-container .ss-congrats-container, html #ss-page-container .ss-congrats-container {
+    width: 778px;
+    margin-left: -389px;
+}
+.ss-container .ss-congrats-container:after, html #ss-page-container .ss-congrats-container:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.ss-container .ss-congrats-container .ss-congrats-text-container, html #ss-page-container .ss-congrats-container .ss-congrats-text-container {
+    float: left;
+    width: 300px;
+    margin-right: 35px;
+    font-size: 14px;
+}
+.ss-container .ss-congrats-container .ss-congrats-text-container p, html #ss-page-container .ss-congrats-container .ss-congrats-text-container p {
+    margin-bottom: 15px;
+}
+.ss-container .ss-congrats-container .ss-congrats-text-container span, .ss-container .ss-congrats-container .ss-congrats-text-container .ss-congrats-username, html #ss-page-container .ss-congrats-container .ss-congrats-text-container span, html #ss-page-container .ss-congrats-container .ss-congrats-text-container .ss-congrats-username {
+    font-family: "Myriad W01 SmBd", Helvetica, Arial, sans-serif !important;
+}
+.ss-container .ss-congrats-container .ss-congrats-text-container .ss-congrats-info, html #ss-page-container .ss-congrats-container .ss-congrats-text-container .ss-congrats-info {
+    margin-bottom: 2px;
+}
+.ss-container .ss-congrats-container .ss-congrats-card-container, html #ss-page-container .ss-congrats-container .ss-congrats-card-container {
+    float: left;
+    width: 380px;
+}
+.ss-container .ss-congrats-container .ss-congrats-card-container h2, html #ss-page-container .ss-congrats-container .ss-congrats-card-container h2 {
+    color: #ef3e42 !important;
+}
+.ss-container .ss-congrats-container .ss-congrats-card-container a, html #ss-page-container .ss-congrats-container .ss-congrats-card-container a {
+    background: url("/etc/designs/svubanners/master/img/simplesignup/printer-icon.png") no-repeat;
+    color: #ef3e42;
+    font-size: 12px;
+    padding-left: 25px;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+.ss-container .ss-congrats-container .ss-congrats-card-container a:hover, html #ss-page-container .ss-congrats-container .ss-congrats-card-container a:hover {
+    color: #b31013;
+}
+.ss-container .ss-congrats-container .ss-congrats-card-container img, html #ss-page-container .ss-congrats-container .ss-congrats-card-container img {
+    margin-top: 10px;
+    display: block;
+}
+.ss-container .ss-congrats-container .ss-congrats-card-container .ss-temp-barcode, html #ss-page-container .ss-congrats-container .ss-congrats-card-container .ss-temp-barcode {
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    width: 55%}
+.ss-container .ss-congrats-container .ss-congrats-card-container ul, html #ss-page-container .ss-congrats-container .ss-congrats-card-container ul {
+    list-style-type: asterisks;
+    margin-left: 10px;
+}
+.ss-container .ss-congrats-container .ss-congrats-card-container li, html #ss-page-container .ss-congrats-container .ss-congrats-card-container li {
+    margin: 15px 0;
+    color: #999;
+    font-size: 12px;
+}
+.ss-container .ss-congratsadded-container, html #ss-page-container .ss-congratsadded-container {
+    width: 300px;
+    margin-left: -150px;
+    text-align: center;
+}
+.ss-container .ss-congratsadded-container h2, html #ss-page-container .ss-congratsadded-container h2 {
+    color: #ef3e42 !important;
+    text-align: left;
+}
+.ss-container .ss-congratsadded-container img, html #ss-page-container .ss-congratsadded-container img {
+    text-align: center;
+    margin: 3px 0 15px;
+}
+.ss-container .ss-congratsadded-container p, html #ss-page-container .ss-congratsadded-container p {
+    font-size: 14px;
+    text-align: left;
+}
+.ss-container .ss-addrewards-container h2, html #ss-page-container .ss-addrewards-container h2 {
+    color: #ef3e42 !important;
+}
+.ss-container .ss-addrewards-container p, html #ss-page-container .ss-addrewards-container p {
+    font-size: 14px;
+}
+.ss-container .ss-addrewards-container>p, html #ss-page-container .ss-addrewards-container>p {
+    margin-top: 10px;
+}
+.ss-container .ss-addrewards-container span, html #ss-page-container .ss-addrewards-container span {
+    font-family: "Myriad W01 SmBd", Helvetica, Arial, sans-serif;
+}
+.ss-container .ss-addrewards-container form, html #ss-page-container .ss-addrewards-container form {
+    margin-top: 10px;
+}
+.ss-container .ss-addrewards-container form>p, html #ss-page-container .ss-addrewards-container form>p {
+    margin: 5px 0;
+    color: #666;
+}
+.ss-container .ss-addrewards-container #ss-add-rewards-cardlessid-input-7, html #ss-page-container .ss-addrewards-container #ss-add-rewards-cardlessid-input-7 {
+    width: 166px;
+}
+.ss-container .ss-addrewards-container #ss-add-rewards-cardlessid-input-4, html #ss-page-container .ss-addrewards-container #ss-add-rewards-cardlessid-input-4 {
+    width: 60px;
+}
+.ss-container .ss-addrewards-container label, html #ss-page-container .ss-addrewards-container label {
+    margin-top: 10px;
+}
+.ss-container .ss-addrewards-container label[for="ss-add-rewards-cardlessid-input"]+p, html #ss-page-container .ss-addrewards-container label[for="ss-add-rewards-cardlessid-input"]+p {
+    color: #999 !important;
+}
+.ss-container .ss-addrewards-container .ss-input-container>div, html #ss-page-container .ss-addrewards-container .ss-input-container>div {
+    display: inline;
+}
+.ss-container .ss-storeselect-container, html #ss-page-container .ss-storeselect-container {
+    min-height: 392px;
+}
+.ss-container .ss-storeselect-container:after:after, html #ss-page-container .ss-storeselect-container:after:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.ss-container .ss-storeselect-container>button, html #ss-page-container .ss-storeselect-container>button {
+    font-size: 14px;
+}
+.ss-container .ss-storeselect-container>button span, html #ss-page-container .ss-storeselect-container>button span {
+    position: relative;
+    right: 3px;
+}
+.ss-container .ss-storeselect-container input, html #ss-page-container .ss-storeselect-container input {
+    background-color: #fff;
+}
+.ss-container .ss-storeselect-container .ss-map-info-container, html #ss-page-container .ss-storeselect-container .ss-map-info-container {
+    display: none;
+}
+.ss-container .ss-storeselect-container .ss-map-info-container>ul, html #ss-page-container .ss-storeselect-container .ss-map-info-container>ul {
+    overflow: hidden;
+}
+.ss-container .ss-storeselect-container .ss-map-info-container>ul>a, html #ss-page-container .ss-storeselect-container .ss-map-info-container>ul>a {
+    display: block;
+    text-decoration: none;
+    margin: 1px 0;
+    position: relative;
+    left: -300px;
+}
+.ss-container .ss-storeselect-container .ss-map-info-container>ul>a ul, html #ss-page-container .ss-storeselect-container .ss-map-info-container>ul>a ul {
+    list-style: none;
+    padding: 6px 12px 5px 10px;
+    width: 272px;
+    margin: 0;
+}
+.ss-container .ss-storeselect-container .ss-map-info-container>ul>a ul li:first-child, html #ss-page-container .ss-storeselect-container .ss-map-info-container>ul>a ul li:first-child {
+    font-family: "Myriad W01 SmBd", Helvetica, Arial, sans-serif;
+}
+.ss-container .ss-storeselect-container .ss-map-info-container>ul>a ul:hover, html #ss-page-container .ss-storeselect-container .ss-map-info-container>ul>a ul:hover {
+    background: #ffffcc;
+}
+.ss-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store, .ss-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul:hover, html #ss-page-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store, html #ss-page-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul:hover {
+    width: 290px;
+    background: url("../../master/img/simplesignup/store-select-arrow-right-cub.png") 100% 0 no-repeat #f2f2f2;
+}
+.ss-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul, html #ss-page-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul {
+    width: 290px;
+}
+.ss-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul:hover, html #ss-page-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul:hover {
+    width: 290px;
+}
+.ss-container .ss-storeselect-container .ss-map-info-container button, html #ss-page-container .ss-storeselect-container .ss-map-info-container button {
+    display: none;
+}
+.ss-container .ss-storeselect-container .ss-map-info-container button:after, html #ss-page-container .ss-storeselect-container .ss-map-info-container button:after {
+    top: 8px;
+}
+.ss-container .ss-storeselect-container .ss-entry-inline-error, html #ss-page-container .ss-storeselect-container .ss-entry-inline-error {
+    width: 236px;
+    margin: 0 auto 10px;
+}
+.ss-container .ss-storeselect-container .ss-store-search-input-container, html #ss-page-container .ss-storeselect-container .ss-store-search-input-container {
+    background-color: #f2f2f2;
+    padding: 8px 10px;
+    margin-bottom: 12px;
+    max-height: 45px;
+}
+.ss-container .ss-storeselect-container .ss-store-search-input-container:after, html #ss-page-container .ss-storeselect-container .ss-store-search-input-container:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.ss-container .ss-storeselect-container .ss-store-search-input-container form, html #ss-page-container .ss-storeselect-container .ss-store-search-input-container form {
+    float: left;
+}
+.ss-container .ss-storeselect-container .ss-store-search-input-container .ss-popup-anchor, html #ss-page-container .ss-storeselect-container .ss-store-search-input-container .ss-popup-anchor {
+    display: inline;
+}
+.ss-container .ss-storeselect-container .ss-store-search-input-container .ss-loading-container, html #ss-page-container .ss-storeselect-container .ss-store-search-input-container .ss-loading-container {
+    float: right;
+    margin-top: 10px;
+}
+.ss-container .ss-storeselect-container .ss-store-search-input-container input, html #ss-page-container .ss-storeselect-container .ss-store-search-input-container input {
+    width: 180px;
+    margin-right: 12px;
+}
+.ss-container .ss-storeselect-container .ss-store-search-input-container input+p, html #ss-page-container .ss-storeselect-container .ss-store-search-input-container input+p {
+    left: 97px;
+}
+.ss-container .ss-storeselect-container .ss-store-search-input-container button, html #ss-page-container .ss-storeselect-container .ss-store-search-input-container button {
+    margin-top: 2px;
+    padding: 7px 24px 5px 11px;
+}
+.ss-container .ss-storeselect-container .ss-store-search-input-container button:after, html #ss-page-container .ss-storeselect-container .ss-store-search-input-container button:after {
+    top: 11px;
+}
+.ss-container .ss-storeselect-container #ss-store-maps-container, html #ss-page-container .ss-storeselect-container #ss-store-maps-container {
+    float: right;
+    border: 1px solid #ef3e42;
+    width: 240px;
+    height: 240px;
+}
+.ss-container .ss-login-container a, html #ss-page-container .ss-login-container a {
+    color: #ef3e42;
+    text-decoration: underline;
+}
+.ss-container .ss-login-container a:hover, html #ss-page-container .ss-login-container a:hover {
+    color: #b31013;
+}
+.ss-container .ss-login-container .ss-forgot-password, html #ss-page-container .ss-login-container .ss-forgot-password {
+    float: left;
+    margin-top: 28px;
+    margin-left: 15px;
+}
+.ss-container .ss-login-container .ss-login-btn, html #ss-page-container .ss-login-container .ss-login-btn {
+    float: left;
+}
+.ss-container .ss-login-container .ss-login-inline-error span, html #ss-page-container .ss-login-container .ss-login-inline-error span {
+    font-family: "Myriad W01 SmBd", Helvetica, Arial, sans-serif;
+}
+.ss-container .ss-login-container .ss-login-inline-error a, html #ss-page-container .ss-login-container .ss-login-inline-error a {
+    cursor: pointer;
+}
+.ss-container .ss-login-container .ss-login-inline-error a:hover, html #ss-page-container .ss-login-container .ss-login-inline-error a:hover {
+    color: #ef3e42;
+}
+.ss-container .ss-forgotpassword-container p, html #ss-page-container .ss-forgotpassword-container p {
+    font-size: 14px;
+    color: #666 !important;
+}
+.ss-container .ss-forgotpassword-container>p, html #ss-page-container .ss-forgotpassword-container>p {
+    margin: 10px 0 20px;
+}
+.ss-container .ss-forgotpassword-container label, html #ss-page-container .ss-forgotpassword-container label {
+    color: #424242 !important;
+}
+.ss-container .ss-forgotpassword-container a, html #ss-page-container .ss-forgotpassword-container a {
+    color: #ef3e42;
+    text-decoration: underline;
+}
+.ss-container .ss-forgotpassword-container a:hover, html #ss-page-container .ss-forgotpassword-container a:hover {
+    color: #b31013 !important;
+}
+.ss-container .ss-forgotpassword-container .ss-forgot-password-btn, html #ss-page-container .ss-forgotpassword-container .ss-forgot-password-btn {
+    float: left;
+}
+.ss-container .ss-forgotpassword-container .ss-entry-inline-error span, html #ss-page-container .ss-forgotpassword-container .ss-entry-inline-error span {
+    font-family: "Myriad W01 SmBd", Helvetica, Arial, sans-serif;
+}
+.ss-container .ss-forgotpassword-container .ss-entry-inline-error a, html #ss-page-container .ss-forgotpassword-container .ss-entry-inline-error a {
+    text-decoration: none;
+    color: #ef3e42 !important;
+}
+.ss-container .ss-forgotpassword-container .ss-forgot-password-confirm, html #ss-page-container .ss-forgotpassword-container .ss-forgot-password-confirm {
+    display: none;
+}
+.ss-container .ss-forgotpassword-container .ss-forgot-password-confirm p, html #ss-page-container .ss-forgotpassword-container .ss-forgot-password-confirm p {
+    margin-bottom: 10px;
+}
+.ss-container .ss-rewardsnumberalreadyexists-container>p, html #ss-page-container .ss-rewardsnumberalreadyexists-container>p {
+    margin-top: 20px;
+}
+.ss-container .ss-rewardsnumberalreadyexists-container>p+p, html #ss-page-container .ss-rewardsnumberalreadyexists-container>p+p {
+    margin-top: 0;
+}
+.ss-container .ss-rewardsnumberalreadyexists-container>p>a, html #ss-page-container .ss-rewardsnumberalreadyexists-container>p>a {
+    color: #ef3e42;
+}
+.ss-container .ss-rewardsnumberalreadyexists-container a, html #ss-page-container .ss-rewardsnumberalreadyexists-container a {
+    font-size: 14px;
+}
+.ss-container .ss-add-associate-rewards-container #ss-add-rewards-associateid-input-7, html #ss-page-container .ss-add-associate-rewards-container #ss-add-rewards-associateid-input-7 {
+    width: 100%}
+.ss-container .ss-addcardlessid-container p, html #ss-page-container .ss-addcardlessid-container p {
+    font-size: 14px;
+}
+.ss-container .ss-addcardlessid-container>label, html #ss-page-container .ss-addcardlessid-container>label {
+    margin-top: 20px;
+    color: #666 !important;
+}
+.ss-container .ss-addcardlessid-container .ss-popup-anchor, html #ss-page-container .ss-addcardlessid-container .ss-popup-anchor {
+    display: inline-block;
+    width: 166px;
+}
+.ss-container .ss-addcardlessid-container .ss-cardless-4, html #ss-page-container .ss-addcardlessid-container .ss-cardless-4 {
+    width: 60px;
+    margin-left: 10px;
+}
+.ss-container .ss-congratsaddedcardlessid-container p, html #ss-page-container .ss-congratsaddedcardlessid-container p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+.ss-container .ss-congratsaddedcardlessid-container form, html #ss-page-container .ss-congratsaddedcardlessid-container form {
+    text-align: center;
+}
+.ss-container .ss-updatecommunicationpreferences-container, html #ss-page-container .ss-updatecommunicationpreferences-container {
+    width: 430px;
+    margin-left: -185px;
+}
+.ss-container .ss-updatecommunicationpreferences-container form label:first-child, html #ss-page-container .ss-updatecommunicationpreferences-container form label:first-child {
+    font-size: 16px;
+}
+.ss-container .ss-updatecommunicationpreferences-container form label:first-child+div, html #ss-page-container .ss-updatecommunicationpreferences-container form label:first-child+div {
+    margin-bottom: 20px;
+}
+.ss-container .ss-updatecommunicationpreferences-container input[type="checkbox"], html #ss-page-container .ss-updatecommunicationpreferences-container input[type="checkbox"] {
+    width: auto;
+}
+.ss-container .ss-updatecommunicationpreferences-container label, html #ss-page-container .ss-updatecommunicationpreferences-container label {
+    display: inline-block;
+    font-size: 14px;
+}
+.ss-container .ss-updatepassword-container, html #ss-page-container .ss-updatepassword-container {
+    width: 460px;
+    margin-left: -230px;
+}
+.ss-container .ss-updatepassword-container form:after, html #ss-page-container .ss-updatepassword-container form:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+.ss-container .ss-updatepassword-container form>div, html #ss-page-container .ss-updatepassword-container form>div {
+    float: right;
+}
+.ss-container .ss-updatepassword-container form>div:first-child, html #ss-page-container .ss-updatepassword-container form>div:first-child {
+    float: left;
+    margin-right: 5%}
+.ss-container .ss-updatepassword-container form .ss-updatepassword-input-container, html #ss-page-container .ss-updatepassword-container form .ss-updatepassword-input-container {
+    width: 185px;
+}
+.ss-container .ss-updatepassword-container form label[for="ss-resetpassword-input2"], html #ss-page-container .ss-updatepassword-container form label[for="ss-resetpassword-input2"] {
+    margin-top: 10px;
+}
+.ss-container .ss-updatepassword-container form .ss-toggle-pass-container, html #ss-page-container .ss-updatepassword-container form .ss-toggle-pass-container {
+    width: 20%;
+    margin: 25px 20px 0 0;
+}
+.ss-container .ss-updatepassword-container form .ss-toggle-pass-container>.ss-toggle-pass, html #ss-page-container .ss-updatepassword-container form .ss-toggle-pass-container>.ss-toggle-pass {
+    margin: 0;
+    float: left;
+}
+.ss-container .ss-updatepassword-container form .ss-toggle-pass-container>.ss-toggle-pass:first-child, html #ss-page-container .ss-updatepassword-container form .ss-toggle-pass-container>.ss-toggle-pass:first-child {
+    margin-right: 5px;
+}
+.ss-container .ss-removecard-container form>a, html #ss-page-container .ss-removecard-container form>a {
+    margin-left: 15px;
+}
+.banner-farmfresh .ss-container .ss-storeselect-container .ss-map-info-container .ss-selected-store, .banner-farmfresh .ss-container .ss-storeselect-container .ss-map-info-container .ss-selected-store ul:hover, .banner-farmfresh #ss-page-container .ss-storeselect-container .ss-map-info-container .ss-selected-store, .banner-farmfresh #ss-page-container .ss-storeselect-container .ss-map-info-container .ss-selected-store ul:hover {
+    background: url("../../master/img/simplesignup/store-select-arrow-right-farmfresh.png") 100% 0 no-repeat #f2f2f2;
+}
+.banner-farmfresh .ss-container .ss-storeselect-container .ss-map-info-container .ss-selected-store ul, .banner-farmfresh #ss-page-container .ss-storeselect-container .ss-map-info-container .ss-selected-store ul {
+    background: url("../../master/img/simplesignup/selected-store-check-farmfresh.png") 88% 40% no-repeat;
+}
+.banner-farmfresh .ss-container .ss-storeselect-container .ss-map-info-container .ss-selected-store ul:hover, .banner-farmfresh #ss-page-container .ss-storeselect-container .ss-map-info-container .ss-selected-store ul:hover {
+    background: url("../../master/img/simplesignup/selected-store-check-farmfresh.png") 88% 40% no-repeat;
+}
+.banner-farmfresh #ss-page-container>h2 {
+    font-family: 'jenna_sue_regular',  Helvetica,  Arial !important;
+    font-size: 36px;
+}
+.banner-rainbowfoods .ss-container .ss-storeselect-container .ss-map-info-container .ss-selected-store, .banner-rainbowfoods .ss-container .ss-storeselect-container .ss-map-info-container .ss-selected-store ul:hover, .banner-rainbowfoods #ss-page-container .ss-storeselect-container .ss-map-info-container .ss-selected-store, .banner-rainbowfoods #ss-page-container .ss-storeselect-container .ss-map-info-container .ss-selected-store ul:hover {
+    background: url("../../master/img/simplesignup/store-select-arrow-right-farmfresh.png") 100% 0 no-repeat #f2f2f2;
+}
+.banner-rainbowfoods .ss-container .ss-storeselect-container .ss-map-info-container .ss-selected-store ul, .banner-rainbowfoods #ss-page-container .ss-storeselect-container .ss-map-info-container .ss-selected-store ul {
+    background: url("../../master/img/simplesignup/selected-store-check-farmfresh.png") 88% 40% no-repeat;
+}
+.banner-rainbowfoods .ss-container .ss-storeselect-container .ss-map-info-container .ss-selected-store ul:hover, .banner-rainbowfoods #ss-page-container .ss-storeselect-container .ss-map-info-container .ss-selected-store ul:hover {
+    background: url("../../master/img/simplesignup/selected-store-check-farmfresh.png") 88% 40% no-repeat;
+}
+.banner-rainbowfoods #ss-page-container>h2 {
+    font-family: 'jenna_sue_regular',  Helvetica,  Arial !important;
+    font-size: 36px;
+}
+.banner-farmfresh .ss-container .ss-alt-container input[data-validation]+p>span, .banner-shoppers .ss-container .ss-alt-container input[data-validation]+p>span, .banner-shopnsave .ss-container .ss-alt-container input[data-validation]+p>span {
+    font-weight: bold;
+    font-family: Helvetica,  Arial,  sans-serif;
+}
+.banner-farmfresh .ss-container .ss-storeselect-container .ss-map-info-container>ul>a ul li:first-child, .banner-shoppers .ss-container .ss-storeselect-container .ss-map-info-container>ul>a ul li:first-child, .banner-shopnsave .ss-container .ss-storeselect-container .ss-map-info-container>ul>a ul li:first-child {
+    font-weight: bold;
+}
+.banner-shopnsave .ss-container .ss-submit-button:after {
+    background: url("../../master/img/simplesignup/maroon-arrow-white.png") no-repeat scroll 95% 50%;
+    margin-top: -2px;
+    width: 10px;
+    height: 12px;
+}
+.banner-hornbachers .ss-container .ss-createrewards-container, .banner-hornbachers #ss-page-container .ss-createrewards-container {
+    width: 336px;
+    margin-left: -168px;
+}
+.banner-shopnsave .ss-container .ss-storeselect-container .ss-map-info-container>ul>a ul li:first-child, .banner-shopnsave #ss-page-container .ss-storeselect-container .ss-map-info-container>ul>a ul li:first-child, .banner-shoppers .ss-container .ss-storeselect-container .ss-map-info-container>ul>a ul li:first-child, .banner-shoppers #ss-page-container .ss-storeselect-container .ss-map-info-container>ul>a ul li:first-child {
+    font-weight: bold;
+}
+.banner-shopnsave .ss-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul, .banner-shopnsave #ss-page-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul, .banner-shoppers .ss-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul, .banner-shoppers #ss-page-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul {
+    background: url("../../master/img/simplesignup/selected-store-check-cub.png") 88% 40% no-repeat;
+}
+.banner-shopnsave .ss-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul:hover, .banner-shopnsave #ss-page-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul:hover, .banner-shoppers .ss-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul:hover, .banner-shoppers #ss-page-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul:hover {
+    background: url("../../master/img/simplesignup/selected-store-check-cub.png") 88% 40% no-repeat;
+}
+.banner-cub .ss-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul, .banner-cub .ss-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul:hover, .banner-cub #ss-page-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul, .banner-cub #ss-page-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul:hover, .banner-hornbachers .ss-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul, .banner-hornbachers .ss-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul:hover, .banner-hornbachers #ss-page-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul, .banner-hornbachers #ss-page-container .ss-storeselect-container .ss-map-info-container>ul .ss-selected-store ul:hover {
+    background: url("../../master/img/simplesignup/selected-store-check-cub.png") 88% 40% no-repeat;
+}
+.ltie9 #ss-page-container>div {
+    border: 1px solid #666;
+}
+html #ss-page-container {
+    background: #fff;
+    position: static;
+    margin: 10px;
+}
+html #ss-page-container p, html #ss-page-container li, html #ss-page-container a {
+    font-size: 14px;
+}
+html #ss-page-container .ss-inner-container {
+    display: block;
+    width: 100%;
+    margin: 0;
+    position: static;
+    box-shadow: none;
+    padding: 20px 15px;
+    top: 0;
+    left: 0;
+}
+html #ss-page-container .ss-entry-inline-error {
+    display: block;
+}
+html #ss-page-container>h2 {
+    font-family: "Myriad W01 Regular", Helvetica, Arial, sans-serif !important;
+    font-size: 24px;
+    border-bottom: none;
+    color: #666 !important;
+}
+html #ss-page-container>div {
+    box-shadow: 0px 0px 2px 2px #E6E6E6;
+    border-radius: 6px;
+    width: 536px;
+}
+html #ss-page-container>div>div {
+    border-radius: 6px;
+}
+html #ss-page-container .ss-signup-full-container .ss-inner-container {
+    width: 265px;
+}
+html #ss-page-container .ss-storeselect-full-container {
+    width: 565px;
+}
+html #ss-page-container .ss-storeselect-full-container .ss-map-info-container li {
+    font-size: 12px;
+}
+html #ss-page-container .ss-welcome-full-container p {
+    margin-bottom: 20px;
+}
+html #ss-page-container .ss-welcome-full-container li {
+    list-style: none;
+    background: url("/etc/designs/svubanners/master/img/simplesignup/red-right-arrow.png") 0% 50% no-repeat;
+    padding-left: 15px;
+}
+html #ss-page-container .ss-welcome-full-container h4 {
+    font-size: 16px;
+    color: #ef3e42;
+}
+html #ss-page-container .ss-linkaccount-full-container>div>div {
+    width: 275px;
+}
+html #ss-page-container .ss-linkaccount-full-container #ss-login-form .ss-clear a {
+    font-size: 12px;
+}
+html #ss-page-container .ss-linkaccount-full-container .ss-skip-step {
+    margin: 0 6px;
+}
+html #ss-page-container .ss-signin-full-container h3 {
+    font-size: 24px;
+}
+html #ss-page-container .ss-signin-full-container .ss-inner-container:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+html #ss-page-container .ss-signin-full-container .ss-inner-container h3 {
+    text-align: left;
+}
+html #ss-page-container .ss-signin-full-container .ss-inner-container .ss-or-h3 {
+    text-align: center;
+}
+html #ss-page-container .ss-signin-full-container .ss-inner-container li {
+    list-style: none;
+    background: url("/etc/designs/svubanners/master/img/simplesignup/red-right-arrow.png") 0% 3px no-repeat;
+    color: #666;
+    padding-left: 15px;
+    margin: 10px 0;
+}
+html #ss-page-container .ss-signin-full-container .ss-inner-container>p, html #ss-page-container .ss-signin-full-container .ss-inner-container li, html #ss-page-container .ss-signin-full-container .ss-inner-container a {
+    font-size: 12px;
+}
+html #ss-page-container .ss-signin-full-container .ss-inner-container>a {
+    color: #424242;
+}
+html #ss-page-container .ss-signin-full-container .ss-inner-container ul {
+    display: block;
+    margin-bottom: 10px;
+}
+html #ss-page-container .ss-signin-full-container .ss-inner-container ul+a {
+    font-size: 17px;
+    color: #424242 !important;
+    text-decoration: none;
+    padding-right: 20px;
+    background: url("/etc/designs/svubanners/master/img/icn-grey-arrow-round-sm.png") 100% 80% no-repeat;
+}
+html #ss-page-container .ss-signin-full-container .ss-login-full-signin {
+    width: 239px;
+    float: left;
+    margin-right: 25px;
+}
+html #ss-page-container .ss-createrewards-full-container {
+    padding-right: 30px;
+}
+html #ss-page-container .ss-createrewards-full-container label {
+    margin-top: 25px;
+    display: block;
+}
+html #ss-page-container .ss-createrewards-full-container form {
+    width: 200px;
+}
+html #ss-page-container .ss-forgotpassword-full-container {
+    padding-right: 30px;
+}
+html #ss-page-container .ss-forgotpassword-full-container label {
+    margin-top: 15px;
+    display: block;
+}
+html #ss-page-container .ss-forgotpassword-full-container a {
+    font-size: 12px;
+    margin-left: 10px;
+}
+html #ss-page-container .ss-forgotpassword-full-container form {
+    width: 236px;
+}
+html #ss-page-container .ss-forgotpasswordconfirm-full-container {
+    padding-right: 30px;
+}
+html #ss-page-container .ss-forgotpasswordconfirm-full-container p {
+    margin-bottom: 10px;
+}
+html #ss-page-container .ss-forgotpasswordconfirm-full-container li {
+    list-style: none;
+    background: url("/etc/designs/svubanners/master/img/simplesignup/red-right-arrow.png") 0% 50% no-repeat;
+    padding-left: 15px;
+    margin-top: 2px;
+}
+html #ss-page-container .ss-forgotpasswordconfirm-full-container h4 {
+    font-size: 16px;
+}
+html #ss-page-container .ss-cardconfirm-full-container>div:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+html #ss-page-container .ss-cardconfirm-full-container form {
+    text-align: left;
+    margin-top: 30px;
+}
+html #ss-page-container .ss-cardconfirm-full-container form>div {
+    width: auto;
+}
+html #ss-page-container .ss-cardconfirm-full-container h2 {
+    font-size: 24px;
+}
+html #ss-page-container .ss-cardconfirm-full-container img {
+    float: right;
+    margin-bottom: 10px;
+}
+html #ss-page-container .ss-resetpassword-full-container {
+    padding-right: 30px;
+}
+html #ss-page-container .ss-resetpassword-full-container form {
+    width: 236px;
+}
+html #ss-page-container .ss-resetpassword-full-container form>input+div {
+    margin-bottom: 15px;
+}
+html #ss-page-container .ss-addrewards-full-container form {
+    width: 240px;
+}
+html #ss-page-container .ss-signupoverlay-full-container {
+    width: 576px;
+}
+html #ss-page-container .ss-signupoverlay-full-container>.ss-inner-container {
+    width: 576px;
+}
+html #ss-page-container .ss-signupoverlay-full-container .ss-signup-cardlessinfo {
+    left: 530px;
+    top: 580px;
+}
+html #ss-page-container .ss-signupoverlay-full-container .ss-signup-cardlessinfo:after {
+    top: 80px;
+}
+html #ss-page-container .ss-signupoverlay-full-container label, html #ss-page-container .ss-signupoverlay-full-container label>p:first-child {
+    font-size: 17px;
+    color: #666 !important;
+}
+html #ss-page-container .ss-signupoverlay-full-container>div>a {
+    position: absolute;
+    left: 705px;
+    top: 715px;
+    font-size: 12px;
+}
+html #ss-page-container .ss-congrats-full-container p:first-child {
+    margin-bottom: 10px;
+}
+html #ss-page-container .ss-congrats-full-container img {
+    float: right;
+}
+html #ss-page-container .ss-congrats-full-container h4 {
+    margin-top: 25px;
+}
+html #ss-page-container .ss-associate-signup-full-container>div>h3 {
+    font-size: 16px;
+    text-align: left;
+    margin-top: 50px;
+}
+html #ss-page-container .ss-associate-signup-full-container a {
+    color: #666 !important;
+    display: block;
+    margin-top: 20px;
+}
+html #ss-page-container .ss-associate-signup-full-container .ss-login-full-signin {
+    margin-right: 45px;
+}
+html #ss-page-container .ss-associate-signup-full-container h3 {
+    color: #424242 !important;
+    margin: 0;
+}
+#layout .ss-set-store-required, #layout .ss-set-store-required a {
+    font-size: 20px;
+}
+.currentCommPref.noValue, .currentCommPrefValue.noValue {
+    color: #ccc !important;
+}
+.comm-prefs.associateCommPref li {
+    padding: 20px 0;
+}
+.currentCommPrefValue {
+    width: 175px;
+    word-break: break-all;
+}
+.currentCommPrefValue.hidden {
+    display: none !important;
+}
+.ss-container .comm-prefs {
+    font-size: 12px;
+}
+.ss-container .comm-prefs li {
+    list-style: none;
+    border-top: 1px solid #ccc;
+    position: relative;
+    display: table;
+    width: 370px;
+    min-height: 70px;
+}
+.ss-container .comm-prefs li .currentCommPref, .ss-container .comm-prefs li .currentCommPrefValue {
+    display: table-cell;
+    vertical-align: middle;
+}
+.ss-container .comm-prefs li input.input3digit {
+    width: 35px;
+}
+.ss-container .comm-prefs li input.input4digit {
+    width: 50px;
+}
+.ss-container .comm-prefs li .associateMessage {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    font-size: 10px;
+    font-weight: bold;
+}
+.ss-container .comm-prefs li:first-child {
+    border: none;
+}
+.ss-container .comm-prefs .currentCommPref {
+    width: 185px;
+}
+.ss-container .comm-prefs .currentCommPrefValue {
+    width: 180px;
+    word-break: break-all;
+}
+.ss-container .comm-prefs #currentCommMail {
+    width: 165px;
+}
+.ss-container .comm-prefs #editAddress {
+    margin-top: 12px;
+}
+.ss-container .communication-address-container .edit-address>div {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.ss-container .communication-address-container .edit-address>div label {
+    margin-bottom: 4px;
+}
+.ss-container .communication-address-container .first-name {
+    width: 128px;
+    margin-right: 10px;
+}
+.ss-container .communication-address-container .last-name {
+    width: 162px;
+}
+.ss-container .communication-address-container .street-address {
+    width: 200px;
+}
+.ss-container .communication-address-container .apt {
+    width: 88px;
+    margin-left: 12px;
+}
+.ss-container .communication-address-container .city {
+    width: 128px;
+    margin-right: 10px;
+}
+.ss-container .communication-address-container .state {
+    width: 60px;
+    margin-right: 10px;
+}
+.ss-container .communication-address-container .state select {
+    padding: 2px;
+}
+.ss-container .communication-address-container .zip-code {
+    width: 88px;
+}
+.ss-container .communication-address-container .ss-back {
+    margin-left: 6px;
+}
+.ss-legalTerms-container {
+    font-size: 12px;
+    font-color: #ccc;
+}
+.ss-legalTerms-container .ss-coupon-image {
+    float: left;
+    width: 80px;
+}
+.ss-legalTerms-container .ss-coupon-description {
+    float: right;
+    width: 145px;
+}
+.ss-legalTerms-container .ss-coupon-terms {
+    clear: both;
+    border-top: 1px #ccc solid;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.ss-legalTerms-container p {
+    margin-bottom: 10px;
+}
+px/20px helvetica, arial, sans-serif;
+    color: #333;
+}
+.woot {
+    font-weight: bold;
+}

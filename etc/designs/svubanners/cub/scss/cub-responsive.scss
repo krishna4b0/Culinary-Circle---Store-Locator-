@@ -1,0 +1,67 @@
+
+
+//body.responsive {
+    
+    .weekly-ads{
+        border: 1px solid red;
+    }
+
+    .coupons{
+        border: 1px solid red;
+    }
+    .cakes{
+        border: 1px solid red;
+    }
+    .rewards{
+        border: 1px solid red;
+    }
+    
+    .secondary-nav-button {
+        height: 96px;
+        border: 2px solid #ef4035;
+    }
+    
+    @media only screen 
+    and (max-width: 640px) {
+    // put styles for small devices (phones) here.
+    
+    
+        .secondary-nav-button {
+            width: 100%;
+        }
+}
+
+
+@media only screen 
+    and (max-width: 640px) {
+// put styles for small devices (phones) here.
+    
+    .ss-login-container {
+        width: 81%;
+    }
+}
+
+
+@media only screen 
+    and (min-device-width: 640px)
+    and (max-device-width: 1024px) {
+        
+    // put styles for medium devices (tablets) here.
+           
+        }
+    
+}
+
+.cub-rewards-image {
+    border: 3px solid red;
+}
+
+@media(min-width:800px) and (max-width:1000px){
+    .svu-slideshow{
+        width: !important;
+    }
+}
+
+
+
+

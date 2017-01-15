@@ -1,0 +1,182 @@
+#QAS_Dialog {
+	color: #3f3f3f;
+	text-align: left;
+}
+
+.QAS_Header {
+	display: block;
+	font-size: 14px;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.QAS_Prompt {
+	float: left;
+	padding-left: 0;
+	padding-top: 20px;
+	width: 295px;
+}
+
+.QAS_Input {
+	padding: 0 0 0.3em;
+	float: left;
+}
+
+.QAS_RightDetails {
+	border-left: 1px solid $text-color1;
+	float: right;
+	margin-top: 20px;
+	padding-left: 20px;
+	width: 294px;
+}
+
+.QAS_RightDetails.noMatch {
+	border-left: 0;
+	float: left;
+	padding-left: 0;
+}
+
+.QAS_RightSidePrompt {
+	padding-bottom: .5em;
+}
+
+.QAS_RightSidePromptText {
+	color: $text-color1;
+	font-size: 14px;
+}
+
+.QAS_RightDetails table {
+	font-size: 14px;
+	line-height: 1em;
+	padding-bottom: 10px;
+}
+
+.QAS_EditLink {
+	color: #719833;
+	font-size: 11px;
+	font-weight: normal;
+	padding-left: 1em;
+}
+
+.QAS_Picklist {
+	float: left;
+	font-size: 0.9em;
+	width: 295px;
+}
+
+.QAS_DeliverableWarning {
+	display: none;
+	font-size: .8em;
+	padding-top: .6em;
+}
+
+.QAS_Pick {
+	font-size: .9em;
+	display: none;
+	width: 450px;
+	height: 200px;
+	overflow: auto;
+}
+
+.QAS_MultPick {
+	font-size: .9em;
+	display: none;
+	width: 285px;
+	overflow: auto;
+}
+
+.QAS_ShowPick {
+	display: none;
+	padding-bottom: .6em;
+}
+
+.QAS_Pick table, .QAS_MultPick table {
+	font-size: .9em;
+}
+
+.QAS_Pick table td, .QAS_MultPick table td {
+	padding-right: 1.5em;
+}
+
+.QAS_PromptText {
+	color: $text-color1;
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+
+.banner-cub .QAS_PromptText, .banner-cub .QAS_RightSidePromptText {
+	font-family: $font-stack2;
+}
+
+.QAS_PromptData br {
+	display: none;
+}
+
+.QAS_PromptData table {
+	clear: both;
+	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+#QAS_RefineText {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #A5ACB2;
+	height: 23px;
+	margin-right: 10px;
+	width: 80px;
+}
+
+#QAS_RefineBtn, #QAS_AcceptOriginal, #QAS_NoApt {
+	color: $text-color2;
+	display: inline-block;
+	font-size: 0.92em;
+	padding: 3px 23px 4px 10px;
+	vertical-align: bottom;
+}
+
+#QAS_NoApt {
+	margin-top: .5em;
+}
+
+/* new 2/24/2014 - signup part 4 */
+.ui-dialog {
+	padding: 20px;
+	box-shadow: 0 0 9px 3px gray;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #fff;
+	z-index: 200000;
+}
+
+.ltie9 .ui-dialog {
+	border: 1px solid #666;
+	overflow: hidden;
+}
+
+.ui-dialog-titlebar {
+	text-align: center;
+}
+
+.ui-dialog-title {
+	color: $text-color1;
+	font-size: 24px;
+}
+
+.banner-cub, .banner-shopnsave {
+	.ui-dialog {
+		font-family: $font-stack1;
+	}
+	.ui-dialog-title {
+		font-family: $font-stack2;
+	}
+}
+
+.ui-dialog:after {
+	content: ' ';
+	display: table;
+	clear: both;
+}

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="YouTube Video Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <basic
+            jcr:primaryType="cq:Widget"
+            title="Basic"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The container's title"
+                    fieldLabel="Title"
+                    name="./title"
+                    xtype="textfield"/>
+                <subtitle
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The container's subtitle"
+                    fieldLabel="Subtitle"
+                    name="./subtitle"
+                    xtype="textfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The containers description."
+                    fieldLabel="Description"
+                    name="./description"
+                    xtype="textarea"/>
+                <videoId
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The video that shows on the main container."
+                    fieldLabel="Video ID"
+                    name="./videoId"
+                    xtype="textfield"/>
+                <size
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Size of the player to embed in the main container, height and width"
+                    fieldLabel="Video size"
+                    heightParameter="./height"
+                    heightSuffix=""
+                    widthParameter="./width"
+                    widthSuffix=""
+                    xtype="sizefield"/>
+            </items>
+        </basic>
+        <videosId
+            jcr:primaryType="cq:Widget"
+            title="Videos Id"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <videosId
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The ID of the videos to feature. Videos ID, Video Title and Video Description must be from the same video to match."
+                    fieldLabel="Videos ID"
+                    name="./videosId"
+                    xtype="multifield"/>
+            </items>
+        </videosId>
+        <videosTitle
+            jcr:primaryType="cq:Widget"
+            title="Videos Title"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <videosTitle
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title of the videos to feature. Videos ID, Video Title and Video Description must be from the same video to match."
+                    fieldLabel="Videos Title"
+                    name="./videosTitle"
+                    xtype="multifield"/>
+            </items>
+        </videosTitle>
+        <videosDescription
+            jcr:primaryType="cq:Widget"
+            title="Videos Description"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <videosDescription
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The description of the videos to feature. Videos ID, Video Title and Video Description must be from the same video to match."
+                    fieldLabel="Videos Description"
+                    name="./videosDescription"
+                    xtype="multifield"/>
+            </items>
+        </videosDescription>
+    </items>
+</jcr:root>

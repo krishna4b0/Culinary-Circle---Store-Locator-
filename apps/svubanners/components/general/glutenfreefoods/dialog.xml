@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Gluten Free Foods"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <basic
+            jcr:primaryType="cq:Widget"
+            title="Gluten Free Foods"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Path where the gluten-free products xml file is found."
+                    fieldLabel="Products XML File"
+                    name="./xmlDamPath"
+                    rootPath="/content/dam"
+                    xtype="pathfield"/>
+            </items>
+        </basic>
+    </items>
+</jcr:root>

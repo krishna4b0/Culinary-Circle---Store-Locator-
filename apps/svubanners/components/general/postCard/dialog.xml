@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Homepage Postcard Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <basic
+            jcr:primaryType="cq:Widget"
+            title="Basic"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <images
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="1"
+                    fieldDescription="The number of images to show on the hompage template"
+                    fieldLabel="Number of images"
+                    name="./images"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <_x0031_
+                            jcr:primaryType="nt:unstructured"
+                            text="1"
+                            value="1"/>
+                        <_x0032_
+                            jcr:primaryType="nt:unstructured"
+                            text="2"
+                            value="2"/>
+                        <_x0033_
+                            jcr:primaryType="nt:unstructured"
+                            text="3"
+                            value="3"/>
+                    </options>
+                </images>
+                <imageToAuthor
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="1"
+                    fieldDescription="The image to author at current time"
+                    fieldLabel="Image to author"
+                    name="./imageToAuthor"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <_x0031_
+                            jcr:primaryType="nt:unstructured"
+                            text="1"
+                            value="1"/>
+                        <_x0032_
+                            jcr:primaryType="nt:unstructured"
+                            text="2"
+                            value="2"/>
+                        <_x0033_
+                            jcr:primaryType="nt:unstructured"
+                            text="3"
+                            value="3"/>
+                    </options>
+                </imageToAuthor>
+            </items>
+        </basic>
+    </items>
+</jcr:root>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Browse Recipe By Category Header Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Browse Recipe By Category Header"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <browseByPagePath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path to the page for viewing the result, defaults to the current page if left blank."
+                    fieldLabel="View Results Page Path"
+                    name="./browseByPagePath"
+                    xtype="pathfield"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

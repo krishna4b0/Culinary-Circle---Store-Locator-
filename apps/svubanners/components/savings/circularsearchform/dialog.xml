@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Circular Item Search Form"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <circularsearchform
+            jcr:primaryType="cq:Widget"
+            title="Cirular Search From"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <resultsPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path where this form should submit its request to. if left blank, path will be the current page."
+                    fieldLabel="Search Results Page Path"
+                    name="./resultsPath"
+                    xtype="pathfield"/>
+            </items>
+        </circularsearchform>
+    </items>
+</jcr:root>

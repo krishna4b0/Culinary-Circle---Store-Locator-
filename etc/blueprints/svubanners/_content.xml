@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2012-02-21T16:05:27.332-05:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/wcm/msm/templates/blueprint"
+        jcr:description="SUPERVALU Banner Site - Master Site Blueprint"
+        jcr:lastModified="{Date}2012-02-21T16:05:27.332-05:00"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="SUPERVALU Banner Site"
+        sling:resourceType="wcm/msm/components/blueprint"
+        sitePath="/content/svubanners"
+        thumbnailRotate="0">
+        <dialog/>
+    </jcr:content>
+</jcr:root>

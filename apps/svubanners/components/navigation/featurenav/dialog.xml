@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Headline Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Feature Navigation"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <item1Path
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Path to the page where first feature item will link"
+                    fieldLabel="Item 1 Page Path"
+                    name="./item1Path"
+                    xtype="pathfield"/>
+                <item1Label
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Field label for first feature item link"
+                    fieldLabel="Item 1 Label"
+                    name="./item1Label"
+                    xtype="textfield"/>
+                <item2Path
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Path to the page where second feature item will link"
+                    fieldLabel="Item 2 Page Path"
+                    name="./item2Path"
+                    xtype="pathfield"/>
+                <item2Label
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Field label for second feature item link"
+                    fieldLabel="Item 2 Label"
+                    name="./item2Label"
+                    xtype="textfield"/>
+                <item3Path
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Path to the page where third feature item will link"
+                    fieldLabel="Item 3 Page Path"
+                    name="./item3Path"
+                    xtype="pathfield"/>
+                <item3Label
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Field label for third feature item link"
+                    fieldLabel="Item 3 Label"
+                    name="./item3Label"
+                    xtype="textfield"/>
+                <item4Path
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Path to the page where fourth feature item will link"
+                    fieldLabel="Item 4 Page Path"
+                    name="./item4Path"
+                    xtype="pathfield"/>
+                <item4Label
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Field label for fourth feature item link"
+                    fieldLabel="Item 4 Label"
+                    name="./item4Label"
+                    xtype="textfield"/>
+                <item4NoZipcode
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Item 4 doesn't contain a zipcode inputbox if checked"
+                    fieldLabel="Without Zipcode Inputbox"
+                    name="./item4NoZipcode"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

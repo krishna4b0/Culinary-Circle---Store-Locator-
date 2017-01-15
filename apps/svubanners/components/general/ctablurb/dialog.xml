@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="CTA Blurb Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="CTA Blurb"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Widgets Title"
+                    fieldLabel="Title"
+                    name="./jcr:title"
+                    xtype="textfield"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./image/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+            </items>
+        </title>
+        <body
+            jcr:primaryType="cq:Widget"
+            title="Blurb Body"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <profileBody
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="the text to include in the blurb"
+                    fieldLabel="Body Text"
+                    name="./text"
+                    xtype="richtext"/>
+            </items>
+        </body>
+        <image
+            jcr:primaryType="cq:Widget"
+            cropParameter="./image/imageCrop"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            mapParameter="./image/imageMap"
+            name="./image/file"
+            requestSuffix="/image.img.png"
+            rotateParameter="./image/imageRotate"
+            sizeLimit="100"
+            title="Image"
+            uploadUrl="/tmp/upload/*"
+            xtype="smartimage"/>
+        <advanced
+            jcr:primaryType="cq:Widget"
+            title="Advanced Image Properties"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./image/jcr:title"
+                    xtype="textfield"/>
+                <alt
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(leave empty to use the title defined above)"
+                    fieldLabel="Alt Text"
+                    name="./image/alt"
+                    xtype="textfield"/>
+                <linkURL
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Drop files or pages from the Content Finder"
+                    fieldLabel="Link to"
+                    name="./image/linkURL"
+                    xtype="pathfield"/>
+                <size
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Size"
+                    heightParameter="./height"
+                    widthParameter="./image/width"
+                    xtype="sizefield"/>
+            </items>
+        </advanced>
+    </items>
+</jcr:root>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/default"
+        cq:lastModified="{Date}2012-05-03T15:44:06.610-04:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="SVU Content Manager Approval"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <participant
+                jcr:created="{Date}2012-04-26T08:13:46.560-06:00"
+                jcr:createdBy="admin"
+                jcr:description="Content Manager Approve"
+                jcr:lastModified="{Date}2012-05-03T15:43:13.700-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Content Manager Approve"
+                sling:resourceType="cq/workflow/components/model/participant">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PARTICIPANT="/home/groups/w/wcm-content-managers"/>
+            </participant>
+            <or
+                jcr:created="{Date}2012-05-03T15:38:23.353-04:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2012-05-03T15:38:53.717-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="2"
+                default1="true"
+                orSplit="true">
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <activateresourceproc
+                        jcr:created="{Date}2012-04-26T08:26:10.593-06:00"
+                        jcr:createdBy="admin"
+                        jcr:description="A process to activate a page or asset"
+                        jcr:lastModified="{Date}2012-05-03T15:38:28.891-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Activate Page/Asset"
+                        sling:resourceType="wcm/workflow/components/workflow/activateresourceprocess"
+                        PROCESS="com.day.cq.wcm.workflow.process.ActivatePageProcess"
+                        PROCESS_AUTO_ADVANCE="true">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.day.cq.wcm.workflow.process.ActivatePageProcess"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </activateresourceproc>
+                </_x0032_>
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <dynamic_participant
+                        jcr:created="{Date}2012-05-03T15:42:27.106-04:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Route to workflow initiator"
+                        jcr:lastModified="{Date}2012-05-03T15:43:18.648-04:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Cancel Publish"
+                        sling:resourceType="cq/workflow/components/model/dynamic_participant">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            DYNAMIC_PARTICIPANT="/etc/workflow/scripts/initiator-participant-chooser.ecma"/>
+                    </dynamic_participant>
+                </_x0031_>
+            </or>
+        </flow>
+        <model/>
+    </jcr:content>
+</jcr:root>

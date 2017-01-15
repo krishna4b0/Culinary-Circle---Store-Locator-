@@ -1,0 +1,126 @@
+/** left column **/
+#content-sidebar {
+display: inline;
+float: left;
+margin: 11px 0 0 0;
+width: 162px;
+}
+/** center column **/
+#content-primary {
+border-left: 2px dotted #EF4035;
+color: #424242;
+display: inline;
+float: left;
+margin: 9px 0 0 0;
+padding: 0 0 0 7px;
+position: relative;
+width: 540px;
+}
+/** right column **/
+#content-related {
+color: #424242;
+display: inline;
+float: left;
+margin: 10px 0 0 5px;
+width: 240px;
+}
+.cq-colcntrl-0 {
+	clear: both;
+}
+
+
+/*Style for 2 columns (50%) */
+.cq-colcntrl-0-c0 {
+    float:left;
+    width:245px;
+    clear: left;
+}
+.cq-colcntrl-0-c1 {
+    float:left;
+    width: 245px;
+    margin-left: 40px;
+}
+/*Style for 2 columns (60%, 40%) */
+.cq-colcntrl-5-c0 {
+    float:left;
+    width:310px;
+}
+.cq-colcntrl-5-c1 {
+    float:left;
+    width:205px;
+    margin-left: 10px;
+}
+/*Style for 2 columns (30%, 70%) */
+.cq-colcntrl-6-c0 {
+    float:left;
+    width:154px;
+}
+.cq-colcntrl-6-c1 {
+    float:left;
+    width:361px;
+    margin-left: 10px;
+}
+
+/*Style for 2 columns (75%, 25%) */
+.cq-colcntrl-1-c0 {
+    float:left;
+    width:395px;
+}
+.cq-colcntrl-1-c1 {
+    float:left;
+    width:125px;
+    margin-left: 10px;
+}
+
+/*Style for 3 columns (33%, 33%, 33%) */
+.cq-colcntrl-2-c0 {
+    float:left;
+    width:170px;
+}
+.cq-colcntrl-2-c1 {
+    float:left;
+    width:170px;
+    margin-left: 10px;
+}
+.cq-colcntrl-2-c2 {
+    float:left;
+    width:170px;
+    margin-left: 10px;
+}
+
+/*Style for 3 columns (25%, 50%, 25%) */
+.cq-colcntrl-3-c0 {
+    float:left;
+    width:130px;
+}
+.cq-colcntrl-3-c1 {
+    float:left;
+    width:250px;
+    margin-left: 10px;
+}
+.cq-colcntrl-3-c2 {
+    float:left;
+    width:130px;
+    margin-left: 10px;
+}
+
+/*Style for 4 columns (25%, 25%, 25%, 25%) */
+.cq-colcntrl-4-c0 {
+    float:left;
+    width:125px;
+}
+.cq-colcntrl-4-c1 {
+    float:left;
+    width:125px;
+    margin-left: 10px;
+}
+.cq-colcntrl-4-c2 {
+    float:left;
+    width:125px;
+    margin-left: 10px;
+}
+.cq-colcntrl-4-c3 {
+    float:left;
+    width:125px;
+    margin-left: 10px;
+}

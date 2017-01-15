@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Headline Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Popular Coupons"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <resultsPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path where this component should link to for viewing coupons."
+                    fieldLabel="View Coupons Page Path"
+                    name="./viewCouponPath"
+                    xtype="pathfield"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

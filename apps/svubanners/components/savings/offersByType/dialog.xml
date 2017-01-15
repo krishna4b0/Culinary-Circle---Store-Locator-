@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Offers By Type"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <offerInfo
+            jcr:primaryType="cq:Widget"
+            title="Offers By Type"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <loginpath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Path to the login page, if a login is required"
+                    fieldLabel="Login Page: "
+                    name="./loginpath"
+                    xtype="pathfield"/>
+                <offertype
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Web"
+                    fieldDescription="The type of offers to return"
+                    fieldLabel="Offer Type: "
+                    name="./offerType"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <Web
+                            jcr:primaryType="nt:unstructured"
+                            text="Web (regular coupons)"
+                            value="Web"/>
+                        <Thor
+                            jcr:primaryType="nt:unstructured"
+                            text="Thor (targeted offers)"
+                            value="THOR"/>
+                        <PrivateLabel
+                            jcr:primaryType="nt:unstructured"
+                            text="Private Label"
+                            value="PRIVATE_LABEL"/>
+                        <FiveStar
+                            jcr:primaryType="nt:unstructured"
+                            text="Five Star (manufacturer coupons)"
+                            value="FIVE_STAR"/>
+                    </options>
+                </offertype>
+                <maxoffers
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The maximum number of offers to display"
+                    fieldLabel="Max to display: "
+                    name="./maxOffers"
+                    xtype="numberfield"/>
+                <tooltip
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The text that appears in the tooltip"
+                    fieldLabel="Tool Tip Text: "
+                    name="./tooltip"
+                    xtype="textfield"/>
+            </items>
+        </offerInfo>
+    </items>
+</jcr:root>

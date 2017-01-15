@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="A sidebar widget that displays to the user the number of eCoupons they currently have saved to their rewards card."
+    jcr:primaryType="cq:Component"
+    jcr:title="My eCoupons Widget"
+    sling:resourceSuperType="foundation/components/parbase"
+    allowedParents="[*/parsys]"
+    componentGroup="SVU Banners - Savings"/>

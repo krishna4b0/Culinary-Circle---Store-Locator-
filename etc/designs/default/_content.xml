@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2015-05-20T15:09:09.526-05:00"
+        cq:lastModifiedBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Default Design"
+        sling:resourceType="wcm/core/components/designer">
+        <offerpage jcr:primaryType="nt:unstructured">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/foundation/components/flash,/libs/foundation/components/image,/libs/foundation/components/slideshow,/libs/foundation/components/text,/libs/foundation/components/textimage]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+        </offerpage>
+        <teaserpage jcr:primaryType="nt:unstructured">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/foundation/components/flash,/libs/foundation/components/image,/libs/foundation/components/slideshow,/libs/foundation/components/text,/libs/foundation/components/textimage]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+        </teaserpage>
+        <promotion jcr:primaryType="nt:unstructured">
+            <config jcr:primaryType="nt:unstructured">
+                <pairings
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys"
+                    components="[/libs/commerce/components/promotion/perfectpartner/pairing]">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </pairings>
+            </config>
+        </promotion>
+        <pack jcr:primaryType="nt:unstructured">
+            <vlt:definition jcr:primaryType="nt:unstructured">
+                <filter
+                    jcr:primaryType="nt:unstructured"
+                    components="[/libs/cq/packaging/components/pack/definition/filter]"/>
+                <screenshots
+                    jcr:primaryType="nt:unstructured"
+                    components="[/libs/cq/packaging/components/pack/definition/screenshot]"/>
+            </vlt:definition>
+        </pack>
+        <collectionpage jcr:primaryType="nt:unstructured">
+            <vlt:definition jcr:primaryType="nt:unstructured">
+                <filter
+                    jcr:primaryType="nt:unstructured"
+                    components="[cq/workflow/components/collection/definition/resource]"/>
+            </vlt:definition>
+        </collectionpage>
+        <formpage jcr:primaryType="nt:unstructured">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Form">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+        </formpage>
+        <segmentpage jcr:primaryType="nt:unstructured">
+            <par
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/cq/personalization/components/traits/logic/or,/libs/cq/personalization/components/traits/logic/and]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+            <orpar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="/libs/cq/personalization/components/traits/logic/or"
+                components="[group:Segmentation]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </orpar>
+            <andpar
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="/libs/cq/personalization/components/traits/logic/and"
+                components="[group:Segmentation]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </andpar>
+        </segmentpage>
+        <newsletterpage jcr:primaryType="nt:unstructured">
+            <header
+                jcr:primaryType="nt:unstructured"
+                maxWidth="530"/>
+            <par
+                jcr:lastModified="{Date}2010-03-17T17:14:41.775+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Newsletter]"
+                componentsX="[/libs/mcm/components/newsletter/image,/libs/mcm/components/newsletter/text,/libs/mcm/components/newsletter/textimage]">
+                <colctrl
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    layouts="2;310,28,192&#x9;2 Columns, main column left&#xa;2;192,28,310&#x9;2 Columns, main column right"/>
+                <section jcr:primaryType="nt:unstructured"/>
+                <image
+                    jcr:primaryType="nt:unstructured"
+                    maxWidth="310"/>
+            </par>
+        </newsletterpage>
+        <page_geometrixx_newsletter jcr:primaryType="nt:unstructured">
+            <header
+                jcr:primaryType="nt:unstructured"
+                maxWidth="530"/>
+            <par
+                jcr:lastModified="{Date}2010-03-17T17:14:41.775+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Newsletter,/libs/foundation/components/reference]"
+                componentsX="[/libs/mcm/components/newsletter/image,/libs/mcm/components/newsletter/text,/libs/mcm/components/newsletter/textimage]">
+                <colctrl
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    layouts="2;310,28,192&#x9;2 Columns, main column left&#xa;2;192,28,310&#x9;2 Columns, main column right"/>
+                <section jcr:primaryType="nt:unstructured"/>
+                <image
+                    jcr:primaryType="nt:unstructured"
+                    maxWidth="310"/>
+            </par>
+        </page_geometrixx_newsletter>
+        <model jcr:primaryType="nt:unstructured">
+            <flow
+                jcr:lastModified="{Date}2010-09-23T12:41:41.543+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:Collaboration Workflow,group:DAM Workflow,group:WCM Workflow,group:Workflow]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </flow>
+        </model>
+        <page jcr:primaryType="nt:unstructured">
+            <par jcr:primaryType="nt:unstructured">
+                <video
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/video"
+                    profiles="[hq,firefoxhq]"/>
+            </par>
+        </page>
+        <clientcontextdesigner jcr:primaryType="nt:unstructured">
+            <stores
+                jcr:lastModified="{Date}2011-08-30T15:28:01.878+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:Client Context">
+                <tagcloud
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/personalization/components/contextstores/tagcloud"
+                    store="tagcloud"/>
+                <resolvedsegments
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/personalization/components/contextstores/tagcloud"
+                    store="segments"/>
+                <activitystream
+                    jcr:primaryType="nt:unstructured"
+                    sling:resovurceType="cq/personalization/components/contextstores/activitystream"
+                    store="activitystream"/>
+                <geolocation
+                    jcr:lastModified="{Date}2011-09-13T15:27:16.333+02:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/personalization/components/contextstores/geolocation"
+                    properties="[city,region,country,country_code]"
+                    serviceURL="http://api.wipmania.com/jsonp?callback=${callback}"
+                    store="geolocation"/>
+            </stores>
+        </clientcontextdesigner>
+        <assetshare jcr:primaryType="nt:unstructured">
+            <lenses
+                jcr:lastModified="{Date}2010-01-05T12:22:21.744+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/cq/search/components/lenses/list,/libs/cq/search/components/lenses/mosaic]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </lenses>
+            <actions
+                jcr:lastModified="{Date}2010-01-05T13:25:44.921+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/dam/components/assetshare/actions/delete,/libs/dam/components/assetshare/actions/download,/libs/dam/components/assetshare/actions/lightbox,/libs/dam/components/assetshare/actions/move,/libs/dam/components/assetshare/actions/tags,/libs/dam/components/assetshare/actions/viewasset]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </actions>
+            <querybuilder
+                jcr:primaryType="nt:unstructured"
+                compontents="[group:Predicates]">
+                <left
+                    jcr:lastModified="{Date}2010-01-05T12:20:53.611+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys"
+                    components="[/libs/cq/search/components/predicates/date,/libs/dam/components/search/predicates/noexpired,/libs/cq/search/components/predicates/options,/libs/cq/search/components/predicates/path,/libs/cq/search/components/predicates/property]">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </left>
+                <top
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys"
+                    components="[/libs/cq/search/components/predicates/date,/libs/dam/components/search/predicates/notexpired,/libs/cq/search/components/predicates/options,/libs/cq/search/components/predicates/path,/libs/cq/search/components/predicates/property]"/>
+            </querybuilder>
+        </assetshare>
+        <asseteditor jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2010-01-05T13:19:02.767+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/dam/components/asseteditor/form/start,/libs/dam/components/asseteditor/form/metadata,/libs/dam/components/asseteditor/subassets,/libs/dam/components/asseteditor/tags,/libs/dam/components/asseteditor/thumbnail,/libs/dam/components/asseteditor/title,/libs/foundation/components/parsys/colctrl]">
+                <colctrl
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    layouts="2;cq-colctrl-lt0&#x9;2 Columns&#xa;"/>
+                <actions
+                    jcr:lastModified="{Date}2010-01-05T13:16:31.612+01:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys"
+                    components="[/libs/dam/components/asseteditor/actions/download,/libs/dam/components/asseteditor/actions/editors,/libs/dam/components/asseteditor/actions/lightbox,/libs/dam/components/asseteditor/actions/references,/libs/dam/components/asseteditor/actions/versioning,/libs/dam/components/asseteditor/actions/locking]">
+                    <section jcr:primaryType="nt:unstructured"/>
+                </actions>
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+        </asseteditor>
+        <promopage jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="{Date}2015-01-14T16:49:19.368-06:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="group:SVU Banners - Promotion">
+                <section jcr:primaryType="nt:unstructured"/>
+            </par>
+        </promopage>
+        <onecolpage jcr:primaryType="nt:unstructured">
+            <centerpar
+                jcr:lastModified="{Date}2015-04-28T12:25:26.004-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,group:Columns,group:SVU Banners - General]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </centerpar>
+        </onecolpage>
+        <twocolwiderightPage jcr:primaryType="nt:unstructured">
+            <centerpar
+                jcr:lastModified="{Date}2015-05-20T15:09:09.082-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,group:Columns,group:POC - Wishabi,group:SVU Banners - Account,group:SVU Banners - General,group:SVU Banners - Recipes,group:SVU Banners - Savings,group:SVU Banners - Shopping List,/apps/svubanners/components/store/printdrivingdirectionswidget,/apps/supervalu/components/content/colctrl/virtual/twocolumns]">
+                <section jcr:primaryType="nt:unstructured"/>
+                <colctrl
+                    jcr:lastModified="{Date}2012-04-17T18:12:11.937-04:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="foundation/components/parsys/colctrl"
+                    layouts="2;cq-colctrl-0&#x9;2 Columns (50%, 50%)&#xa;3;cq-colctrl-1&#x9;3 Columns (33%, 33%, 33%)&#xa;4;cq-colctrl-2&#x9;4 columns (25%, 25%, 25%, 25%)"/>
+            </centerpar>
+            <leftpar
+                jcr:lastModified="{Date}2015-04-28T12:15:24.640-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,group:SVU Banners - General]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </leftpar>
+        </twocolwiderightPage>
+        <twocolpage jcr:primaryType="nt:unstructured">
+            <centerpar
+                jcr:lastModified="{Date}2015-05-07T16:29:20.418-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,group:Columns,group:SVU Banners - General,group:SVU Banners - Store Search]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </centerpar>
+            <rightpar
+                jcr:lastModified="{Date}2015-04-28T12:16:14.027-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,/libs/foundation/components/parsys/colctrl/virtual/2cols,/libs/foundation/components/parsys/colctrl/virtual/3cols,/libs/foundation/components/parsys/colctrl,group:SVU Banners - General]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </rightpar>
+        </twocolpage>
+        <threecolpage jcr:primaryType="nt:unstructured">
+            <leftpar
+                jcr:lastModified="{Date}2015-04-28T12:18:18.729-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,group:SVU Banners - General]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </leftpar>
+            <centerpar
+                jcr:lastModified="{Date}2015-04-28T12:18:34.809-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,group:Columns,group:SVU Banners - General]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </centerpar>
+            <rightpar
+                jcr:lastModified="{Date}2015-04-28T12:18:50.482-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[group:General,group:SVU Banners - General]">
+                <section jcr:primaryType="nt:unstructured"/>
+            </rightpar>
+        </threecolpage>
+    </jcr:content>
+    <_x0030_.gif/>
+    <favicon.ico/>
+    <images/>
+</jcr:root>

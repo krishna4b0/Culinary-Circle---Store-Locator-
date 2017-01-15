@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="dailyDealsDialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <dealInfo
+                jcr:primaryType="cq:Panel"
+                title="Deal Info">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <dealDate
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="The date that the deal is valid"
+                        fieldLabel="Date:"
+                        name="./dealdate"
+                        xtype="textfield"/>
+                </items>
+            </dealInfo>
+            <productInfo
+                jcr:primaryType="cq:Panel"
+                title="Product Info&#xa;">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <productName
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        disabled="{Boolean}false"
+                        fieldDescription="The name of the deal product"
+                        fieldLabel="Name:"
+                        grow="{Boolean}false"
+                        name="./productname"
+                        xtype="textfield"/>
+                    <productPrice
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="The price of the product"
+                        fieldLabel="Price: "
+                        name="./productprice"
+                        xtype="textfield"/>
+                    <productDescription
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="The product short description"
+                        fieldLabel="Description"
+                        name="./productdesc"
+                        xtype="richtext"/>
+                </items>
+            </productInfo>
+            <recipeInfo
+                jcr:primaryType="cq:Panel"
+                border="false"
+                height=""
+                title="Recipe Info"
+                width="">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <recipeTeaser
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="A short teaser for the recipe page"
+                        fieldLabel="Teaser Text: "
+                        name="./recipeteaser"
+                        xtype="textfield"/>
+                    <recipeID
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Comma delimited list of recipe IDs"
+                        fieldLabel="Recipe ID(s)"
+                        name="./recipeid"
+                        xtype="textfield"/>
+                    <recipeLink
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Titles for recipes to use as link. Comma delimited list."
+                        fieldLabel="Link: "
+                        name="./recipelink"
+                        xtype="textfield"/>
+                </items>
+            </recipeInfo>
+            <targeting
+                jcr:primaryType="cq:Widget"
+                title="Targeting"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <storegroups
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Select the store groups for which this component applies."
+                        fieldLabel="Store Groups"
+                        name="./storeGroups"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            options="$PATH.displayoptions.json"
+                            type="select"
+                            width="200"
+                            xtype="selection"/>
+                    </storegroups>
+                    <matchtype
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="any"
+                        fieldLabel="Match Type"
+                        name="./matchType"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <all
+                                jcr:primaryType="nt:unstructured"
+                                text="Match All"
+                                value="all"/>
+                            <any
+                                jcr:primaryType="nt:unstructured"
+                                text="Match Any"
+                                value="any"/>
+                        </options>
+                    </matchtype>
+                </items>
+            </targeting>
+        </items>
+    </items>
+</jcr:root>

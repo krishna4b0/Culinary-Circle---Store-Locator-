@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Create Account Form Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <removeCard
+            jcr:primaryType="cq:Widget"
+            title="Remove Rewards Card Form"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <removePath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescript="Path to the Page Containing the Remove Card Form."
+                    fieldLabel="Remove Card Page Path"
+                    name="./removeCardPath"
+                    xtype="pathfield"/>
+                <upgradePath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescript="Path to the Page Containing the Upgrade Card Form."
+                    fieldLabel="Upgrade Card Page Path"
+                    name="./upgradeCardPath"
+                    xtype="pathfield"/>
+                <replacePath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescript="Path to the Page Containing the Replace Card Form."
+                    fieldLabel="Replace Card Page Path"
+                    name="./replaceCardPath"
+                    xtype="pathfield"/>
+                <requestPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescript="Path to the Page  to Print Temporary Card."
+                    fieldLabel="Print Temporary Card Page Path"
+                    name="./printTemporaryCardPath"
+                    xtype="pathfield"/>
+            </items>
+        </removeCard>
+    </items>
+</jcr:root>

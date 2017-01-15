@@ -1,0 +1,113 @@
+/** Footer **/
+#footer {
+  width: 960px;
+  display: block;
+  padding-top: 40px;
+  background-color: #FFFFFF;
+  clear: both;
+}
+
+#footer #top_row h4, #footer #top_row .lead {
+  margin: 15px 0px 3px;
+  font-size: 13px;
+  font-weight: bold;
+  display: block;
+}
+
+#footer #top_row a {
+  line-height: 14px;
+  font-size: 11px;
+}
+
+#footer #top_row {
+  width: 100%;
+  background: #fafafa;
+  display: block;
+  height: auto;
+  overflow: hidden;
+}
+
+#footer #top_row div div {
+  float: left;
+}
+
+#footer #top_row div div.column-1 {
+  padding-left: 0px;
+  width: 86px;
+  padding-right: 10px;
+}
+
+#footer #top_row div div.column-2 {
+  width: 148px;
+}
+
+#footer #top_row div div.column-3 {
+  width: 92px;
+}
+
+#footer #top_row div div.column-4 {
+  width: 152px;
+}
+
+#footer #top_row div div.column-5 {
+  width: 110px;
+}
+
+#footer #top_row div div.column-6 {
+  width: 78px;
+}
+
+#footer #top_row div div.column-7 {
+  width: 134px;
+}
+
+#footer #top_row li {
+  display: block;
+}
+
+#footer #bottom_row {
+  background-color: #eee;
+  display: block;
+  height: 30px;
+}
+
+#footer #top_row > div {
+  width: 920px;
+  margin-left: 20px;
+}
+
+#footer #bottom_row > div {
+  width: 920px;
+  margin-left: 20px;
+}
+
+#footer #bottom_row ul {
+  margin-top: 8px;
+  float: left;
+}
+
+#footer #bottom_row li {
+  border-left: #d2d2d2 1px solid;
+  padding-bottom: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline;
+  padding-top: 0px;
+}
+
+#footer #bottom_row li.no_border {
+  padding-left: 0px;
+}
+
+#footer #bottom_row a {
+  font-size: 10px;
+}
+
+#footer #bottom_row p {
+  font-size: 10px;
+}
+
+#footer #bottom_row p {
+  margin-top: 10px;
+  float: right;
+}

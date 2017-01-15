@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    title="Contextual Navigation"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <contextualnavigation
+            jcr:primaryType="cq:Widget"
+            title="Contextual Navigation"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="children"
+                    fieldLabel="Build list using"
+                    name="./listFrom"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <children
+                            jcr:primaryType="nt:unstructured"
+                            text="Site Structure"
+                            value="children"/>
+                        <recipes
+                            jcr:primaryType="nt:unstructured"
+                            text="Recipe Categories"
+                            value="recipes"/>
+                    </options>
+                </listFrom>
+                <orderBy
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter a property like 'jcr:created'"
+                    fieldLabel="Order by"
+                    name="./orderBy"
+                    type="combobox"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <title
+                            jcr:primaryType="nt:unstructured"
+                            value="jcr:title"/>
+                        <created
+                            jcr:primaryType="nt:unstructured"
+                            value="jcr:created"/>
+                        <modified
+                            jcr:primaryType="nt:unstructured"
+                            value="cq:lastModified"/>
+                        <template
+                            jcr:primaryType="nt:unstructured"
+                            value="cq:template"/>
+                    </options>
+                </orderBy>
+                <recipeCategoryPath
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Recipe Category Search Page"
+                    name="./recipeCategoryPath"
+                    xtype="pathfield"/>
+            </items>
+        </contextualnavigation>
+    </items>
+</jcr:root>

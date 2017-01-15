@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Suggested Shopping List Item"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <suggestedListItem
+            jcr:primaryType="cq:Widget"
+            title="Shopping List Widget"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <itemName
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Item Name"
+                    name="./itemName"
+                    xtype="textfield"/>
+                <itemQty
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Item Quantity Text"
+                    name="./itemQty"
+                    xtype="textfield"/>
+            </items>
+        </suggestedListItem>
+    </items>
+</jcr:root>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Featured Content Component&#xa;"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Featured Content"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The feature title"
+                    fieldLabel="Feature Title"
+                    name="./jcr:title"
+                    xtype="textfield"/>
+                <recipeText
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Displays the text excerpt after the title"
+                    fieldLabel="Feature Text Excerpt"
+                    name="./recipeText"
+                    xtype="textfield"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./image/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+                <articles
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Displays the list of articles with heading"
+                    fieldLabel="Articles"
+                    name="./articles"
+                    xtype="richtext"/>
+                <recipeId
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The recipe ID, if applicable"
+                    fieldLabel="Recipe ID"
+                    name="./recipeId"
+                    xtype="textfield"/>
+                <featureImage
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="recipe"
+                    fieldDescription="The type of feature (e.g. recipe, article, etc.) This controls the ribbon image in the upper-right."
+                    fieldLabel="Feaure Overlay"
+                    name="./featureImage"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <recipe
+                            jcr:primaryType="nt:unstructured"
+                            text="Recipe"
+                            value="/etc/designs/svubanners/master/images/img-featured-recipe-overlay.png"/>
+                        <article
+                            jcr:primaryType="nt:unstructured"
+                            text="Article"
+                            value="/etc/designs/svubanners/master/images/img-featured-article-overlay.png"/>
+                        <none
+                            jcr:primaryType="nt:unstructured"
+                            text="None"
+                            value=""/>
+                    </options>
+                </featureImage>
+                <backgroundColor
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Select the color code for the background."
+                    fieldLabel="Background color"
+                    name="./backgroundColor"
+                    options="$PATH.coloroptions.json"
+                    type="select"
+                    xtype="selection"/>
+            </items>
+        </title>
+        <image
+            jcr:primaryType="cq:Widget"
+            cropParameter="./image/imageCrop"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            mapParameter="./image/imageMap"
+            name="./image/file"
+            requestSuffix="/image.img.png"
+            rotateParameter="./image/imageRotate"
+            sizeLimit="100"
+            title="Image"
+            uploadUrl="/tmp/upload/*"
+            xtype="smartimage"/>
+        <advanced
+            jcr:primaryType="cq:Widget"
+            title="Advanced Image Properties"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./image/jcr:title"
+                    xtype="textfield"/>
+                <alt
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(leave empty to use the title defined above)"
+                    fieldLabel="Alt Text"
+                    name="./image/alt"
+                    xtype="textfield"/>
+                <linkURL
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Drop files or pages from the Content Finder"
+                    fieldLabel="Link to"
+                    name="./image/linkURL"
+                    xtype="pathfield"/>
+                <size
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Size"
+                    heightParameter="./image/height"
+                    widthParameter="./image/width"
+                    xtype="sizefield"/>
+            </items>
+        </advanced>
+    </items>
+</jcr:root>

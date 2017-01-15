@@ -1,0 +1,23 @@
+@mixin MIclearafter () {
+	&:after {
+		display: table;
+		content: '';
+		clear: both;
+	}
+}
+
+@mixin MIboxsizing () {
+	* {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+
+@mixin MItransition ($transition) {
+	-webkit-transition: $transition;
+	-moz-transition: $transition;
+	-ms-transition: $transition; 
+	-o-transition: $transition;
+	transition: $transition;
+}

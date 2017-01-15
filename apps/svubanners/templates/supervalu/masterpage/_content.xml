@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="The Master Template provides all global functionality which appears on every page within the site such as headers, footers, global css and script includes, and global page properties.  The template is considereed &quot;abstract&quot; is that it will never be used to render a page, with the exception of redirect pages."
+    jcr:primaryType="cq:Template"
+    jcr:title="Site Master Template"
+    allowedPaths="[/content/svubanners/farmfresh(/.*)?,/content/svubanners/shopnsave(/.*)?,/content/svubanners/cub(/.*)?,/content/svubanners/hornbachers(/.*)?,/content/svubanners/shoppers(/.*)?,/content/svubanners/rainbowfoods(/.*)?,/content/svubanners/cmwa(/.*)?]"
+    ranking="{Long}99">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="svubanners/components/templates/supervalu/masterpage"/>
+</jcr:root>

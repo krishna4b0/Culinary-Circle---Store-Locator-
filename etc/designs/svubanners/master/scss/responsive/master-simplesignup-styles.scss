@@ -1,0 +1,1938 @@
+$error-outline: #DB3E42;
+$error-background: #FDE8E9;
+
+// start app CSS
+
+// misc stuff
+
+.ltie9 .ss-container .ss-toggle-pass {  // no support
+	display: none;
+}
+
+@-webkit-keyframes spinner { 
+	from 
+	{ 
+		-webkit-transform: rotateY(0deg); 
+	} 
+	to { 
+		-webkit-transform: rotateY(360deg); 
+	} 
+}
+
+@keyframes spinner { 
+	from {
+		-moz-transform: rotateY(0deg); 
+		-ms-transform: rotateY(0deg); 
+		transform: rotateY(0deg); 
+		}
+	to {
+		-moz-transform: rotateY(360deg); 
+		-ms-transform: rotateY(360deg); 
+		transform: rotateY(360deg); 
+	} 
+}
+
+
+
+// modal styles
+
+#ss-create-rewards-form {
+
+	.ss-submit-button {
+		float: left;
+	}
+
+	.ss-not-now {
+		float: left;
+		margin-top: 28px;
+		margin-left: 15px;
+	}
+}
+
+
+.ss-container, html #ss-page-container {
+
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	line-height: 1.2;
+
+	p, h1, h2, h3, h4, label {
+		color: #424242;
+	}
+
+	p, li, ul, button {
+		margin: 0;  // overwriting inherited
+	}
+
+	::-ms-clear, ::-ms-reveal { // IE clear field and show password checkboxes
+	    width: 0;
+	    height: 0;
+	}
+
+	*, *:before, *:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	input, a:focus {
+		outline-color: $text-color1;
+	}
+
+	.ss-overlay {
+		display: none;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: url('/etc/designs/svubanners/master/img/simplesignup/gray-background.png');
+		z-index: 20000;
+	}
+
+	.ss-close-button {
+		background: url('/etc/designs/svubanners/master/img/simplesignup/ss-close-button.png');
+		width: 34px;
+		height: 34px;
+		position: absolute;
+		right: -17px;
+		top: -17px;
+	}
+
+	.ss-popup-anchor {
+		position: relative;
+	}
+
+	.ss-inner-container {
+		display: none;
+		box-shadow: 0px 0px 9px 4px #4D4D4D;
+		position: absolute;
+		padding: 28px;
+		top: 140px;
+		left: 50%;
+		background: #fff;
+		font-size: 17px;
+		z-index: 20001;
+	}
+
+	h2 {
+		font-family: $font-stack2 !important;
+		font-size: 24px;
+		padding-bottom: 6px;
+		border-bottom: 6px solid $text-color1;
+		margin-bottom: 12px;
+		color: $text-color1 !important;
+	}
+
+	h3 {
+		font-size: 20px;
+		text-align: center;
+		color: #424242 !important;
+	}
+
+	.ss-or-h3 {
+		margin: 8px 0 5px;
+	}
+
+	.ss-clear {
+		@include MIclearafter;
+	}
+
+	.ss-submit-button {
+		background: $button-normal-top;
+		background: -moz-linear-gradient(top, $button-normal-top 0%, $button-normal-top 50%, $button-normal-bottom 51%, $button-normal-bottom 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$button-normal-top), color-stop(50%,$button-normal-top), color-stop(51%,$button-normal-bottom), color-stop(100%,$button-normal-bottom));
+		background: -webkit-linear-gradient(top, $button-normal-top 0%,$button-normal-top 50%,$button-normal-bottom 51%,$button-normal-bottom 100%);
+		background: -o-linear-gradient(top, $button-normal-top 0%,$button-normal-top 50%,$button-normal-bottom 51%,$button-normal-bottom 100%);
+		background: -ms-linear-gradient(top, $button-normal-top 0%,$button-normal-top 50%,$button-normal-bottom 51%,$button-normal-bottom 100%);
+		background: linear-gradient(to bottom, $button-normal-top 0%,$button-normal-top 50%,$button-normal-bottom 51%,$button-normal-bottom 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$button-normal-top}', endColorstr='#{$button-normal-bottom}',GradientType=0 );
+		margin-top: 20px;
+		outline: 0;
+		border: none;
+		color: #fff;
+		cursor: pointer;
+		font-size: 14px;
+		font-family: $font-stack1;
+		padding: 3px 24px 3px 11px;
+		position: relative;
+
+		&:active {
+			outline: 0;
+			border: none;
+			background: $button-active-top;
+			background: -moz-linear-gradient(top,  $button-active-top 0%, $button-active-top 49%, $button-active-bottom 50%, $button-active-bottom 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$button-active-top), color-stop(49%,$button-active-top), color-stop(50%,$button-active-bottom), color-stop(100%,$button-active-bottom));
+			background: -webkit-linear-gradient(top,  $button-active-top 0%,$button-active-top 49%,$button-active-bottom 50%,$button-active-bottom 100%);
+			background: -o-linear-gradient(top,  $button-active-top 0%,$button-active-top 49%,$button-active-bottom 50%,$button-active-bottom 100%);
+			background: -ms-linear-gradient(top,  $button-active-top 0%,$button-active-top 49%,$button-active-bottom 50%,$button-active-bottom 100%);
+			background: linear-gradient(to bottom,  $button-active-top 0%,$button-active-top 49%,$button-active-bottom 50%,$button-active-bottom 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$button-active-top}', endColorstr='#{$button-active-bottom}',GradientType=0 );
+		}
+
+		&:focus {
+			box-shadow: inset 0px 0px 2px 2px $button-focus;
+		}
+
+		&:hover {
+			background: $button-hover-bottom;
+			background: -moz-linear-gradient(top, $button-hover-top 0%, $button-hover-top 50%, $button-hover-bottom 51%, $button-hover-bottom 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$button-hover-top), color-stop(50%,$button-hover-top), color-stop(51%,$button-hover-bottom), color-stop(100%,$button-hover-bottom));
+			background: -webkit-linear-gradient(top, $button-hover-top 0%,$button-hover-top 50%,$button-hover-bottom 51%,$button-hover-bottom 100%);
+			background: -o-linear-gradient(top, $button-hover-top 0%,$button-hover-top 50%,$button-hover-bottom 51%,$button-hover-bottom 100%);
+			background: -ms-linear-gradient(top, $button-hover-top 0%,$button-hover-top 50%,$button-hover-bottom 51%,$button-hover-bottom 100%);
+			background: linear-gradient(to bottom, $button-hover-top 0%,$button-hover-top 50%,$button-hover-bottom 51%,$button-hover-bottom 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$button-hover-top}', endColorstr='#{$button-hover-bottom}',GradientType=0 );
+		}
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 7px;
+			right: 8px;
+			width: 8px;
+			height: 9px;
+			background: url('/etc/designs/svubanners/master/img/simplesignup/white-right-arrow.png') no-repeat;
+		}
+
+		span {
+			float: right;
+			margin-top: 4px;
+			width: 8px;
+			height: 9px;
+			background: url('/etc/designs/svubanners/master/img/simplesignup/white-right-arrow.png') no-repeat;
+		}
+	}
+
+	.ss-submit-button-disabled, .ss-submit-button-disabled:hover, .ss-submit-button-disabled:active {
+			background: $button-disabled-top;
+			background: -moz-linear-gradient(top, $button-disabled-top 0%, $button-disabled-top 50%, $button-disabled-bottom 51%, $button-disabled-bottom 100%);
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$button-disabled-top), color-stop(50%,$button-disabled-top), color-stop(51%,$button-disabled-bottom), color-stop(100%,$button-disabled-bottom));
+			background: -webkit-linear-gradient(top, $button-disabled-top 0%,$button-disabled-top 50%,$button-disabled-bottom 51%,$button-disabled-bottom 100%);
+			background: -o-linear-gradient(top, $button-disabled-top 0%,$button-disabled-top 50%,$button-disabled-bottom 51%,$button-disabled-bottom 100%);
+			background: -ms-linear-gradient(top, $button-disabled-top 0%,$button-disabled-top 50%,$button-disabled-bottom 51%,$button-disabled-bottom 100%);
+			background: linear-gradient(to bottom, $button-disabled-top 0%,$button-disabled-top 50%,$button-disabled-bottom 51%,$button-disabled-bottom 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$button-disabled-top}', endColorstr='#{$button-disabled-bottom}',GradientType=0 );
+			color: #eee;
+	}
+
+	.ss-loading-container {
+		display: none;
+		float: left;
+		margin-top: 20px;
+
+		span {
+			font-size: 12px;
+			color: #999 !important;
+			margin-left: 5px;
+		}
+
+		img {
+			-webkit-animation-name: spinner; 
+			-webkit-animation-timing-function: linear; 
+			-webkit-animation-iteration-count: infinite; 
+			-webkit-animation-duration: 3s; 
+			animation-name: spinner; 
+			animation-timing-function: linear; 
+			animation-iteration-count: infinite; 
+			animation-duration: 3s;
+			-webkit-transform-style: preserve-3d; 
+			-moz-transform-style: preserve-3d; 
+			-ms-transform-style: preserve-3d; 
+			transform-style: preserve-3d;
+		}
+	}
+
+
+	.ss-popup-box {
+		display: none;
+		box-shadow: 0px 0px 7px -1px rgb(100, 100, 100);
+		font-size: 13px;
+		position: absolute;
+		left: 50%;
+		$temp: top .5s, bottom .5s;
+		@include MItransition ($temp);
+	 	
+	 	&:after {
+	 		content: '';
+	 		position: absolute;
+	 		left: 50%;
+	 	}
+	}
+
+	.ss-entry-inline-error {
+		display: none;
+		background-color: $error-background;
+		padding: 14px;
+		border: 1px solid $error-outline;
+		font-size: 13px;
+		color: $text-color1;
+		text-align: center;
+		margin-bottom: 10px;
+
+		a, p {
+			font-size: 13px;
+			color: $error-outline !important;
+			text-decoration: none;
+			cursor: default;
+
+			&:focus {
+				outline: none;
+			}
+
+			a {
+				text-decoration: underline;
+			}
+		}
+
+		span {
+			font-family: $font-stack2;
+		}
+	}
+
+	.ss-go-back {
+		float: left;
+		margin-top: 28px;
+		margin-left: 15px;
+	}
+
+	.ss-invalid-input {
+		background: url('/etc/designs/svubanners/master/img/simplesignup/error-icon.png') 98% 50% no-repeat;
+	}	
+
+	// Signup/registration 06a/b and other similar ones
+	.ss-alt-container {
+		width: 296px;
+		margin-left: -148px;
+
+		form {
+			@include MIclearafter;
+		}
+
+		.ss-invalid-email-popup {
+			background-color: #FDE8E9;
+			color: $error-outline !important;
+			text-align: center;
+			border: 1px solid $error-outline;
+			padding: 14px 5px;
+			top: 55px;
+			z-index: 20005;
+			width: 260px;
+			margin-left: -130px;
+			&:after {
+		 		top: -6px;
+		 		margin-left: -13px;
+		 		background: url('/etc/designs/svubanners/master/img/simplesignup/bubble-arrow-up-pink.png') no-repeat;
+		 		width: 26px;
+		 		height: 7px;
+		 	}
+
+			span {
+				font-family: $font-stack2;
+			}
+		}
+
+		.ss-invalid-email-popup.ss-popup-low {
+			top: 80px;
+		}
+
+		.ss-popup-transition {
+			top: 35px !important;
+		}
+
+		.ss-popup-low.ss-popup-transition {
+			top: 60px !important;
+		}
+
+		.ss-invalid-email-popup.ss-popup-cardless {
+			top: 70px;
+		}
+
+		.ss-popup-cardless.ss-popup-transition {
+			top: 50px !important;
+		}
+
+		.ss-password-label {
+			margin-top: 10px;
+		}
+
+		.ss-password-popup {
+			display: none;
+			box-shadow: 0px 0px 7px -1px rgb(100, 100, 100);
+			color: #333;
+			font-size: 13px;
+			border: 1px solid #dedede;
+			position: absolute;
+			padding: 14px 25px 10px 0px;
+			top: 55px;
+			@include MItransition (top 1s);
+			left: 50%;
+			width: 260px;
+			margin-left: -130px;
+			background-color: #FFFFCC;
+			z-index: 30000;
+
+			ul {
+				list-style: none;
+			}
+
+		 	&:after {
+		 		content: '';
+		 		position: absolute;
+		 		top: -8px;
+		 		left: 50%;
+		 		margin-left: -13px;
+		 		background: url('/etc/designs/svubanners/master/img/simplesignup/bubble-arrow-up-yellow.png') no-repeat;
+		 		width: 26px;
+		 		height: 8px;
+		 	}
+
+			.ss-password-valid {
+				background-image: url('/etc/designs/svubanners/master/img/simplesignup/email-validate-icon-valid.png');
+			}
+
+			.ss-password-invalid {
+				background-image: url('/etc/designs/svubanners/master/img/simplesignup/email-validate-icon-invalid.png');
+			}
+
+			li {
+				background: url('/etc/designs/svubanners/master/img/simplesignup/email-validate-icon-gray.png') 4% 0% no-repeat;
+				margin-left: 10px;
+				padding-left: 25px;
+				padding-top: 2px;
+				&:first-child {
+					margin-bottom: 8px;
+				}
+			}
+		}
+
+		.ss-password-popup-t {
+			top: 35px;
+		}
+
+		.ss-toggle-pass {
+			float: right;
+			width: auto;
+			font-size: 12px;
+			margin: 12px 0 5px;
+		}
+
+		label {
+			display: block;
+			color: #424242 !important;
+		}
+
+		label.ss-toggle-pass {
+			margin-left: 6px;
+		}
+
+		input {
+			width: 100%;
+		}
+
+		.ss-remember {
+			float: left;
+			width: auto;
+			font-size: 12px;
+			margin: 14px 5px 0 0;
+		}
+
+		.ss-checkbox-container {
+			@include MIclearafter;
+		}
+
+		.ss-facebook-link {
+			display: block;
+			height: 45px;
+			border: 1px solid #324772;
+			background: url('/etc/designs/svubanners/master/img/simplesignup/facebook-logo.png') 50% 50% #45619D no-repeat;
+		}
+
+		.ss-facebook-link:hover {
+			border: 1px solid blue;
+		}
+
+		.ss-facebook-link:active {
+			border: 1px solid black !important;
+		}
+
+		.ss-need-account-prompt, .ss-have-account-prompt {
+			margin-top: 15px;
+			text-align: center;
+
+			a {
+				color: $text-color1;
+				&:hover {
+					color: $link-hover-color;
+				}
+			}
+		}
+	}
+
+	.ss-signup-associate.ss-signupoverlay-container {
+		.ss-submit-button + a {
+			top: -20px;
+		}
+	}
+
+	.ss-myaccount-contactinfo-container.ss-signupoverlay-container {
+		.ss-submit-button + a {
+			top: 135px;
+		}
+	}
+	
+
+	.ss-associatesignup-container {
+		width: 566px;
+		margin-left: -283px;
+
+		.ss-signup-content-container {
+			float: left;
+			width: 236px;
+/*			margin-right: 40px;
+*/		}
+
+		.ss-associate-info-container {
+
+			width: 240px;
+			float: right;
+
+			h3 {
+				text-align: left;
+			}
+
+			img {
+				position: absolute;
+				left: 260px;
+				top: 61px;
+			}
+
+			p {
+				margin-bottom: 15px;
+			}
+
+			a {
+				font-size: 17px;
+				color: #424242;
+				text-decoration: none;
+				padding-right: 30px;
+				background: url('/etc/designs/svubanners/master/img/icn-grey-arrow-round-sm.png') 100% 80% no-repeat;
+			}
+		}
+	}
+
+	.ss-welcome-container {
+		width: 320px;
+		margin-left: -160px;
+
+		.ss-submit-button {
+			font-size: 14px;
+			display: block;
+			margin: 18px auto 0;
+		}	
+	}
+
+	.ss-linkaccount-container {
+		width: 354px;
+		margin-left: -177px;
+
+		.ss-link-container {
+			margin-top: 15px;
+			padding: 7px;
+
+			a {
+				text-decoration: none;
+			} 
+
+			p {
+				color: #fff;
+				font-size: 16px;
+				margin: 7px 0 0 80px;
+			}
+			
+			img {
+				float: left;
+			}
+		}
+
+		.ss-link-container-facebook {
+			background: #45619D;
+
+			img {
+				border-right: 1px solid #324772;
+			}
+		}
+
+		.ss-checkbox-container {
+			width: 100%;
+		}
+
+		.ss-skip-step {
+			margin: 0 15px 0 10px;
+		}
+
+	}
+
+	.ss-createrewards-container {
+		width: 340px;
+		margin-left: -170px;
+		padding-right: 20px;
+
+		.ss-submit-button {
+			font-size: 14px;
+		}
+
+		p {
+			margin-bottom: 10px;
+		}
+
+		.ss-altid-inuse-message-lower, .ss-altid-inuse-message-upper {
+			display: none;
+		}
+
+		.ss-altid-inuse-message-lower {
+			margin-top: 20px;
+		}
+	}
+
+	.ss-cardconfirm-container {
+		width: 490px;
+		margin-left: -245px;
+		font-size: 14px;
+		text-align: center;
+
+		input:focus {
+			outline-width: 0;
+		}
+
+		h2 {
+			color: $text-color1 !important;
+		}
+
+		img {
+			text-align: center;
+			margin: 10px 0 20px;
+		}
+
+		form {
+
+			> div {
+			text-align: left;
+			width: 300px;
+			margin: 0 auto;
+			}
+
+			p {
+				display: none;
+				padding-left: 25px;
+				color: $text-color1;
+			}
+		}
+
+		span {
+			font-family: $font-stack2;
+		}
+
+	}
+
+	.ss-signupoverlay-container {
+		width: 572px;
+		margin-left: -286px;
+
+		[disabled] {
+			background-color: #EBEBE4;
+		}
+
+		$endposo: 65px;
+
+		.ss-entry-inline-error {
+			position: absolute;
+			width: 175px;
+			left: 340px;
+			top: 80px;
+		}
+
+		.ss-signup-input-container {
+			position: relative;
+		}
+
+		.ss-submit-button + a {
+			position: relative;
+			top: 205px;
+			left: 235px;
+			color: $text-color1;
+		}
+
+		.ss-signup-cardlessinfo {
+			position: absolute;
+
+			border: 1px solid #D6D6D6;
+			box-shadow: 4px 4px 10px 1px #d6d6d6;
+			top: -30px;
+			left: 190px;
+			width: 330px;
+			padding: 10px 10px 0;
+				h2 {
+					color: $error-outline;
+					font-size: 16px;
+					border: none;
+					font-family: $font-stack1 !important;
+					margin-bottom: 0px;
+				}
+
+				p {
+					font-size: 12px;
+					margin-bottom: 10px;
+				}
+
+			&:after {
+				content: '';
+				width: 23px;
+				height: 27px;
+				position: absolute;
+				top: 50px;
+				left: -20px;
+				background: url('/etc/designs/svubanners/master/img/simplesignup/bubble-arrow-left.png')
+
+			}
+		}
+
+		.ss-loading-container {
+			margin-top: 35px;
+		}
+
+		form {
+			padding-right: 200px;
+			@include MIclearafter;
+		}
+
+		form > div, button, select {
+			float: left;
+			margin-top: 10px;
+		}
+
+		input, button {
+			display: block;
+			margin-right: 10px;
+		}
+
+		span {
+			color: $text-color1;
+		}
+
+		.ss-signup-firstname-container {
+			input {
+				width: 130px;
+			}
+		}
+
+		.ss-signup-lastname-container {
+			margin-right: 0;
+			input {
+				width: 160px;
+			}
+		}
+
+		.ss-signup-address-container {
+			input {
+				width: 200px;
+			}
+		}
+
+		.ss-signup-apt-container {
+			margin-right: 0;
+			input {
+				width: 90px;
+			}
+		}
+
+		.ss-signup-city-container {
+			input {
+				width: 130px;
+			}
+		}
+
+		.ss-signup-state-container {
+			width: 70px;
+			select {
+				margin-top: 2px;
+				width: 60px;
+				line-height: 1;
+			}
+		}
+
+		.ss-signup-zipcode-container {
+			margin-right: 0;
+			input {
+				margin-right: 0;
+				width: 90px;
+			}
+		}
+
+		.ss-signup-phones-container {
+			position: relative;
+
+			label > span {
+				position: relative;
+				top: 0;
+				left: -5px;
+				color: #000;
+			}
+
+			label > p {
+				font-size: 16px;
+			}
+
+			input {
+				margin-right: 8px;
+				width: 60px;
+				display: inline-block;
+			}
+
+			> span {
+				color: $text-color2;
+				position: absolute;
+				top: 20px;
+				left: 43px;
+			}
+
+
+			.ss-phone-number-3 {
+				width: 40px;
+			}
+
+			.ss-validate-phone-left {
+				left: 20px;
+			}
+
+			.ss-validate-phone-right {
+				left: 135px;
+			}
+
+			label > div {
+				display: inline;
+			}
+		}
+
+		.ss-signup-cardless-container {
+			label > p {
+				font-size: 16px;
+			}
+
+			input {
+				display: inline-block;
+				width: 90px;
+			}
+
+			.ss-cardless-4 {
+				width: 60px;
+			}
+
+			.ss-validate-cardless-left {
+				left: 45px;
+			}
+
+			.ss-validate-cardless-right {
+				left: 130px;
+			}				
+		}
+
+		.ss-signup-btn, .ss-confirm-btn {
+			margin-right: 230px;
+			margin-top: 20px;
+		}
+	}
+
+	.ss-congrats-container {
+		width: 778px;
+		margin-left: -389px;
+		@include MIclearafter;
+
+		.ss-congrats-text-container {
+			float: left;
+			width: 300px;
+			margin-right: 35px;
+			font-size: 14px;
+
+			p {
+				margin-bottom: 15px;
+			}
+
+			span, .ss-congrats-username {
+				font-family: $font-stack2 !important;
+			}
+
+			.ss-congrats-info {
+				margin-bottom: 2px;
+			}
+		}
+
+		.ss-congrats-card-container {
+			float: left;
+			width: 380px;
+
+			h2 {
+				color: $text-color1 !important;
+			}
+
+			a {
+				background: url('/etc/designs/svubanners/master/img/simplesignup/printer-icon.png') no-repeat;
+				color: $text-color1;
+				font-size: 12px;
+				padding-left: 25px;
+				text-decoration: underline;
+				margin-bottom: 15px;
+				&:hover {
+					color: $link-hover-color;
+				}
+			}
+
+			img {
+				margin-top: 10px;
+				display: block;
+			}
+
+			.ss-temp-barcode {
+				position: absolute;
+				top: 180px;
+				left: 150px;
+				width: 55%;
+			}
+
+			ul {
+				list-style-type: asterisks;
+				margin-left: 10px;
+			}
+
+			li {
+				margin: 15px 0;
+				color: #999;
+				font-size: 12px;
+			}
+		}
+	}
+
+	.ss-congratsadded-container {
+		width: 300px;
+		margin-left: -150px;
+		text-align: center;
+
+		h2 {
+			color: $text-color1 !important;
+			text-align: left;
+		}
+
+		img {
+			text-align: center;
+			margin: 3px 0 15px;
+		}
+
+		p {
+			font-size: 14px;
+			text-align: left;
+		}
+	}
+
+	.ss-addrewards-container {
+
+		h2 {
+			color: $text-color1 !important;
+		}
+
+		p {
+			font-size: 14px;
+		}
+
+		> p {
+			margin-top: 10px;
+		}
+
+		span {
+			font-family: $font-stack2;
+		}
+
+		form {
+			margin-top: 10px;
+
+			> p {
+				margin: 5px 0;
+				color: #666;
+			}
+		}
+
+		#ss-add-rewards-cardlessid-input-7 {
+			width: 166px;
+		}
+
+		#ss-add-rewards-cardlessid-input-4 {
+			width: 60px;
+		}
+
+		label {
+			margin-top: 10px;
+		}
+
+		label[for="ss-add-rewards-cardlessid-input"] + p {
+			color: #999 !important;
+		}
+
+		.ss-input-container > div {
+			display: inline;
+		}
+	}
+
+	.ss-storeselect-container {
+		width: 590px;
+		min-height: 442px;
+		margin-left: -295px;
+		&:after {
+			@include MIclearafter;
+		}
+
+		> button {
+			font-size: 14px;
+
+			span {
+				position: relative;
+				right: 3px;
+			}
+		}
+
+		input {
+			background-color: #fff;
+		}
+
+		.ss-map-info-container {
+			display: none;
+
+			> ul {
+				overflow: hidden;
+
+				> a {
+					display: block;
+					text-decoration: none;
+					margin: 1px 0;
+					position: relative;
+					left: -300px;
+
+					ul {
+						list-style: none;
+						padding: 6px 12px 5px 10px;
+						width: 272px;
+						margin: 0;
+
+						li:first-child {
+							font-family: $font-stack2;
+						}
+
+						&:hover {
+							background: #ffffcc;				
+						}
+					}
+				}
+
+				.ss-selected-store, .ss-selected-store ul:hover {
+					width: 290px;
+					background: url("../../master/img/simplesignup/store-select-arrow-right-cub.png") 100% 0 no-repeat $store-search-container-color;
+				}
+
+				.ss-selected-store ul {
+					width: 290px;
+
+					&:hover {
+						width: 290px;
+					}
+				}
+			}
+
+			button {
+				display: none;
+				&:after {
+					top: 8px;
+				}
+			}
+		}
+
+		.ss-entry-inline-error {
+			width: 236px;
+			margin: 0 auto 10px;
+		}
+
+		.ss-store-search-input-container {
+			background-color: $store-search-container-color;
+			padding: 8px 10px;
+			margin-bottom: 12px;
+			max-height: 45px;
+			@include MIclearafter;
+
+			form {
+				float: left;
+			}
+
+			.ss-popup-anchor {
+				display: inline;
+			}
+
+			.ss-loading-container {
+				float: right;
+				margin-top: 10px;
+			}
+
+			input {
+				width: 180px;
+				margin-right: 12px;
+			}
+
+			input + p {
+				left: 97px;
+			}
+
+			button {
+				margin-top: 2px;
+				padding: 7px 24px 5px 11px;
+
+				&:after {
+					top: 11px;
+				}
+			}
+		}
+
+		#ss-store-maps-container {
+			float: right;
+			border: 1px solid $text-color1;
+			width: 240px;
+			height: 240px;
+		}
+	}
+
+	.ss-login-container {
+		a {
+			color: $text-color1;
+			text-decoration: underline;
+			&:hover {
+				color: $link-hover-color;
+			}
+		}
+
+		.ss-forgot-password {
+			float: left;
+			margin-top: 28px;
+			margin-left: 15px;
+		}
+
+		.ss-login-btn {
+			float: left;
+		}
+
+		.ss-login-inline-error {
+			span {
+				font-family: $font-stack2;
+			}
+			
+			a {
+				cursor: pointer;
+				&:hover {
+					color: $text-color1;
+				}
+			}
+		}
+	}
+
+	.ss-forgotpassword-container {
+		p {
+			font-size: 14px;
+			color: #666 !important;
+		}
+
+		> p {
+			margin: 10px 0 20px;
+		}
+
+		label {
+			color: #424242 !important;
+		}
+
+		a {
+			color: $text-color1;
+			text-decoration: underline;
+			&:hover {
+				color: $link-hover-color !important;
+			}
+		}
+
+		.ss-forgot-password-btn {
+			float: left;
+		}
+
+		.ss-entry-inline-error {
+
+			span {
+				font-family: $font-stack2;
+			}
+
+			a {
+				text-decoration: none;
+				color: $text-color1 !important;
+			}
+		}
+
+		.ss-forgot-password-confirm {
+			display: none;
+
+			p {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.ss-rewardsnumberalreadyexists-container {
+		> p {
+			margin-top: 20px;
+		}
+
+		> p + p {
+			margin-top: 0;
+		}
+
+		> p > a {
+			color: $text-color1;
+		}
+
+		a {
+			font-size: 14px;
+		}
+	}
+
+	.ss-add-associate-rewards-container {
+
+		#ss-add-rewards-associateid-input-7 {
+			width: 100%;
+		}
+	}
+
+	.ss-addcardlessid-container {
+		
+		p {
+			font-size: 14px;
+		}
+
+		> label {
+			margin-top: 20px;
+			color: #666 !important;
+		}
+
+		.ss-popup-anchor {
+			display: inline-block;
+			width: 166px;
+		}
+
+		.ss-cardless-4 {
+			width: 60px;
+			margin-left: 10px;
+		}
+	}
+
+	.ss-congratsaddedcardlessid-container {
+
+		p {
+			font-size: 14px;
+			margin-top: 20px;
+		}
+
+		form {
+			text-align: center;
+		}
+	}
+
+	.ss-updatecommunicationpreferences-container {
+		width: 430px;
+		margin-left: -185px;
+
+		form label:first-child {
+			font-size: 16px;
+
+			+ div {
+				margin-bottom: 20px;
+			}
+		}
+
+		input[type="checkbox"] {
+			width: auto;
+		}
+
+		label {
+			display: inline-block;
+			font-size: 14px;
+		}
+	}
+
+	.ss-updatepassword-container {
+		width: 460px;
+		margin-left: -230px;
+
+		form {
+			@include MIclearafter;
+			> div {
+				float: right;
+			}
+
+			> div:first-child {
+				float: left;
+				margin-right: 5%;
+			}
+
+			.ss-updatepassword-input-container {
+				width: 185px;
+			}
+
+			label[for="ss-resetpassword-input2"] {
+				margin-top: 10px;
+			}
+
+			.ss-toggle-pass-container {
+				width: 20%;
+				margin: 25px 20px 0 0;
+
+				> .ss-toggle-pass {
+					margin: 0;
+					float: left;
+					&:first-child {
+						margin-right: 5px;
+					}
+				}
+			}
+		}
+	}
+
+	.ss-removecard-container {
+		form > a {
+			margin-left: 15px;
+		}
+	}
+}
+
+// banner specific
+
+// farmfresh
+
+.banner-farmfresh {
+
+	.ss-container, #ss-page-container {
+
+		.ss-storeselect-container .ss-map-info-container {
+			
+				.ss-selected-store, .ss-selected-store ul:hover {
+						background: url("../../master/img/simplesignup/store-select-arrow-right-farmfresh.png") 100% 0 no-repeat $store-search-container-color;
+					}
+
+				.ss-selected-store ul {
+					background: url("../../master/img/simplesignup/selected-store-check-farmfresh.png") 88% 40% no-repeat;
+
+					&:hover {
+						background: url("../../master/img/simplesignup/selected-store-check-farmfresh.png") 88% 40% no-repeat;
+				}
+			}
+		}
+	}
+
+	#ss-page-container > h2 {
+		font-family: 'jenna_sue_regular', Helvetica, Arial !important;
+		font-size: 36px;
+	}
+}
+
+.banner-rainbowfoods {
+
+	.ss-container, #ss-page-container {
+
+		.ss-storeselect-container .ss-map-info-container {
+			
+				.ss-selected-store, .ss-selected-store ul:hover {
+						background: url("../../master/img/simplesignup/store-select-arrow-right-farmfresh.png") 100% 0 no-repeat $store-search-container-color;
+					}
+
+				.ss-selected-store ul {
+					background: url("../../master/img/simplesignup/selected-store-check-farmfresh.png") 88% 40% no-repeat;
+
+					&:hover {
+						background: url("../../master/img/simplesignup/selected-store-check-farmfresh.png") 88% 40% no-repeat;
+				}
+			}
+		}
+	}
+
+	#ss-page-container > h2 {
+		font-family: 'jenna_sue_regular', Helvetica, Arial !important;
+		font-size: 36px;
+	}
+}
+
+
+// adding bold for some banners that don't have a bold natural webfont. Look at removing Shoppers late 2014 (lol)
+
+.banner-farmfresh .ss-container, .banner-shoppers .ss-container, .banner-shopnsave .ss-container {
+	.ss-alt-container {
+		input[data-validation] + p > span {
+			font-weight: bold;
+			font-family: Helvetica, Arial, sans-serif;
+		}
+	}
+
+	.ss-storeselect-container .ss-map-info-container {
+		> ul {
+			> a ul li:first-child {
+				font-weight: bold;
+			}
+		}
+	}
+}
+
+.banner-shopnsave .ss-container {
+	.ss-submit-button:after {
+		background: url("../../master/img/simplesignup/maroon-arrow-white.png") no-repeat scroll 95% 50%;
+		margin-top: -2px;
+		width: 10px;
+		height: 12px;
+	}
+}
+
+.banner-hornbachers .ss-container, .banner-hornbachers #ss-page-container {
+	.ss-createrewards-container {
+		width: 336px;
+		margin-left: -168px;
+	}
+}
+
+// some combined styles
+
+.banner-shopnsave .ss-container, .banner-shopnsave #ss-page-container, .banner-shoppers .ss-container, .banner-shoppers #ss-page-container {
+	.ss-storeselect-container .ss-map-info-container {
+		> ul {
+			> a ul li:first-child {
+				font-weight: bold;
+			}
+
+			// .ss-selected-store, .ss-selected-store ul:hover {
+			// 		background: url("../../master/img/simplesignup/store-select-arrow-right-cub.png") 100% 0 no-repeat $store-search-container-color;
+			// 	}
+
+			.ss-selected-store ul {
+				background: url("../../master/img/simplesignup/selected-store-check-cub.png") 88% 40% no-repeat;
+
+				&:hover {
+					background: url("../../master/img/simplesignup/selected-store-check-cub.png") 88% 40% no-repeat;
+				}
+			}
+		}
+	}
+}
+
+.banner-cub .ss-container, .banner-cub #ss-page-container, .banner-hornbachers .ss-container, .banner-hornbachers #ss-page-container {
+	
+	.ss-storeselect-container .ss-map-info-container {
+		> ul {
+			// .ss-selected-store, .ss-selected-store ul:hover {
+			// 		background: url("../../master/img/simplesignup/store-select-arrow-right-cub.png") 100% 0 no-repeat $store-search-container-color;
+			// 	}
+
+			.ss-selected-store ul, .ss-selected-store ul:hover {
+				background: url("../../master/img/simplesignup/selected-store-check-cub.png") 88% 40% no-repeat;
+				}
+			}
+		}
+}
+
+// page based styling
+.ltie9 #ss-page-container > div {
+	border: 1px solid #666;
+}
+
+html #ss-page-container {
+	background: #fff;
+	position: static;
+	margin: 10px;
+
+	p, li, a {
+		font-size: 14px;
+	}
+
+	.ss-inner-container {
+		display: block;
+		width: 100%;
+		margin: 0;
+		position: static;
+		box-shadow: none;
+		padding: 20px 15px;
+		top: 0;
+		left: 0;
+	}
+
+	.ss-entry-inline-error {
+		display: block;
+	}
+
+	> h2 {
+		font-family: $font-stack1 !important;
+		font-size: 24px;
+		border-bottom: none;
+		color: #666 !important;
+	}
+
+	> div {
+		box-shadow: 0px 0px 2px 2px #E6E6E6;
+		border-radius: 6px;
+		width: 536px;
+
+		> div {
+			border-radius: 6px;
+		}
+	}
+
+	// uncarded
+
+	// 01 signup
+
+	.ss-signup-full-container {
+		.ss-inner-container {
+			width: 265px;
+		}
+	}
+
+	// 02 my store
+
+	.ss-storeselect-full-container {
+		width: 565px;
+
+		.ss-map-info-container li {
+			font-size: 12px;
+		}
+	}
+
+	// 03 welcome
+
+	.ss-welcome-full-container {
+		p {
+			margin-bottom: 20px;
+		}
+
+		li {
+			list-style: none;
+			background: url('/etc/designs/svubanners/master/img/simplesignup/red-right-arrow.png') 0% 50% no-repeat;
+			padding-left: 15px;
+		}
+
+		h4 {
+			font-size: 16px;
+			color: $text-color1;
+		}
+	}
+
+	// 04 link social account
+
+	.ss-linkaccount-full-container {
+
+		> div > div {
+			width: 275px;
+		}
+
+		#ss-login-form .ss-clear a {
+			font-size: 12px;
+		}
+
+		.ss-skip-step {
+			margin: 0 6px;
+		}
+	}
+
+	// 06 signin
+
+	.ss-signin-full-container {
+
+		h3 {
+			font-size: 24px;
+		}
+
+		.ss-inner-container {
+			@include MIclearafter;
+
+			h3 {
+				text-align: left;
+			}
+
+			.ss-or-h3 {
+				text-align: center;
+			}
+
+			li {
+				list-style: none;
+				background: url('/etc/designs/svubanners/master/img/simplesignup/red-right-arrow.png') 0% 3px no-repeat;
+				color: #666;
+				padding-left: 15px;
+				margin: 10px 0;
+			}
+
+			> p, li, a {
+				font-size: 12px;
+			}
+
+			> a {
+				color: #424242;
+			}
+
+			ul {
+				display: block;
+				margin-bottom: 10px;
+			}
+
+			ul + a {
+				font-size: 17px;
+				color: #424242 !important;
+				text-decoration: none;
+				padding-right: 20px;
+				background: url('/etc/designs/svubanners/master/img/icn-grey-arrow-round-sm.png') 100% 80% no-repeat;
+			}
+		}
+
+		.ss-login-full-signin {
+			width: 239px;
+			float: left;
+			margin-right: 25px;
+		}
+	}
+
+	// 07 create rewards number
+
+	.ss-createrewards-full-container {
+		padding-right: 30px;
+
+		label {
+			margin-top: 25px;
+			display: block;
+		}
+
+		form {
+			width: 200px;
+		}
+	}
+
+	// 09a forgot password
+
+	.ss-forgotpassword-full-container {
+		padding-right: 30px;
+
+		label {
+			margin-top: 15px;
+			display: block;
+		}
+
+		a {
+			font-size: 12px;
+			margin-left: 10px;
+		}
+
+		form {
+			width: 236px;
+		}
+	}
+
+	// 09b forgot password success message page
+
+	.ss-forgotpasswordconfirm-full-container {
+		padding-right: 30px;
+
+		p {
+			margin-bottom: 10px;
+		}
+
+		li {
+			list-style: none;
+			background: url("/etc/designs/svubanners/master/img/simplesignup/red-right-arrow.png") 0% 50% no-repeat;
+			padding-left: 15px;
+			margin-top: 2px;
+		}
+
+		h4 {
+			font-size: 16px;
+		}
+	}
+
+	.ss-cardconfirm-full-container {  //needs a little work
+
+		> div {
+			@include MIclearafter;
+		}
+
+		form {
+			text-align: left;
+			margin-top: 30px;
+
+			> div {
+				width: auto;
+			}
+		}
+
+		h2 {
+			font-size: 24px;
+		}
+
+		img {
+			float: right;
+			margin-bottom: 10px;
+		}
+	}
+
+	.ss-resetpassword-full-container {
+		padding-right: 30px;
+
+		form {
+			width: 236px;
+
+			> input + div {
+				margin-bottom: 15px;
+			}
+		}
+	}
+
+	.ss-addrewards-full-container {
+
+		form {
+			width: 240px;
+		}
+	}
+
+	.ss-signupoverlay-full-container {
+		width: 576px;
+
+		> .ss-inner-container {
+			width: 576px;
+		}
+
+		.ss-signup-cardlessinfo {
+			left: 530px;
+			top: 580px;
+
+			&:after {
+				top: 80px;
+			}
+		}
+
+		label, label > p:first-child {
+			font-size: 17px;
+			color: #666 !important;
+		}
+
+		> div > a {
+			position: absolute;
+			left: 705px;
+			top: 715px;
+			font-size: 12px;
+		}
+	}
+
+	.ss-congrats-full-container {
+
+		p:first-child {
+			margin-bottom: 10px;
+		}
+
+		img {
+			float: right;
+		}
+
+		h4 {
+			margin-top: 25px;
+		}
+	}
+
+	.ss-associate-signup-full-container {
+
+		> div > h3 {
+			font-size: 16px;
+			text-align: left;
+			margin-top: 50px;
+		}
+
+		a {
+			color: #666 !important;
+			display: block;
+			margin-top: 20px;
+		}
+
+		.ss-login-full-signin {
+			margin-right: 45px;
+		}
+
+		h3 {
+			color: #424242 !important;
+			margin: 0;
+		}
+	}
+}
+
+// "you must set your store" prompt text on the savings pages
+
+#layout .ss-set-store-required, #layout .ss-set-store-required a {
+	font-size: 20px;
+}
+
+// remove social from noncarded banners for now
+
+// .banner-hornbachers, .banner-farmfresh, .banner-shoppers, .banner-shopnsave {
+// 	.ss-container, .ss-page-container {
+// 		.ss-social-component {
+// 		display: none;
+// 		}
+// 	}
+// }
+
+
+
+	.currentCommPref.noValue, .currentCommPrefValue.noValue {
+		color: #ccc !important;
+	}
+
+	.comm-prefs.associateCommPref {
+		li {
+			padding: 20px 0;
+		}
+	}
+
+	.currentCommPrefValue {
+		width: 175px;
+		word-break: break-all;
+	}
+
+	.currentCommPrefValue.hidden {
+		display: none !important;
+	}
+
+.ss-container .comm-prefs {
+	font-size: 12px;
+
+	li {
+		list-style: none;
+		border-top: 1px solid #ccc;
+		position: relative;
+		display: table;
+		width: 370px;
+		min-height: 70px;
+
+		.currentCommPref, .currentCommPrefValue {
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		input.input3digit {
+			width: 35px;
+		}
+
+		input.input4digit {
+			width: 50px;
+		}
+
+		.associateMessage {
+			position: absolute;
+			bottom: 5px;
+			left: 0;
+			font-size: 10px;
+			font-weight: bold;
+
+		}
+	}
+
+	li:first-child {
+		border: none;
+	}
+
+	.currentCommPref {
+		width: 185px;
+	}
+
+	.currentCommPrefValue {
+		width: 180px;
+		word-break: break-all;
+	}
+
+	#currentCommMail {
+
+		width: 165px;
+	}
+
+	#editAddress {
+		margin-top: 12px;
+	}
+}
+
+
+.ss-container .communication-address-container {
+	.edit-address > div {
+		display: inline-block;
+		margin-bottom: 10px;
+
+		label {
+			margin-bottom: 4px;
+		}
+	}
+	.first-name {
+		width: 128px;
+		margin-right: 10px;
+	}
+	.last-name {
+		width: 162px;
+	}
+	.street-address {
+		width: 200px;
+	}
+	.apt {
+	  width: 88px;
+	  margin-left: 12px;
+	}
+	.city {
+		width: 128px;
+		margin-right: 10px;
+	}
+	.state {
+		width: 60px;
+		margin-right: 10px;
+
+		select {
+			padding: 2px;
+		}
+	}
+	.zip-code{
+		width: 88px;
+	}
+	.ss-back{
+		margin-left: 6px;
+	}
+}
+
+.ss-legalTerms-container {
+
+	font-size: 12px;
+	font-color: #ccc;
+
+	.ss-coupon-image {
+		float: left;
+		width: 80px;
+	}
+
+	.ss-coupon-description {
+		float: right;
+		width: 145px;
+	}
+
+	.ss-coupon-terms {
+		clear: both;
+		border-top: 1px #ccc solid;
+		margin-top: 10px;
+		padding-top: 10px;
+	}
+
+	p {
+		margin-bottom: 10px;
+	}
+
+}

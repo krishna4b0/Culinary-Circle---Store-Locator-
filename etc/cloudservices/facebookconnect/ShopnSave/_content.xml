@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cloudservicename="facebookconnect"
+        cq:lastModified="{Date}2015-01-08T19:19:34.241-06:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2015-04-22T09:17:12.532-05:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/libs/social/connect/templates/facebookconnect"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="ShopnSave facebook app"
+        jcr:uuid="05fdd5b5-caa4-41be-9822-785caf47b947"
+        sling:resourceType="social/connect/components/facebookconnectpage"
+        oauth.config.id="ea26b150d0e74cc5672ae718e62cb801"
+        thumbnailPath="/libs/social/connect/templates/facebookconnect/thumbnail.png"
+        urlParams="[]">
+        <com.adobe.granite.auth.oauth.provider-ShopnSave.config/>
+    </jcr:content>
+    <rep:policy/>
+</jcr:root>

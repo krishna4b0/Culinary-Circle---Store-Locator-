@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Forgot Password"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <removeCard
+            jcr:primaryType="cq:Widget"
+            title="Healthy Eaters Tour Form"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <findStorePath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The page path for store search."
+                    fieldLabel="Find A Store Path"
+                    name="./findStorePath"
+                    xtype="pathfield"/>
+            </items>
+        </removeCard>
+    </items>
+</jcr:root>

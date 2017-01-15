@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="This template will be used to render pages for individual store locations.  It is based on the 2 column template, but has special properties and behaviors, warranting it's own template. The page title will be rendered dynamically based on the recipe selected."
+    jcr:primaryType="cq:Template"
+    jcr:title="SVU Banner Site Store Location Template"
+    allowedPaths="[/content/svubanners/hornbachers(/.*)?,/content/svubanners/shoppers(/.*)?]"
+    ranking="{Long}50">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="svubanners/components/templates/storeLocationPage"/>
+</jcr:root>

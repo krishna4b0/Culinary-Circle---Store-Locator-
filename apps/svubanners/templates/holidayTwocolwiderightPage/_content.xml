@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="The holiday two column wide right page template is used for the holiday pages where the wide column is aligned right and it has a slider."
+    jcr:primaryType="cq:Template"
+    jcr:title="SVU Banner Site Holiday Two Column w/slider emplate"
+    allowedPaths="[/content/svubanners/hornbachers(/.*)?,/content/svubanners/shoppers(/.*)?]"
+    ranking="{Long}25">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="svubanners/components/templates/HolidayTwocolwiderightPage"/>
+</jcr:root>

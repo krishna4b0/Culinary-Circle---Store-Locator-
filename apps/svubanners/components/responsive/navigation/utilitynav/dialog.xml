@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Utility Navigation"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <basic
+            jcr:primaryType="cq:Widget"
+            title="Basic">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    name="./force"
+                    value="true"
+                    xtype="hidden"/>
+                <signupLabel
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Registration Label"
+                    name="./signupLabel"
+                    xtype="textfield"/>
+            </items>
+        </basic>
+    </items>
+</jcr:root>

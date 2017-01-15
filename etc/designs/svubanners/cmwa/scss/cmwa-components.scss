@@ -1,0 +1,178 @@
+    /** Rewards Header - Cub **/    
+.rewardsheader {
+    background: url("../images/bg-landing-header.png") no-repeat scroll 0 0 transparent;
+    display: block;
+    height: 410px;
+    width: 770px;
+}
+.rewardsheader .left p {
+    color: #FFFFFF;
+    font-size: 17px;
+    margin: 0 0 10px 15px;
+}
+.rewardsheader .left li {
+    background: url("../img/bg-li-white.png") no-repeat scroll 0 3px transparent;
+    color: #FFFFFF;
+    font-size: 12px;
+    margin-bottom: 7px;
+    margin-left: 25px;
+    padding-left: 13px;
+}
+.rewardsheader .left li:last-child {
+    margin-bottom: 0;
+}
+.rewardsheader .left ul {
+    margin-bottom: 0;
+}
+.rewardsheader .left {
+    margin-top: 170px;
+}
+.rewardsheader .left i {
+    color: #7FB800;
+    display: block;
+    font-size: 11px;
+    font-style: normal;
+    line-height: 13px;
+    margin-left: 35px;
+}
+.rewardsheader .right p:first-child {
+    color: #FFFFFF;
+    display: block;
+    font-size: 12px;
+    padding: 0;
+    top: 20px;
+    width: 140px;
+}
+.rewardsheader .right p {
+    color: #FFFFFF;
+    display: block;
+    font-size: 11px;
+    margin-left: 165px;
+    position: relative;
+    top: 40px;
+    width: 170px;
+}
+.rewardsheader a {
+    color: #FCB03F;
+}
+.rewardsheader .left a {
+    font-size: 16px;
+    font-weight: bold;
+}
+.rewardsheader .right a {
+    font-size: 11px;
+}
+.rewardsheader .top .sign-up-now {
+    background: url("../images/btn-fuel-rewards-sign-up-now.png") repeat scroll 0 0 transparent;
+    display: block;
+    height: 50px;
+    margin: 104px 0 0 488px;
+    position: absolute;
+    width: 190px;
+}
+
+#preferred-card-selection .locate-card-number.rewards {
+    display: block;
+    width: 120px;
+    height: 78px;
+    background: url("../img/img-preferred-rewards-card-lg.png") transparent;
+    margin-bottom: 15px;
+}
+
+#nav-account.loggedin li.personal {
+    left: -400px;
+}
+
+#nav-primary #nav-pri-search:hover {
+    background: #fff !important;
+} 
+#nav-primary li ul a {
+    background: none repeat scroll 0 0 #EF3E42 !important;
+    color: #FFFFFF;
+    padding: 12px 20px;
+}
+
+#nav-primary #nav-pri-search:hover {
+    background: none !important;
+}
+
+p.title, p.title + p, .contextualnavigation a, .hero h1 span, div.hero-body h2, div.hero-body h2 + p, .parsys_column .ctablurb h2, .ctablurb div p, .ctablurb div p a {
+    font-family: 'Myriad W01 Regular', Arial, Helvetica, sans-serif;
+
+}
+
+.ctablurb div p a {
+    color:#EF3E42 !important;
+    }
+.title h2 {
+    font: 24px 'Myriad W01 Regular', Arial, Helvetica, sans-serif;
+    color: #666;
+}
+
+/*New nav*/
+
+#nav-primary * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#nav-primary > li > a {
+    height: 38px !important;
+}
+
+#nav-primary {
+    top: 4px;
+}
+
+#nav-primary li ul {
+    border: 1px solid #ef3e42;
+}
+
+#nav-primary ul a {
+    width: 195px !important;
+}
+
+#nav-primary > li:hover, #nav-primary > li > a:hover, #nav-primary > li:hover > a {
+    border: none !important;
+}
+
+#nav-primary li#nav-pri-departments a {
+    padding-top: 12px !important;
+}
+
+p.title {
+    color: $text-color1;
+}
+
+h1 {
+    color: #EF3E42;
+}
+
+div.adslisting .button {
+    background: url('../images/bg-button.gif') 100% 50% no-repeat;
+}
+
+#logo {
+    width: 440px;
+    height: 90px;
+    top: 0;
+    left: -4px;
+    margin-top: -30px;
+    a {
+        width: 440px;
+    }
+}
+
+#cust-preferences-top {
+    visibility: hidden;
+}
+
+#customer_preferences #frm-email {
+    height: 80px;
+    visibility: hidden;
+}
+
+#nav-pri-search #frm-search {
+    visibility: hidden;
+}

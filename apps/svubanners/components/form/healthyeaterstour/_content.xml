@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="A form to book a tour for healthy eaters"
+    jcr:primaryType="cq:Component"
+    jcr:title="Healthy Eaters Tour Form"
+    sling:resourceSuperType="foundation/components/parbase"
+    allowedParents="[*/parsys]"
+    componentGroup="SVU Banners - General"/>

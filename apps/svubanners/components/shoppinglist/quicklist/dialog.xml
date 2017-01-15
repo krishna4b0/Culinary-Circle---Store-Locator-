@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Quick List Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <quickListConfiguration
+            jcr:primaryType="cq:Widget"
+            title="Quick List Configuration"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="The Title to display at the top of the list"
+                    fieldLabel="List Title"
+                    name="./jcr:title"
+                    xtype="textfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The description to display at the top of the list"
+                    fieldLabel="List Description"
+                    name="./description"
+                    xtype="textfield"/>
+                <generic
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Determine if the layout/design should adapt to the page"
+                    fieldLabel="Generic Layout"
+                    name="./generic"
+                    type="checkbox"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(field,record,path){if(field.getValue()=='true'){this.findParentByType('tabpanel').hideTabStripItem(1);this.findParentByType('tabpanel').unhideTabStripItem(2);}else{}}"
+                        selectionchanged="function(box,value,isChecked){if(isChecked){box.findParentByType('tabpanel').hideTabStripItem(1);box.findParentByType('tabpanel').unhideTabStripItem(2);}else{box.findParentByType('tabpanel').hideTabStripItem(2);box.findParentByType('tabpanel').unhideTabStripItem(1);}}"/>
+                </generic>
+                <width
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}true"
+                    fieldDescription="The width of the list container (number or percentage)"
+                    fieldLabel="List Width"
+                    name="./jcr:width"
+                    xtype="textfield"/>
+                <shoppingListLink
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path to the page to view shopping list."
+                    fieldLabel="Shopping List Link"
+                    name="./shoppingListLink"
+                    xtype="pathfield"/>
+                <shoppingListLinkLabel
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Label to display for the link to view the shopping list"
+                    fieldLabel="Shopping List Link Label"
+                    name="./shoppingListLinkLabel"
+                    xtype="textfield"/>
+                <imageQuicklist
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Determine if the quicklist includes images."
+                    fieldLabel="Image Quicklist"
+                    name="./imageQuicklist"
+                    type="checkbox"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(field,record,path){if(field.getValue()=='true'){this.findParentByType('tabpanel').hideTabStripItem(1);this.findParentByType('tabpanel').unhideTabStripItem(2);}else{}}"
+                        selectionchanged="function(box,value,isChecked){if(isChecked){box.findParentByType('tabpanel').hideTabStripItem(1);box.findParentByType('tabpanel').unhideTabStripItem(2);}else{box.findParentByType('tabpanel').hideTabStripItem(2);box.findParentByType('tabpanel').unhideTabStripItem(1);}}"/>
+                </imageQuicklist>
+            </items>
+        </quickListConfiguration>
+        <quickListTextItems
+            jcr:primaryType="cq:Widget"
+            title="Quick List Items"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The items to display in the list"
+                    fieldLabel="List Items"
+                    name="./listItems"
+                    xtype="multifield"/>
+            </items>
+        </quickListTextItems>
+        <slides
+            jcr:primaryType="cq:Widget"
+            ddGroups="[media]"
+            fileReferencePrefix="./items$"
+            title="Quick List Items"
+            xtype="slideshow">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(2); }"/>
+        </slides>
+    </items>
+</jcr:root>

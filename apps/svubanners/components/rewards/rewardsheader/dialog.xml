@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Title"
+    title="Rewards Header"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <text
+            jcr:primaryType="cq:Widget"
+            title="Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <signupPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path for the signup action button"
+                    fieldLabel="Signup path"
+                    name="./signupPath"
+                    xtype="pathfield"/>
+                <leftRichText
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Text to be displayed on the left side of the header."
+                    fieldLabel="Left text"
+                    name="./leftRichText"
+                    xtype="richtext"/>
+                <rigthRichText
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Text to be displayed on the right side of the header."
+                    fieldLabel="Right text"
+                    name="./rightRichText"
+                    xtype="richtext"/>
+            </items>
+        </text>
+    </items>
+</jcr:root>

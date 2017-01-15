@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Circular Listing Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Cirular Listing"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <preview
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Determines if this list should be for active circulars for sneak preview circulars."
+                    fieldLabel="Show Sneak-Preview Circulars"
+                    inputValue="true"
+                    name="./preview"
+                    type="checkbox"
+                    xtype="selection"/>
+                <viewCircularPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The paht to the page for viewing circulars.  circulars will link to this page and include circular id as a selector value.  sneak peek and store id will optionally passed as query parameters."
+                    fieldLabel="View Circular Page Path"
+                    name="./viewCircularPath"
+                    xtype="pathfield"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

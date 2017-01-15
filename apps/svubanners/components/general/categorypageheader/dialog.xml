@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Category Page Header"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Category Page Header"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <imagewidth
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="half-width-image"
+                    fieldLabel="The Image Width"
+                    name="./imageWidth"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <button
+                            jcr:primaryType="nt:unstructured"
+                            text="50%"
+                            value="half-width-image"/>
+                        <link
+                            jcr:primaryType="nt:unstructured"
+                            text="25%"
+                            value="quarter-width-image"/>
+                    </options>
+                </imagewidth>
+            </items>
+        </title>
+    </items>
+</jcr:root>

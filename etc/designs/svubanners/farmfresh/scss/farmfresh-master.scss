@@ -1,0 +1,410 @@
+@font-face {
+  font-family: 'jenna_sue_regular';
+  src: url('/etc/designs/svubanners/master/css/fonts/jenna-sue/JennaSue-webfont.eot');
+  src: url('/etc/designs/svubanners/master/css/fonts/jenna-sue/JennaSue-webfont.eot?#iefix') format('embedded-opentype'),
+     url('/etc/designs/svubanners/master/css/fonts/jenna-sue/JennaSue-webfont.woff') format('woff'),
+     url('/etc/designs/svubanners/master/css/fonts/jenna-sue/JennaSue-webfont.ttf') format('truetype'),
+     url('/etc/designs/svubanners/master/css/fonts/jenna-sue/JennaSue-webfont.svg#jenna_sueregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+    background: url("../../master/img/bg-layout-home-new-tile.png") repeat scroll 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, a, button.link {
+    color: #00704a;
+}
+
+h1,
+#content-primary h1,
+.tabs h1 a,
+.title h1 {
+    background-color: #fff !important;
+    color: #666 !important;
+    font-family: jenna_sue_regular, Arial, Helvetica, sans-serif !important;
+    font-size: 36px;
+}
+
+#nav-account.loggedin li.personal {
+  display: none;
+}
+
+  .tabs h1 a {
+      font-size: 24px;
+  }
+h2,
+#content-primary h2,
+.title h2 {
+    font-size: 26px;
+}
+h3,
+#content-primary h3,
+.title h3 {
+    font-size: 16px;
+}
+h4,
+#content-primary h4,
+.title h4 {
+    font-size: 14px;
+}
+h5,
+#content-primary h5,
+.title h5 {
+    font-weight: bold;
+}
+.title h1,
+.title h2,
+.title h3,
+.title h4,
+.title h5 {
+    color: #666 !important;
+}
+#layout {
+    background: url("../../master/img/bg-layout-home-new-tile.png") repeat-y scroll 0 0 #FFFFFF;
+}
+#header {
+    background: #fff;
+    border-bottom: 2px solid #00704a;
+}
+#wrapper-content {
+    background: none repeat scroll 0 0 #FFFFFF;
+}
+#content {
+    background: #fff;
+}
+#customer_preferences {
+    background-image: url("../../master/img/bg-header-customer-prefs-new.png");
+    height: 126px;
+}
+  #customer_preferences {
+    height: 150px\9; /* IE8 and below */
+  }
+#logo {
+    background-image: url("../img/img-farm-fresh-logo-320x80.png");
+    width: 320px;
+    height: 80px;
+    display: block;
+    margin-left: 10px;
+    position: relative;
+    text-indent: -9999px;
+    top: -110px;
+}
+  #logo a {
+      width: 393px;
+      height: 73px;
+      margin-left: 0px;
+      display: block;
+  }
+#frm-email input,
+#frm-search input,
+#frm-findstore input {
+    color: #666;
+    font-size: 14px;
+}
+#frm-email {
+    left: 295px;
+}
+#frm-email input {
+    border-right: 1px solid #ccc;
+    padding: 5px 10px;
+    width: 165px;
+}
+#frm-email button {
+    background: url("../../master/img/icn-grey-arrow-round.png") no-repeat scroll 0 0;
+    width: 21px;
+    margin: 3px 5px;
+}
+#frm-search {
+    margin: 0 15px 0 !important;
+    width: 175px;
+}
+  #frm-search input {
+      border-right: 1px solid #ccc;
+      padding: 5px 10px;
+      width: 123px;
+  }
+#frm-search button {
+    background: url("../../master/img/icn-green-arrow-round.png") no-repeat scroll 0 0;
+    width: 21px;
+    margin: 3px 5px;
+}
+#frm-findstore input {
+    display: none;
+}
+
+#nav-secondary li a:hover {
+    background: url("../../master/img/bg-button-savings-hvr.gif") repeat-x scroll 0 50% #0fac07 !important;
+    border: 1px solid #dde0e3 !important;
+    color: #fff !important;
+}
+#nav-secondary li.subopen a {
+    background: #0fac07 !important;
+    border: 1px solid #0fac07 !important;
+    color: #fff !important;
+}
+#nav-account {
+    top: 15px;
+}
+  #nav-account a {
+      color: #00704a;
+      font-size: 12px;
+      text-transform: uppercase;
+  }
+    #nav-account.loggedout {
+        left: 375px;
+    }
+    #nav-account.loggedin {
+        left: 330px;
+    }
+    #nav-account #nav-acct-customerservice {
+        display: none;
+    }
+  #nav-account li ul#login-options li#login-options-list {
+      margin-left: 6px;
+      width: auto;
+  }
+#nav-primary li#nav-pri-shopping-list.hover,
+#nav-primary li#nav-pri-savings.hover,
+#nav-primary li#nav-pri-recipes.hover,
+#nav-primary li#nav-pri-healthy-eating.hover,
+#nav-primary li#nav-pri-departments.hover,
+#nav-primary li#nav-pri-about.hover,
+#nav-primary li#nav-pri-pharmacy.hover {
+    background: #fff !important;
+}
+#nav-primary li#nav-pri-shopping-list a,
+#nav-primary li#nav-pri-savings a,
+#nav-primary li#nav-pri-recipes a,
+#nav-primary li#nav-pri-healthy-eating a,
+#nav-primary li#nav-pri-departments a,
+#nav-primary li#nav-pri-about a,
+#nav-primary li#nav-pri-pharmacy a {
+    background: #fff !important;
+    color: #00704a;
+}
+#nav-primary li#nav-pri-shopping-list a:hover,
+#nav-primary li#nav-pri-shopping-list a.active,
+#nav-primary li#nav-pri-savings a:hover,
+#nav-primary li#nav-pri-savings a.active,
+#nav-primary li#nav-pri-recipes a:hover,
+#nav-primary li#nav-pri-recipes a.active,
+#nav-primary li#nav-pri-healthy-eating a:hover,
+#nav-primary li#nav-pri-healthy-eating a.active,
+#nav-primary li#nav-pri-departments a:hover,
+#nav-primary li#nav-pri-departments a.active,
+#nav-primary li#nav-pri-about a:hover,
+#nav-primary li#nav-pri-about a.active,
+#nav-primary li#nav-pri-pharmacy a:hover,
+#nav-primary li#nav-pri-pharmacy a.active {
+    background: #00704a !important;
+    color: #fff !important;
+}
+#nav-primary li#nav-pri-shopping-list ul a,
+#nav-primary li#nav-pri-savings ul a,
+#nav-primary li#nav-pri-recipes ul a,
+#nav-primary li#nav-pri-healthy-eating ul a,
+#nav-primary li#nav-pri-departments ul a,
+#nav-primary li#nav-pri-about ul a,
+#nav-primary li#nav-pri-pharmacy ul a {
+    background: #fff !important;
+    color: #00704a;
+}
+#nav-primary #nav-pri-shopping-list.hover > a,
+#nav-primary #nav-pri-savings.hover > a,
+#nav-primary #nav-pri-recipes.hover > a,
+#nav-primary #nav-pri-healthy-eating.hover > a,
+#nav-primary #nav-pri-departments.hover > a,
+#nav-primary #nav-pri-about.hover > a,
+#nav-primary #nav-pri-pharmacy.hover > a {
+    background: #fff !important;
+    border-top: 1px solid #00704a;
+    border-left: 1px solid #00704a;
+    border-right: 1px solid #00704a;
+    color: #00704a;
+}
+#nav-primary #nav-pri-shopping-list ul li.hover a,
+#nav-primary #nav-pri-shopping-list ul li a:hover,
+#nav-primary #nav-pri-shopping-list ul li a:active,
+#nav-primary #nav-pri-savings ul li.hover a,
+#nav-primary #nav-pri-savings ul li a:hover,
+#nav-primary #nav-pri-savings ul li a:active,
+#nav-primary #nav-pri-recipes ul li.hover a,
+#nav-primary #nav-pri-recipes ul li a:hover,
+#nav-primary #nav-pri-recipes ul li a:active,
+#nav-primary #nav-pri-healthy-eating ul li.hover a,
+#nav-primary #nav-pri-healthy-eating ul li a:hover,
+#nav-primary #nav-pri-healthy-eating ul li a:active,
+#nav-primary #nav-pri-departments ul li.hover a,
+#nav-primary #nav-pri-departments ul li a:hover,
+#nav-primary #nav-pri-departments ul li a:active,
+#nav-primary #nav-pri-about ul li.hover a,
+#nav-primary #nav-pri-about ul li a:hover,
+#nav-primary #nav-pri-about ul li a:active,
+#nav-primary #nav-pri-pharmacy ul li.hover a,
+#nav-primary #nav-pri-pharmacy ul li a:hover,
+#nav-primary #nav-pri-pharmacy ul li a:active {
+    background: #00704a !important;
+    background: #fff\9 !important; /* IE8 and below */
+    color: #00704a\9 !important; /* IE8 and below */
+}
+#nav-primary {
+    border-top: none;
+    padding-top: 5px;
+}
+  #nav-primary ul {
+      border-image: none;
+      border-style: none;
+      border-width: 0;
+      box-shadow: none;
+      top: 31px;
+  }
+  #nav-primary ul a {
+      border-top: none;
+      text-transform: lowercase;
+      width: 215px !important;
+  }
+  #nav-primary li {
+      border-left: none;
+      height: 27px;
+      width: auto !important;
+  }
+      #nav-primary li.hover {
+          padding-bottom: 0;
+      }
+  #nav-primary li a {
+      border-top: 1px solid #fff;
+      border-left: 1px solid #fff;
+      border-right: 1px solid #fff;
+      color: #00704a;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      font-weight: normal;
+      line-height: 16px;
+      padding: 6px 10px 8px 10px !important;
+  }
+    #nav-primary ul li a:hover,
+    #nav-primary ul li a:active {
+        border-bottom: none;
+    }
+    #nav-primary li ul {
+        border: 1px solid #00704a;
+    }
+  #nav-primary ul li a {
+      border: none;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+      font-weight: normal;
+      padding: 5px 5px 8px 10px !important;
+  }
+    #nav-primary ul li a:hover {
+        border: none;
+    }
+  #nav-primary li.hover ul li a:hover,
+  #nav-primary li.hover ul li a.active {
+      color: #fff !important;
+  }
+#nav-secondary li.subopen  ul li a {
+    background: none repeat scroll 0 0 #fff !important;
+    border: 1px solid #fff !important;
+    color: #0FAC07 !important;
+}
+#footer {
+    padding-top: 20px;
+    width: 960px;
+}
+  #footer h4 {
+      color: #666 !important;
+      padding-bottom: 10px;
+  }
+  #footer #top-row {
+      background: url("../../master/img/img-tear-curl-915x180.png") no-repeat scroll 0 0 #FFFFFF;
+      color: #666;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 20px;
+      padding: 200px 15px 15px;
+  }
+  #footer .middle_row {
+      background: none repeat scroll 0 0 #FFFFFF;
+      padding: 0 0 30px;
+      position: relative;
+  }
+  #footer .column-1,
+  #footer .column-2 {
+      display: inline-block;
+      padding-left: 40px;
+  }
+  #footer .column-1 {
+      padding-left: 50px;
+  }
+  #footer .column-2 {
+      position: absolute;
+      top: 0;
+      left: 500px;
+      padding-top: 11px;
+  }
+    #footer .column-2 br {
+        display: none;
+    }
+  #footer #bottom_row li {
+      padding-left: 5px;
+      margin-left: 3px;
+      padding-right: 0;
+  }
+    #footer #bottom_row li a {
+        color: #666 !important;
+        font-size: 12px;
+        text-transform: lowercase;
+    }
+  #footer #bottom_row p {
+      color: #666 !important;
+      font-size: 12px;
+  }
+#noName #store-name {
+    font-size: 12px;
+}
+#wrapper-content .button,
+#wrapper-content .button:visited {
+    background: url("../../master/images/bg-button-savings.gif") no-repeat scroll 100% 50% #0fac07 !important;
+}
+  #wrapper-content .button:hover {
+      background: url("../../master/images/bg-button-savings-hvr.gif") no-repeat scroll 100% 50% #0fac07 !important;
+  }
+#wrapper-content .ctabutton .button,
+#wrapper-content .ctabutton .button:visited,
+#wrapper-content .ctabutton .button:active,
+#wrapper-content .ctabutton .button:hover {
+    background: url("../../master/img/icn-grey-arrow-round-sm.png") no-repeat scroll 100% 50% #fff !important;
+    color: #666666 !important;
+    font-size: 16px;
+    padding: 3px 25px 4px 0;
+    text-transform: lowercase;
+}
+#wrapper-content div.highlight .ctabutton .button,
+#wrapper-content div.highlight .ctabutton .button:visited,
+#wrapper-content div.highlight .ctabutton .button:active,
+#wrapper-content div.highlight .ctabutton .button:hover {
+    border: 1px solid #CCCCCC;
+}
+#holiday-hours strong {
+    font-weight: normal;
+}
+
+div.carousel{
+    margin-top: 0px;
+}
+
+#twitter-img {
+float: none;
+margin: 0;
+}
+
+.ltie9.sec-savings div.sort #frm-coupon-search-options {
+  background: none;
+}

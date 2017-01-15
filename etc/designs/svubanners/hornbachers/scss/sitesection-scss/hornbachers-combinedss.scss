@@ -1,0 +1,518 @@
+@import "../hornbachers-combined.scss";
+
+.sec-404 {
+
+}
+
+.sec-about {
+
+}
+
+.sec-account {
+
+#content-primary .create-account-progress-bar-new ul li.account-current {
+    background-image: url("../../master/img/step_one_active.png");
+}
+#content-primary .create-account-progress-bar-new ul li.store-current {
+    background-image: url("../../master/img/step_two_active.png");
+}
+#content-primary .create-account-progress-bar-new ul li.pref-current {
+    background-image: url("../../master/img/step_three_active.png");
+}
+#content-primary .create-account-progress-bar-new ul li span.current {
+    color: $text-color1;
+}
+}
+
+.sec-beer {
+
+}
+
+.sec-dailydeals {
+
+}
+
+.sec-departments {
+
+}
+
+.sec-healthy-eating {
+
+}
+
+.sec-healthy-eating-landing {
+
+}
+
+.sec- {
+
+#homepanel01 ul {
+    margin-left: 0;
+}
+#homepanel01 ul li a, #homepanel01 ul li button {
+    height: 77px;
+    margin-bottom: 10px;
+    width: 279px;
+}
+#homepanel01 ul li.first a {
+    background: url("../img/sprite-secondary-nav.png") no-repeat scroll 0 0;
+}
+  #homepanel01 ul li.first a:hover {
+      background-position: 0 -77px !important;
+  }
+#homepanel01 ul li.second a {
+    background: url("../img/sprite-secondary-nav.png") no-repeat scroll 0 -160px;
+}
+  #homepanel01 ul li.second a:hover {
+      background-position: 0 -237px !important;
+  }
+#homepanel01 ul li.third a {
+    background: url("../img/sprite-secondary-nav.png") no-repeat scroll 0 -320px;
+}
+  #homepanel01 ul li.third a:hover {
+      background-position: 0 -397px !important;
+  }
+#homepanel01 ul li.fourth a {
+    background: url("../img/sprite-secondary-nav.png") repeat scroll 0 -480px;
+}
+  #homepanel01 ul li a:hover, #homepanel01 ul li button:hover {
+      background-position: 0 -557px !important;
+  }
+.homepanel h3 {
+    color: #666 !important;
+    font-size: 16px;
+    line-height: inherit;
+    margin-bottom: 9px;
+}
+#frm-findstore input {
+    margin-left: 100px;
+    margin-top: 41px;
+    width: 128px;
+}
+
+div.featureImage{
+    padding-top: 0;
+}
+
+#homepanel01 .featurenav {
+  float: right;
+  margin-right: 20px;
+}
+
+#homepanel01 .featureImage {
+  padding-right: 0;
+}
+}
+
+.sec-organic {
+#content-primary p, #content-primary li {
+	font-family: $font-stack1;
+}
+}
+
+.sec-pharmacy {
+
+}
+
+.sec-recipes {
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 16px;
+}
+
+h4 {
+    font-size: 14px;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+div.recipesearchform {
+    background-color: #ebebeb !important;
+    color: $text-color2;
+    font-family: $font-stack1;
+    text-transform: lowercase;
+    width: 575px;
+}
+
+div.recipesearchform #frm-recipe-search-search-n-filter {
+      position: relative;
+}
+
+div.recipesearchform #frm-recipe-search-search-n-filter h2 {
+	color: $text-color2;
+	font-family: $font-stack1;
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+
+div.recipesearchform #frm-recipe-search-search-n-filter #inp-recipe-search {
+	border-right: 1px solid #ccc;
+	font-family: $font-stack1;
+	font-weight: normal;
+	width: 260px;
+	margin: 0 20px 0 40px;
+}
+
+div.recipesearchform #frm-recipe-search-search-n-filter .button, div.recipesearchform #frm-recipe-search-search-n-filter .button:hover {
+	background: url("../../master/img/icn-grey-arrow-round.png") no-repeat scroll 0 0 !important;
+	color: #666;
+	float: none;
+	height: 21px;
+	margin: 10px 5px;
+	padding: 0;
+	text-indent: -999px;
+	width: 21px;
+}
+
+div.recipesearchform #frm-recipe-search-search-n-filter p.example {
+	color: $text-color2;
+	display: inline;
+	font-size: 12px;
+	left: 25px;
+	margin: 4px 0 12px;
+	position: absolute;
+	top: 90px;
+}
+
+div.recipesearchform #frm-recipe-search-options {
+	border-left: none;
+	color: $text-color2;
+	font-family: $font-stack1;
+	height: auto;
+	padding: 20px 15px 20px 0;
+	width: 210px;
+}
+
+div.recipesearchform #frm-recipe-search-options h4 {
+	font-size: 16px;
+	font-weight: bold;
+	margin-bottom: 2px;
+}
+
+div.recipesearchform #frm-recipe-search-options select {
+	width: 205px;
+}
+
+div.recipesearchform #frm-recipe-search-options .filter-col label {
+	color: $text-color2;
+	font-weight: normal;
+	line-height: 28px;
+}
+
+div.featuredrecipe #featured-recipe-container h4 {
+	color: $text-color2;
+	font-family: $font-stack1;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+div.recipeteaser h3 {
+	color: $text-color2;
+	font-family: $font-stack2;
+	font-size: 16px;
+	line-height: 1.35em;
+}
+
+div.recipeteaser a {
+	color: $text-color2;
+}
+
+div.recipesearchform #frm-recipe-search-search-n-filter label {
+	font-family: $font-stack1;
+	color: $text-color1;
+}
+
+div.recipe-detail-col1 h1 span, div.recipe-detail-col2 h2 {
+	color: $text-color1;
+	font-size: 17px;
+}
+
+div.recipe-detail-col1 h2 {
+    color: #ef7300;
+    font-size: 17px;
+}
+
+#content-primary h3 {
+	color: #ef7300;
+}
+}
+
+.sec-rewards {
+
+}
+
+.sec-rewardscards {
+
+}
+
+.sec-savings {
+
+.hairline {
+	clear: both;
+}
+
+.half-width-image .parsys .image {
+	height: 110px;
+}
+
+.coupon-options a {
+	color: #666 !important;
+}
+
+#content-primary .viewad .pagination {
+	background: url("../images/bg-coupon-bar.png") repeat-x;
+	padding: 7px 4px;
+}
+
+#content-primary .pagination ul {
+	margin-right: 30px;
+}
+
+#content-primary .viewad .pagination ul {
+	padding-right: 45px;
+	float: right;
+}
+
+.circularsearchform, .couponsearchform {
+	padding-bottom: 0;
+}
+
+.couponsearchform {
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.couponsearchform .tabbed h1 span, .circularsearchform .tabbed h1 span {
+	line-height: 23px;
+	padding: 8px 38px 8px 21px;
+}
+
+#content-primary .pagination li.next {
+	width: 23px;
+	display: inline-block;
+}
+
+#my-coupon-search-n-filter-wrapper {
+	background-color: #ebebeb;
+	color: $text-color2;
+	font-family: $font-stack1;
+	text-transform: lowercase;
+	width: 735px;
+}
+
+#my-coupon-search-n-filter-wrapper #frm-coupon-search-search-n-filter {
+	padding: 15px 20px;
+}
+
+#my-coupon-search-n-filter-wrapper #frm-coupon-search-search-n-filter h2 {
+	color: $text-color2;
+	font-family: $font-stack1;
+	font-size: 24px;
+	margin-bottom: 5px;
+}
+
+#my-coupon-search-n-filter-wrapper #frm-coupon-search-search-n-filter #inp-coupon-search {
+	border-right: 1px solid #ccc;
+	font-family: $font-stack1;
+	font-weight: normal;
+	width: 255px;
+	margin-left: 20px;
+}
+
+#my-coupon-search-n-filter-wrapper #frm-coupon-search-search-n-filter label {
+	color: #ef3e42;
+	font-size: 19px;
+	margin: 0 40px 0 20px;
+}
+
+#my-coupon-search-n-filter-wrapper #frm-coupon-search-search-n-filter .button, #my-coupon-search-n-filter-wrapper #frm-coupon-search-search-n-filter .button:hover {
+	background: url('../images/red-arrow20x20.png') !important;
+	color: #666;
+	float: none;
+	height: 21px;
+	margin: 10px 5px;
+	padding: 0;
+	text-indent: -999px;
+	width: 21px;
+	text-transform: capitalize; /* IE7/8 fix */
+	line-height: 0\9; /* IE7/8 fix */
+	font-size: 0px\9; /* IE7/8 fix */
+}
+
+#frm-coupon-search-options .button {
+	background-image: url('../images/red-arrow20x20.png') !important;
+}
+
+#my-coupon-search-n-filter-wrapper #frm-coupon-search-options {
+	border-left: none;
+	height: auto;
+}
+
+div.sort #frm-coupon-search-options form fieldset .filter-col {
+	margin-left: 30px;
+}
+
+#frm-coupon-search-options .filter-col:first-child {
+	display: none;
+}
+
+#frm-coupon-search-options .filter-col label {
+	color: $text-color2;
+	font-weight: normal;
+	line-height: 28px;
+}
+
+p.example {
+	display: none;
+}
+
+.couponsearchresults .grid .coupon-outer {
+	background: none;
+	border: 1px solid #999;
+	margin: 0 30px 20px 0;
+	position: relative;
+	width: 198px;
+}
+
+.couponsearchresults .grid .coupon-outer:last-child {
+	margin-right: 0;
+}
+
+.couponsearchresults .grid .coupon-inner {
+	width: 168px;
+}
+
+.couponsearchresults .grid .coupon-inner .itemlinks {
+	color: #666 !important;
+	margin-left: 0;
+	width: 168px;
+}
+
+#content-primary .couponsearchresults .grid .itemlinks h3 {
+	color: #666 !important;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.couponsearchresults .grid .coupon-inner .itemlinks p {
+	color: #666 !important;
+}
+
+.couponsearchresults .grid .coupon-inner .itemlinks .expiration {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.couponsearchresults .grid .coupon-options {
+	float: left;
+	margin-bottom: 10px;
+}
+
+.couponsearchresults .grid .add-to-list-container {
+	margin: 0 0 0 22px;
+}
+
+.coupon-options span {
+	margin-top: 7px;
+}
+
+div.adslisting .tile1, div.adslisting .tile {
+	border-left: medium none;
+	border-right: medium none;
+	width: 240px;
+}
+
+.adslisting h2 {
+	color: #666 !important;
+	font-family: 'ClarendonBTW01-Condense', 'Times New Roman', Times, serif !important;
+	font-size: 36px !important;
+}
+
+.adslisting h2 strong, .adslisting h2 b {
+	font-weight: normal;
+}
+
+#content-primary .adslisting h3 {
+	color: #666666 !important;
+	font-size: 14px;
+}
+
+#content-primary .adslisting h3.sneak-peek {
+	font-family: $font-stack3 !important;
+	font-size: 22px !important;
+	font-weight: normal;
+}
+
+.empty-list-content .empty-list button {
+	margin-right: 2px;
+}
+
+.special-inner div.itemlinks h2 a {
+	font-size: 24px;
+	font-weight : normal !important;
+}
+
+.searchLabel {
+	color: #666;
+}
+
+#content-primary h2 {
+	font-family: $font-stack2 !important;
+	font-size: 18px !important;
+	color: #ef3e42 !important;
+}
+
+#content-primary h1 {
+	font-size: 24px;
+	font-family: $font-stack2 !important;
+	color: $text-color1 !important;
+}
+
+div.sort #frm-coupon-search-options {
+	top: -134px;
+}
+
+/* breakfix 7/28/2014 */
+#content-primary .pagination {
+	background: url('../../master/images/bg-filter-results-info.jpg');
+	background-repeat: no-repeat;
+}
+
+.coupon-options span {
+	font-size: 10px;
+}
+}
+
+.sec-shopping-list {
+
+.hero-body h2 {
+	padding-top: 0;
+}
+}
+
+.sec-stores {
+
+}
+
+.sec-summer {
+	
+}
+
+.sec-savings .coupon-options a.legalTerms {
+  margin-left: 120px;
+  margin-top: 6px;
+  width: inherit;
+  height: inherit;
+  float: right;
+  padding: 0;
+}

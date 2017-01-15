@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="View Rewards Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <viewRewards
+            jcr:primaryType="cq:Widget"
+            title="View Rewards"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <hideGasRewards
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="If selected, Gas Rewards tab is not displayed."
+                    fieldLabel="Hide Gas Rewards"
+                    name="./hideGasRewards"
+                    type="checkbox"
+                    xtype="selection"/>
+                <hideRewards
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="If selected, Rewards tab is not displayed."
+                    fieldLabel="Hide Rewards"
+                    name="./hideRewards"
+                    type="checkbox"
+                    xtype="selection"/>
+                <gasAwardText
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="Spend $50 (5,000 points) = $0.05/gallon Reward"
+                    fieldLabel="Gas Award Text"
+                    name="./gasAwardText"
+                    xtype="textfield"/>
+                <awardText
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="5,000 points = $5 Reward"
+                    fieldLabel="Award Text"
+                    name="./awardText"
+                    xtype="textfield"/>
+                <pointForAward
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Used to calculate next reward points."
+                    fieldLabel="Points Needed For Award"
+                    name="./pointForAward"
+                    xtype="numberfield"/>
+            </items>
+        </viewRewards>
+        <expiration
+            jcr:primaryType="cq:Widget"
+            title="Rewards Expiration"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <awardText
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Rewards Expiration"
+                    name="./expirationContent"
+                    xtype="richtext"/>
+            </items>
+        </expiration>
+        <gasProgram
+            jcr:primaryType="cq:Widget"
+            title="Gas Program Details"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <awardText
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Gas Program Details"
+                    name="./gasProgramDetails"
+                    xtype="richtext"/>
+            </items>
+        </gasProgram>
+    </items>
+</jcr:root>

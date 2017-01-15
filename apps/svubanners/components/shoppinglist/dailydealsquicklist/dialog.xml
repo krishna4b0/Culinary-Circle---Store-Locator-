@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Daily Deals Quick List Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <slides
+            jcr:primaryType="cq:Widget"
+            ddGroups="[media]"
+            fileReferencePrefix="./items$"
+            title="Quick List Products"
+            xtype="quicklistproduct"/>
+        <targeting
+            jcr:primaryType="cq:Widget"
+            title="Targeting"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <storegroups
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Select the store groups for which this component applies."
+                    fieldLabel="Store Groups"
+                    name="./storeGroups"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        options="$PATH.displayoptions.json"
+                        type="select"
+                        width="200"
+                        xtype="selection"/>
+                </storegroups>
+                <matchtype
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="any"
+                    fieldLabel="Match Type"
+                    name="./matchType"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <all
+                            jcr:primaryType="nt:unstructured"
+                            text="Match All"
+                            value="all"/>
+                        <any
+                            jcr:primaryType="nt:unstructured"
+                            text="Match Any"
+                            value="any"/>
+                    </options>
+                </matchtype>
+            </items>
+        </targeting>
+        <quickListConfiguration
+            jcr:primaryType="cq:Widget"
+            title="Quick List Configuration"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <imageQuicklist
+                    jcr:primaryType="cq:Widget"
+                    name="./imageQuicklist"
+                    value="true"
+                    xtype="hidden"/>
+            </items>
+        </quickListConfiguration>
+    </items>
+</jcr:root>

@@ -1,0 +1,97 @@
+#content-primary {
+    float:left;
+    width:79%;
+    padding-right:1%
+}
+
+#content-sidebar {
+    float:left;
+    width:165px;
+    padding-left:1%
+}
+
+/*Style for 2 columns (50%) */
+.cq-colcntrl-0-c0 {
+    float:left;
+    width:50%;
+}
+.cq-colcntrl-0-c1 {
+    float:left;
+    width:50%;
+}
+
+/*Style for 2 columns (75%, 25%) */
+.cq-colcntrl-1-c0 {
+    float:left;
+    width:75%;
+}
+.cq-colcntrl-1-c1 {
+    float:left;
+    width:25%;
+}
+
+/*Style for 3 columns (33%, 33%, 33%) */
+.cq-colcntrl-2-c0 {
+    float:left;
+    width:33%;
+}
+.cq-colcntrl-2-c1 {
+    float:left;
+    width:33%;
+}
+.cq-colcntrl-2-c2 {
+    float:left;
+    width:33%;
+}
+
+/*Style for 3 columns (25%, 50%, 25%) */
+.cq-colcntrl-3-c0 {
+    float:left;
+    width:25%;
+}
+.cq-colcntrl-3-c1 {
+    float:left;
+    width:49.75%;
+}
+.cq-colcntrl-3-c2 {
+    float:left;
+    width:25%;
+}
+
+/*Style for 4 columns (25%, 25%, 25%, 25%) */
+.cq-colcntrl-4-c0 {
+    float:left;
+    width:25%;
+}
+.cq-colcntrl-4-c1 {
+    float:left;
+    width:25%;
+}
+.cq-colcntrl-4-c2 {
+    float:left;
+    width:25%;
+}
+.cq-colcntrl-4-c3 {
+    float:left;
+    width:25%;
+}
+
+/*Style for 2 columns (60%, 40%) */
+.cq-colcntrl-5-c0 {
+    float:left;
+    width:60%;
+}
+.cq-colcntrl-5-c1 {
+    float:left;
+    width:40%;
+}
+
+/*Style for 2 columns (30%, 70%) */
+.cq-colcntrl-6-c0 {
+    float:left;
+    width:30%;
+}
+.cq-colcntrl-6-c1 {
+    float:left;
+    width:70%;
+}

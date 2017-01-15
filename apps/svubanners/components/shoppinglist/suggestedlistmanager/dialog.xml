@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Suggested Shopping List Manager"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <shoppingListToolWidget
+            jcr:primaryType="cq:Widget"
+            title="Suggested List Manager"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <featuredListPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Path to the suggested shopping list page which is the &quot;featured&quot; list"
+                    fieldLabel="Feaured List Page"
+                    name="./featuredListPath"
+                    xtype="pathfield"/>
+                <currentListPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path to the page to view the current shopping list"
+                    fieldLabel="Current List Path"
+                    name="./currentListPath"
+                    xtype="pathfield"/>
+            </items>
+        </shoppingListToolWidget>
+    </items>
+</jcr:root>

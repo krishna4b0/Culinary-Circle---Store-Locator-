@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Shaws Policy Lookup Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <policyLookUp
+            jcr:primaryType="cq:Widget"
+            title="Policy Look Up"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <oldpolicy
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Path to the old PFD policy in the DAM."
+                    fieldLabel="Old Policy Path"
+                    name="./oldPolicy"
+                    xtype="pathfield"/>
+                <newpolicy
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Path to the new PFD policy in the DAM."
+                    fieldLabel="New Policy Path"
+                    name="./newPolicy"
+                    xtype="pathfield"/>
+            </items>
+        </policyLookUp>
+    </items>
+</jcr:root>

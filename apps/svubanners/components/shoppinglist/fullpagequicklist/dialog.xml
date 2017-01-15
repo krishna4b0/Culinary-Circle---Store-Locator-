@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Full Page List Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <quickListConfiguration
+            jcr:primaryType="cq:Widget"
+            title="Quick List Configuration"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="The Title to display at the top of the list"
+                    fieldLabel="List Title."
+                    name="./jcr:title"
+                    xtype="textfield"/>
+                <description
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The description to display at the top of the list"
+                    fieldLabel="List Description"
+                    name="./description"
+                    xtype="richtext"/>
+                <imageQuicklist
+                    jcr:primaryType="cq:Widget"
+                    name="./imageQuicklist"
+                    value="true"
+                    xtype="hidden"/>
+            </items>
+        </quickListConfiguration>
+        <slides
+            jcr:primaryType="cq:Widget"
+            ddGroups="[media]"
+            fileReferencePrefix="./items$"
+            title="Quick List Items"
+            xtype="slideshow"/>
+    </items>
+</jcr:root>

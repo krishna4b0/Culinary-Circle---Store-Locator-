@@ -1,0 +1,534 @@
+body {
+    background-color: $text-color1;
+}
+
+a,
+body,
+li,
+p {
+    font-family: $font-stack1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $font-stack1 !important;
+}
+
+a {
+    color: #cc0033 !important;
+}
+
+h1,
+#content-primary h1,
+.tabs h1 a,
+.title h1 {
+    color: #666 !important;
+    font-size: 36px;
+}
+
+.tabs h1 a {
+    font-size: 24px;
+}
+
+h2,
+#content-primary h2,
+.title h2 {
+    font-size: 26px;
+}
+
+h3,
+#content-primary h3,
+.title h3 {
+    font-size: 16px;
+}
+
+h4,
+#content-primary h4,
+.title h4 {
+    font-size: 14px;
+}
+
+h5,
+#content-primary h5,
+.title h5 {
+    font-weight: bold;
+}
+
+.title h1,
+.title h2,
+.title h3,
+.title h4,
+.title h5 {
+    color: #666 !important;
+}
+
+#layout {
+    box-shadow: 0px 2px 12px 6px #342d2d;
+    background-color: #fff
+}
+
+#header {
+    border-bottom: 2px solid $text-color1;
+}
+
+#wrapper-content {
+    background: none repeat scroll 0 0 #fff;
+    margin-bottom: 10px;
+}
+
+#content {
+    background: #fff;
+}
+
+#customer_preferences {
+    background-image: url("../img/bg-header-customer-prefs-new.png");
+    height: 156px;
+}
+
+
+#logo {
+    background-image: url("../img/bg-header-logo.png");
+    display: block;
+    height: 89px;
+    margin-left: 10px;
+    position: relative;
+    text-indent: -9999px;
+    top: -120px;
+    width: 440px;
+    background-repeat: no-repeat;
+     a {
+    display: block;
+    height: 89px;
+    margin-left: 0;
+    width: 440px;
+    }
+}
+
+#frm-email input,
+#frm-search input,
+#frm-findstore input {
+    color: #666;
+    font-size: 14px;
+}
+
+#frm-email {
+    left: 295px;
+}
+
+#frm-email input {
+    border-right: 1px solid #ccc;
+    padding: 5px 10px;
+    width: 165px;
+}
+
+#frm-email button {
+    background: url("../img/small-button-white-transparent-corners.png") no-repeat scroll 0 0;
+    width: 21px;
+    margin: 3px 5px;
+}
+
+#frm-search {
+    margin: 0 15px 0 !important;
+    width: 180px;
+}
+
+#frm-search input {
+    border-right: 1px solid #ccc;
+    padding: 5px 10px;
+    width: 123px;
+}
+
+#frm-search button {
+    background: url("../img/small-button-white-transparent-corners.png") no-repeat scroll 0 0;
+    width: 21px;
+    margin: 3px 5px;
+}
+
+#nav-secondary li a:hover {
+    background: url("../../master/img/bg-button.gif") repeat-x scroll 0 50% #cc0033 !important;
+    border: 1px solid $text-color1 !important;
+    color: #fff !important;
+}
+
+#nav-secondary li.subopen a {
+    background: $text-color1 !important;
+    border: 1px solid $text-color1 !important;
+    color: #fff !important;
+}
+
+#nav-account {
+    top: 15px;
+}
+
+#nav-account a {
+    color: #000 !important;
+    font-size: 12px;
+    font-family: $font-stack1;
+}
+
+#nav-account > li {
+    border-left: 1px solid #000;
+}
+
+#nav-account.loggedout {
+    left: 375px;
+}
+
+#nav-account.loggedin {
+    left: 330px;
+}
+
+#nav-account #nav-acct-customerservice {
+    display: none;
+}
+
+#nav-account li ul#login-options li#login-options-list {
+    margin-left: 6px;
+    width: auto;
+}
+
+#nav-primary > li > a {
+    color: $text-color2;
+    font-family: $font-stack2;
+}
+
+#nav-primary li#nav-pri-shopping-list.hover,
+#nav-primary li#nav-pri-savings.hover,
+#nav-primary li#nav-pri-recipes.hover,
+#nav-primary li#nav-pri-healthy-eating.hover,
+#nav-primary li#nav-pri-departments.hover,
+#nav-primary li#nav-pri-online-shopping.hover,
+#nav-primary li#nav-pri-pharmacy.hover {
+    background: #fff !important;
+}
+
+#nav-primary li#nav-pri-shopping-list a,
+#nav-primary li#nav-pri-savings a,
+#nav-primary li#nav-pri-recipes a,
+#nav-primary li#nav-pri-healthy-eating a,
+#nav-primary li#nav-pri-departments a,
+#nav-primary li#nav-pri-online-shopping a,
+#nav-primary li#nav-pri-pharmacy a {
+    background-color: #fff;
+    color: #333 !important;
+}
+
+#nav-primary li#nav-pri-shopping-list a:hover,
+#nav-primary li#nav-pri-shopping-list a.active,
+#nav-primary li#nav-pri-online-shopping a:hover,
+#nav-primary li#nav-pri-online-shopping a.active,
+#nav-primary li#nav-pri-savings a:hover,
+#nav-primary li#nav-pri-savings a.active,
+#nav-primary li#nav-pri-recipes a:hover,
+#nav-primary li#nav-pri-recipes a.active,
+#nav-primary li#nav-pri-healthy-eating a:hover,
+#nav-primary li#nav-pri-healthy-eating a.active,
+#nav-primary li#nav-pri-departments a:hover,
+#nav-primary li#nav-pri-departments a.active,
+#nav-primary li#nav-pri-pharmacy a:hover,
+#nav-primary li#nav-pri-pharmacy a.active {
+    background: #fff !important;
+    color: #fff !important;
+}
+
+#nav-primary li#nav-pri-shopping-list > a:hover,
+#nav-primary li#nav-pri-shopping-list > a.active,
+#nav-primary li#nav-pri-online-shopping > a:hover,
+#nav-primary li#nav-pri-online-shopping > a.active,
+#nav-primary li#nav-pri-savings > a:hover,
+#nav-primary li#nav-pri-savings > a.active,
+#nav-primary li#nav-pri-recipes > a:hover,
+#nav-primary li#nav-pri-recipes > a.active,
+#nav-primary li#nav-pri-healthy-eating > a:hover,
+#nav-primary li#nav-pri-healthy-eating > a.active,
+#nav-primary li#nav-pri-departments > a:hover,
+#nav-primary li#nav-pri-departments > a.active,
+#nav-primary li#nav-pri-pharmacy > a:hover,
+#nav-primary li#nav-pri-pharmacy > a.active {
+    background: #fff !important;
+    color: #333 !important;
+}
+
+#nav-primary li#nav-pri-shopping-list ul a,
+#nav-primary li#nav-pri-savings ul a,
+#nav-primary li#nav-pri-recipes ul a,
+#nav-primary li#nav-pri-healthy-eating ul a,
+#nav-primary li#nav-pri-online-shopping ul a,
+#nav-primary li#nav-pri-departments ul a,
+#nav-primary li#nav-pri-pharmacy ul a {
+    background: #fff !important;
+    color: $text-color2;
+}
+
+#nav-primary #nav-pri-shopping-list.hover > a,
+#nav-primary #nav-pri-online-shopping.hover > a,
+#nav-primary #nav-pri-savings.hover > a,
+#nav-primary #nav-pri-recipes.hover > a,
+#nav-primary #nav-pri-healthy-eating.hover > a,
+#nav-primary #nav-pri-departments.hover > a,
+#nav-primary #nav-pri-pharmacy.hover > a {
+    background: #fff !important;
+    border-top: 1px solid $text-color1;
+    border-left: 1px solid $text-color1;
+    border-right: 1px solid $text-color1;
+    color: $text-color1;
+}
+
+#nav-primary #nav-pri-shopping-list ul li.hover a,
+#nav-primary #nav-pri-shopping-list ul li a:hover,
+#nav-primary #nav-pri-shopping-list ul li a:active,
+#nav-primary #nav-pri-savings ul li.hover a,
+#nav-primary #nav-pri-savings ul li a:hover,
+#nav-primary #nav-pri-savings ul li a:active,
+#nav-primary #nav-pri-recipes ul li.hover a,
+#nav-primary #nav-pri-recipes ul li a:hover,
+#nav-primary #nav-pri-recipes ul li a:active,
+#nav-primary #nav-pri-online-shopping ul li.hover a,
+#nav-primary #nav-pri-online-shopping ul li a:hover,
+#nav-primary #nav-pri-online-shopping ul li a:active,
+#nav-primary #nav-pri-healthy-eating ul li.hover a,
+#nav-primary #nav-pri-healthy-eating ul li a:hover,
+#nav-primary #nav-pri-healthy-eating ul li a:active,
+#nav-primary #nav-pri-departments ul li.hover a,
+#nav-primary #nav-pri-departments ul li a:hover,
+#nav-primary #nav-pri-departments ul li a:active,
+#nav-primary #nav-pri-pharmacy ul li.hover a,
+#nav-primary #nav-pri-pharmacy ul li a:hover,
+#nav-primary #nav-pri-pharmacy ul li a:active {
+    background: $text-color1 !important;
+}
+
+#nav-primary {
+    border-top: none;
+    padding-top: 5px;
+}
+
+#nav-primary ul {
+    border-image: none;
+    border-style: none;
+    border-width: 0;
+    box-shadow: none;
+    top: 31px;
+}
+
+#nav-primary ul a {
+    border-top: none;
+    text-transform: lowercase;
+    width: 215px !important;
+}
+
+#nav-primary li {
+    border-left: none;
+    height: 27px;
+    width: auto !important;
+}
+
+#nav-primary li.hover {
+    padding-bottom: 0;
+}
+
+#nav-primary li a {
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    color: $text-color1;
+    font-family: $font-stack1;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 16px;
+    padding: 6px 10px 8px 10px !important;
+}
+
+#nav-primary ul li a:hover,
+#nav-primary ul li a:active {
+    border-bottom: none;
+}
+
+#nav-primary li ul {
+    border: 1px solid $text-color1;
+}
+
+#nav-primary ul li a {
+    border: none;
+    font-family: $font-stack1;
+    font-size: 17px;
+    font-weight: normal;
+    padding: 5px 5px 8px 10px !important;
+}
+
+#nav-primary ul li a:hover {
+    border: none;
+}
+
+#nav-primary li.hover ul li a:hover,
+#nav-primary li.hover ul li a.active {
+    color: #fff !important;
+}
+
+#nav-secondary li.subopen ul li a {
+    background: none repeat scroll 0 0 #fff !important;
+    border: 1px solid #fff !important;
+    color: #cc0033 !important;
+}
+
+#footer {
+    padding-top: 0px;
+}
+
+#footer h4 {
+    color: #666 !important;
+    padding-bottom: 10px;
+}
+
+#footer #top-row {
+    color: #666;
+    font-family: $font-stack1;
+    margin-bottom: 20px;
+    padding: 167px 0 0 0;
+    background: url('../img/hornbachers-logo-banner.png') no-repeat;
+}
+
+#footer .middle_row {
+    background: none repeat scroll 0 0;
+    padding: 0 0 30px;
+    position: relative;
+}
+
+#footer .column-1,
+#footer .column-2 {
+    display: inline-block;
+    padding-left: 40px;
+}
+
+#footer .column-1 {
+    padding-left: 50px;
+}
+
+#footer .column-2 {
+    position: absolute;
+    top: 0;
+    left: 350px;
+    padding-top: 11px;
+}
+
+#footer .column-2 br {
+    display: none;
+}
+
+#footer #bottom_row {
+    height: auto;
+    background-color: #fff;
+}
+
+#footer #bottom_row li {
+    padding-left: 5px;
+    margin-left: 3px;
+    padding-right: 0;
+    border-left: 1px solid #000;
+}
+
+#footer #bottom_row li a {
+    color: #000 !important;
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+#footer #bottom_row p {
+    color: #000 !important;
+    font-size: 14px;
+}
+
+#footer #bottom_row > div:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+#footer #bottom_row ul {}
+
+#noName #store-name {
+    font-size: 12px;
+}
+
+#wrapper-content .button,
+#wrapper-content .button:visited {
+    background: url("../../master/img/bg-button.gif") no-repeat scroll 100% 50% #cc0033 !important;
+}
+
+#wrapper-content .button:hover {
+    background: url("../../master/img/bg-button.gif") no-repeat scroll 100% 50% #cc0033 !important;
+}
+
+#wrapper-content .ctabutton .button,
+#wrapper-content .ctabutton .button:visited,
+#wrapper-content .ctabutton .button:active,
+#wrapper-content .ctabutton .button:hover {
+    background: url("../../master/img/icn-grey-arrow-round-sm.png") no-repeat scroll 100% 50% #fff !important;
+    color: #666666 !important;
+    font-size: 16px;
+    padding: 3px 25px 4px 0;
+    text-transform: lowercase;
+}
+
+#wrapper-content div.highlight .ctabutton .button,
+#wrapper-content div.highlight .ctabutton .button:visited,
+#wrapper-content div.highlight .ctabutton .button:active,
+#wrapper-content div.highlight .ctabutton .button:hover {
+    border: 1px solid #CCCCCC;
+}
+
+#holiday-hours strong {
+    font-weight: normal;
+}
+
+div.carousel {
+    margin-top: 0;
+}
+
+#footer a {
+    color: #707070;
+    float: none;
+    margin-left: 5px;
+}
+
+p.lead {
+    font-family: $font-stack2 !important;
+    color: #000 !important;
+    font-size: 16px;
+}
+
+div.headerImage {
+    right: -410px;
+    width: 240px;
+    top: 15px;
+}
+
+.middlefooterpar .text p {
+    font-size: 16px;
+    padding: 30px 35px;
+    color: $text-color1;
+}
+
+#customer_preferences.background-hidden .background {
+    background-color: #fff;
+}
+
+#nav-account.loggedin li.personal {
+    left: -550px;
+}
+
+#nav-account.loggedout,
+#nav-acct-findastore {
+    text-transform: uppercase;
+}
+
+.homepagePar .image {
+    margin-bottom: 0;
+}
+
+#homepanel01 {
+    overflow: auto;
+}

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Titled Widget Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Titled Widget"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./title"
+                    xtype="textfield"/>
+                <center
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Select whether the text is centered or not"
+                    fieldLabel="Centered"
+                    inputValue="true"
+                    name="./center"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

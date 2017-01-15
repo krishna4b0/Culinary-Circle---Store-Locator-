@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Recipe Teaser Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Feature Recipe Configuration"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <recipeId
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="Text box that stores the recipe ID"
+                    fieldLabel="Recipe Id"
+                    name="./recipeId"
+                    xtype="textfield"/>
+                <viewRecipePath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path to the page for viewing the full recipe."
+                    fieldLabel="View Recipe Page Path"
+                    name="./viewRecipePath"
+                    xtype="pathfield"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable]"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:cloudservicename="facebookconnect"
+        cq:lastModified="{Date}2014-11-25T14:28:39.108-06:00"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2015-04-22T09:16:45.898-05:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/libs/social/connect/templates/facebookconnect"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Cub Foods Facebook Test"
+        jcr:uuid="dcda26e8-6c85-4373-aa64-5f4ab996ee9c"
+        sling:resourceType="social/connect/components/facebookconnectpage"
+        oauth.config.id="dfea3fbf2b5e875c2e079e829725dd78"
+        thumbnailPath="/libs/social/connect/templates/facebookconnect/thumbnail.png"
+        urlParams="[]">
+        <com.adobe.granite.auth.oauth.provider-cub-foods-facebook-test.config/>
+    </jcr:content>
+    <rep:policy/>
+</jcr:root>

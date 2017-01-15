@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="The shopping list widget appears in the page sidebar and allows a user to view and edit their shopping lists"
+    jcr:primaryType="cq:Component"
+    jcr:title="Shopping List Widget"
+    sling:resourceSuperType="foundation/components/parbase"
+    allowedParents="[*/parsys]"
+    componentGroup="SVU Banners - Shopping List"/>

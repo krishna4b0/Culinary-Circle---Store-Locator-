@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="My eCoupons Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="eCoupons"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <welcomeText
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The text which will be displayed next to the filter area (&quot;Congratulations! These offers....&quot;)"
+                    fieldLabel="Welcome Text"
+                    name="./welcomeText"
+                    xtype="textarea"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

@@ -1,0 +1,17 @@
+//*:::::::::::::::::::::::::::::::::::::::::: Master Init File ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//:::::::::::::::::::::::::::::::::::: Used to import all master files ::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+@import "vars"; // default variables for all sites
+@import "reset"; // Eric Meyer's reset 
+@import "mixins";
+@import "base";
+@import "typography"; // basic typography settings (h1, h2, p)
+@import "utils"; // utilities for display
+@import "header-css";
+@import "master";
+@import "components";
+@import "jquery.fancybox-1.3.1";
+@import "combinedss";
+@import "simplesignup";
+@import "navigation";
+@import "footer";

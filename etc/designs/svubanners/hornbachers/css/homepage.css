@@ -1,0 +1,16 @@
+#homepanel01 ul li.first a {
+    background: url(../images/img-option01.png);
+}
+
+#homepanel01 ul li.third a {
+    background: url(../images/img-option03.png);
+}
+
+#homepanel01 ul li.fourth a {
+    background: url(../images/img-option04.png);
+}
+
+/* Change "Find A Store" to "Careers", per the business */
+#homepanel01 ul li.fourth a {
+    background: url(/content/dam/svubanners/hornbachers/en/index/img-option04-hornbachers.png);
+}

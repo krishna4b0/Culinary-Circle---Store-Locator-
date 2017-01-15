@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Title"
+    title="Title Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Title"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <type
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="H1"
+                    fieldDescription="The Size of the Title.  options: H1,H2,H3,H4,H5,H6"
+                    fieldLabel="Type / Size"
+                    name="./type"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <h1
+                            jcr:primaryType="nt:unstructured"
+                            text="H1"
+                            value="h1"/>
+                        <h2
+                            jcr:primaryType="nt:unstructured"
+                            text="H2"
+                            value="h2"/>
+                        <h3
+                            jcr:primaryType="nt:unstructured"
+                            text="H3"
+                            value="h3"/>
+                        <h4
+                            jcr:primaryType="nt:unstructured"
+                            text="H4"
+                            value="h4"/>
+                        <h5
+                            jcr:primaryType="nt:unstructured"
+                            text="H5"
+                            value="h5"/>
+                        <h6
+                            jcr:primaryType="nt:unstructured"
+                            text="H6"
+                            value="h6"/>
+                    </options>
+                </type>
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title to display. Default: the page's title."
+                    fieldLabel="Title"
+                    name="./jcr:title"
+                    xtype="textfield"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./image/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+                <imageonly
+                    jcr:primaryType="nt:unstructured"
+                    fieldDescription="If checked, the title text is hidden"
+                    fieldLabel="Image Only Title"
+                    name="./imageOnly"
+                    type="checkbox"
+                    xtype="selection"/>
+                <link
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Path to link the title"
+                    fieldLabel="Link"
+                    name="./link"
+                    xtype="pathfield"/>
+            </items>
+        </title>
+        <image
+            jcr:primaryType="cq:Widget"
+            cropParameter="./image/imageCrop"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            mapParameter="./image/imageMap"
+            name="./image/file"
+            requestSuffix="/image.img.png"
+            rotateParameter="./image/imageRotate"
+            sizeLimit="100"
+            title="Image"
+            uploadUrl="/tmp/upload/*"
+            xtype="smartimage"/>
+    </items>
+</jcr:root>

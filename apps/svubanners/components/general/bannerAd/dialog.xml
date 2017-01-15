@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Title Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Banner Ad"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <provider
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="http://ad.doubleclick.net"
+                    fieldDescription="The banner ad provider/vendor"
+                    fieldLabel="Provider"
+                    name="./provider"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <doubleClick
+                            jcr:primaryType="nt:unstructured"
+                            text="DoubleClick"
+                            value="http://ad.doubleclick.net"/>
+                        <googleAdSense
+                            jcr:primaryType="nt:unstructured"
+                            text="Google AdSense"
+                            value="http://pagead2.googlesyndication.com"/>
+                    </options>
+                </provider>
+                <script
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="NOTE: Do not include &amp;lt;script&amp;gt;&amp;lt;/script&amp;gt;"
+                    fieldLabel="Ad Code"
+                    name="./script"
+                    xtype="textarea"/>
+                <noscript
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="NOTE: Do not include &amp;lt;noscript&amp;gt;&amp;lt;/noscript&amp;gt;"
+                    fieldLabel="Non-JS Content"
+                    name="./noscript"
+                    xtype="textarea"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

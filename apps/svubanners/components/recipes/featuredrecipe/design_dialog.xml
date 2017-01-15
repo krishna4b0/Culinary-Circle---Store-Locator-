@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Featured Recipe (Design)"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <colors
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Hex color codes available for author to choose. Include the hash(#) e.g #F0F0F0"
+            fieldLabel="Background Colors"
+            name="./colors"
+            xtype="multifield"/>
+    </items>
+</jcr:root>

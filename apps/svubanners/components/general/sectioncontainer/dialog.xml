@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Home Page Section Container Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Section Container"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <sectionTitle
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldDescription="The title to show at the top of the container"
+                    fieldLabel="Section Title"
+                    name="./sectionTitle"
+                    xtype="textfield"/>
+                <sectionCount
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="2"
+                    fieldDescription="The number of sections to show in the container options are: 2, 3&#xa;Author may only select one."
+                    fieldLabel="Section Count"
+                    name="./sectionCount"
+                    type="dropdown"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <two
+                            jcr:primaryType="nt:unstructured"
+                            text="2"
+                            value="2"/>
+                        <three
+                            jcr:primaryType="nt:unstructured"
+                            text="3"
+                            value="3"/>
+                    </options>
+                </sectionCount>
+            </items>
+        </title>
+    </items>
+</jcr:root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    oauth.access.token.persist="{Boolean}true"
+    oauth.client.id="147426265370901"
+    oauth.client.secret="009d672abe20ceca24194ecf9bc76b34"
+    oauth.config.id="3570ab9b1042343ea473642eb367c2ae"
+    oauth.config.provider.id="soco-facebook"
+    oauth.create.users="true"
+    oauth.create.users.groups="[svu-pub-users]"
+    oauth.encode.userids="false"
+    oauth.scope="[friends_about_me,friends_activities,friends_checkins,friends_hometown]"/>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Saved List Manager"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Basic"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <viewListPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Path to the page to be used for viewing a shopping list."
+                    fieldLabel="View List Page Path"
+                    name="./viewListPath"
+                    xtype="pathfield"/>
+                <blankText
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The text to be displayed if the user has no shopping lists."
+                    fieldLabel="No Lists Text"
+                    name="./blankText"
+                    xtype="textfield"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

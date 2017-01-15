@@ -1,0 +1,16 @@
+#base=/etc/designs/svubanners/master/js
+
+jquery-current.min.js
+jcarousellite_1.0.1.min.js
+jquery-ui-1.8.4.custom.min.js
+jquery.tablednd_0_5.js
+jquery.cookie.js
+global.js
+carousel.js
+departments.js
+faq.js
+shopping-list.js
+shopping-list-ajax.js
+jquery.slides.js
+jquery.path.js
+jquery-ui.js

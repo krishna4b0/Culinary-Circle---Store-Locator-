@@ -1,0 +1,475 @@
+@import "../farmfresh-combined.scss";
+.sec-404 {}
+
+.sec-about {}
+
+.sec-account {
+    #content-primary .create-account-progress-bar-new ul li.account-current {
+        background-image: url("../../master/img/icn-step-one-active-green.png");
+    }
+    #content-primary .create-account-progress-bar-new ul li.store-current {
+        background-image: url("../../master/img/icn-step-two-active-green.png");
+    }
+    #content-primary .create-account-progress-bar-new ul li.pref-current {
+        background-image: url("../../master/img/icn-step-three-active-green.png");
+    }
+    #content-primary .create-account-progress-bar-new ul li span.current {
+        color: #0d9b08;
+    }
+    #content-primary .create-account-progress-bar-new ul li.progress-dots-spacer-2 {
+        display: none;
+    }
+    #content-primary .create-account-progress-bar-new ul li.progress-dots-spacer-3 {
+        margin-left: -15px;
+    }
+    #content-primary .create-account-progress-bar-new ul li.pref-inactive {
+        background: none;
+        display: none;
+    }
+    #content-primary .create-account-progress-bar-new ul li.pref-current {
+        background: none;
+        display: none;
+    }
+    #content-primary .create-account-progress-bar-new ul li.pref-complete {
+        background: none;
+        display: none;
+    }
+    #content-primary .create-account-progress-bar-new ul li.contact-current {
+        background: url(/etc/designs/svubanners/master/img/step_three_active.png) no-repeat top center;
+    }
+    #content-primary .create-account-progress-bar-new ul li.contact-complete {
+        background: url(/etc/designs/svubanners/master/img/step_three_inactive.png) no-repeat top center;
+    }
+    #content-primary .create-account-progress-bar-new ul li.contact-inactive {
+        background: url(/etc/designs/svubanners/master/img/step_three_inactive.png) no-repeat top center;
+    }
+}
+
+.sec-beer {}
+
+.sec-dailydeals {}
+
+.sec-departments {}
+
+.sec-healthy-eating {}
+
+.sec-healthy-eating-landing {
+    div.title h1 {
+        background-color: #fff;
+        font-family: jenna_sue_regular, Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        padding: 20px 0 0;
+    }
+    div#content-primary h3 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1em;
+    }
+    .text.parbase.section p,
+    .text.parbase.section li,
+    .text.parbase.section li a {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px !important;
+        letter-spacing: inherit;
+    }
+}
+
+.sec- {
+    #homepanel01 ul {
+        margin-left: 0;
+    }
+    #homepanel01 ul li a,
+    #homepanel01 ul li button {
+        height: 77px;
+        margin-bottom: 10px;
+        width: 289px;
+    }
+    #homepanel01 ul li.first a {
+        background: url("../../master/img/sprite-secondary-nav.png") repeat scroll 0 0;
+    }
+    #homepanel01 ul li.first a:hover {
+        background-position: 0 -77px !important;
+    }
+    #homepanel01 ul li.second a {
+        background: url("../../master/img/sprite-secondary-nav.png") repeat scroll 0 -154px;
+    }
+    #homepanel01 ul li.second a:hover {
+        background-position: 0 -231px !important;
+    }
+    #homepanel01 ul li.third a {
+        background: url("../../master/img/sprite-secondary-nav.png") repeat scroll 0 -308px;
+    }
+    #homepanel01 ul li.third a:hover {
+        background-position: 0 -385px !important;
+    }
+    #homepanel01 ul li.fourth button {
+        background: url("../../master/img/sprite-secondary-nav.png") repeat scroll 0 -462px;
+    }
+    #homepanel01 ul li a:hover,
+    #homepanel01 ul li button:hover {
+        background-position: 0 -539px !important;
+    }
+    #frm-findstore input {
+        display: none;
+    }
+    .homepanel h3 {
+        color: #666 !important;
+        font-family: jenna_sue_regular, Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: inherit;
+        margin-bottom: 9px;
+    }
+    div.featureImage {
+        padding-top: 0px;
+    }
+}
+
+.sec-organic {}
+
+.sec-pharmacy {}
+
+.sec-recipes {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    h1 {
+        font-family: jenna_sue_regular, Arial, Helvetica, sans-serif;
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    h5 {
+        font-weight: bold;
+    }
+    div.recipesearchform {
+        background-color: #ebebeb !important;
+        color: #00704a;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: lowercase;
+        width: 575px;
+    }
+    div.recipesearchform #frm-recipe-search-search-n-filter {
+        position: relative;
+    }
+    div.recipesearchform #frm-recipe-search-search-n-filter h2 {
+        color: #00704a;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    div.recipesearchform #frm-recipe-search-search-n-filter #inp-recipe-search {
+        border-right: 1px solid #ccc;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        width: 260px;
+    }
+    div.recipesearchform #frm-recipe-search-search-n-filter .button,
+    div.recipesearchform #frm-recipe-search-search-n-filter .button:hover {
+        background: url("../../master/img/icn-green-arrow-round.png") no-repeat scroll 0 0 !important;
+        color: #666;
+        float: none;
+        height: 21px;
+        margin: 10px 5px;
+        padding: 0;
+        text-indent: -999px;
+        width: 21px;
+    }
+    div.recipesearchform #frm-recipe-search-search-n-filter p.example {
+        color: #00704a;
+        display: inline;
+        font-size: 12px;
+        left: 25px;
+        margin: 4px 0 12px;
+        position: absolute;
+        top: 90px;
+    }
+    div.recipesearchform #frm-recipe-search-options {
+        border-left: none;
+        color: #00704a;
+        font-family: Arial, Helvetica, sans-serif;
+        height: auto;
+        padding: 20px 15px 20px 0;
+        width: 210px;
+    }
+    div.recipesearchform #frm-recipe-search-options h4 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 2px;
+    }
+    div.recipesearchform #frm-recipe-search-options select {
+        width: 205px;
+    }
+    div.recipesearchform #frm-recipe-search-options .filter-col label {
+        color: #00704a;
+        font-weight: normal;
+        line-height: 28px;
+    }
+    div.featuredrecipe #featured-recipe-container h4 {
+        color: #00704a;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    div.recipeteaser h3 {
+        color: #00704a;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.35em;
+    }
+    div.recipeteaser a {
+        color: #00704a;
+    }
+    .recipesearchform #frm-recipe-search-search-n-filter label {
+        color: #00704a !important;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    div.recipesearchform #inp-recipe-search {
+        margin: 0 20px 0 40px;
+    }
+}
+
+.sec-rewards {}
+
+.sec-rewardscards {}
+
+.sec-savings {
+    .hairline {
+        clear: both;
+    }
+    .half-width-image .parsys .image {
+        height: 110px;
+    }
+
+    #content-primary .pagination li.next {
+        width: 23px;
+        display: inline-block;
+    }
+    #content-primary .pagination {
+        background: url("../../master/images/bg-filter-results-info.jpg") no-repeat scroll 0 0;
+        width: 100%;
+    }
+    #content-primary .pagination ul {
+        margin-right: 30px;
+    }
+    .circularsearchform,
+    .couponsearchform {
+        padding-bottom: 0;
+    }
+    .couponsearchform {
+        margin-top: 20px;
+    }
+    .couponsearchform .tabbed h1 span,
+    .circularsearchform .tabbed h1 span {
+        line-height: 23px;
+        padding: 8px 38px 8px 21px;
+    }
+    #my-coupon-search-n-filter-wrapper {
+        background-color: #ebebeb;
+        color: #00704a;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: lowercase;
+        width: 600px;
+    }
+    #my-coupon-search-n-filter-wrapper #frm-coupon-search-search-n-filter,
+    #my-coupon-search-n-filter-wrapper #frm-recipe-search-search-n-filter {
+        padding: 15px 20px;
+        width: inherit;
+    }
+    #my-coupon-search-n-filter-wrapper #frm-coupon-search-search-n-filter label,
+    .recipesearchform #frm-recipe-search-search-n-filter label {
+        color: #00704a;
+    }
+    #my-coupon-search-n-filter-wrapper #frm-coupon-search-search-n-filter h2 {
+        color: #00704a;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        margin-bottom: 5px;
+    }
+    #my-coupon-search-n-filter-wrapper #frm-coupon-search-search-n-filter #inp-coupon-search {
+        border-right: 1px solid #ccc;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: normal;
+        width: 260px;
+    }
+    #my-coupon-search-n-filter-wrapper #frm-coupon-search-search-n-filter .button,
+    #my-coupon-search-n-filter-wrapper #frm-coupon-search-search-n-filter .button:hover {
+        background: url("../../master/img/icn-green-arrow-round.png") no-repeat scroll 0 0 !important;
+        color: #666;
+        float: none;
+        height: 21px;
+        margin: 10px 5px;
+        padding: 0;
+        text-indent: -999px;
+        width: 21px;
+        text-transform: capitalize;
+        /* IE7/8 fix */
+        line-height: 0\9;
+        /* IE7/8 fix */
+        font-size: 0px\9;
+        /* IE7/8 fix */
+    }
+    #my-coupon-search-n-filter-wrapper #frm-coupon-search-options {
+        border-left: none;
+        height: auto;
+    }
+    #frm-coupon-search-options .filter-col:first-child {
+        display: none;
+    }
+    #frm-coupon-search-options .filter-col label {
+        color: #00704a;
+        font-weight: normal;
+        line-height: 28px;
+    }
+    p.example {
+        display: none;
+    }
+    .couponsearchresults .grid .coupon-outer {
+        background: none;
+        border: 1px solid #999;
+        margin: 0 30px 20px 0;
+        position: relative;
+        width: 198px;
+    }
+    .couponsearchresults .grid .coupon-outer:last-child {
+        margin-right: 0;
+    }
+    .couponsearchresults .grid .coupon-inner {
+        width: 168px;
+    }
+    .couponsearchresults .grid .coupon-inner .itemlinks {
+        color: #666 !important;
+        margin-left: 0;
+        width: 168px;
+    }
+    #content-primary .couponsearchresults .grid .itemlinks h3 {
+        color: #666 !important;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .couponsearchresults .grid .coupon-inner .itemlinks p {
+        color: #666 !important;
+    }
+    .couponsearchresults .grid .coupon-inner .itemlinks .expiration {
+        display: inline-block;
+    }
+    .couponsearchresults .grid .coupon-options {
+        float: left;
+        margin-bottom: 10px;
+    }
+    .couponsearchresults .grid .add-to-list-container {
+        margin: 0 0 0 22px;
+    }
+    .coupon-options span {
+        margin-top: 7px;
+    }
+    div.adslisting .tile1,
+    div.adslisting .tile {
+        border-left: medium none;
+        border-right: medium none;
+        width: 240px;
+    }
+    .adslisting h2 {
+        color: #666 !important;
+        font-family: jenna_sue_regular, Arial, Helvetica, sans-serif !important;
+        font-size: 36px !important;
+    }
+    .adslisting h2 strong,
+    .adslisting h2 b {
+        font-weight: normal;
+    }
+    #content-primary .adslisting h3 {
+        color: #666666 !important;
+        font-size: 14px;
+    }
+    #content-primary .adslisting h3.sneak-peek {
+        font-family: jenna_sue_regular, Arial, Helvetica, sans-serif !important;
+        font-size: 22px !important;
+        font-weight: normal;
+    }
+    .empty-list-content .empty-list button {
+        margin-right: 2px;
+    }
+}
+
+.sec-shopping-list {
+    .widget-icon .widget-token {
+        display: none;
+    }
+    .widget-icon h3 {
+        color: #54b948 !important;
+        padding: 13px 16px 10px 20px;
+        font-size: 14px;
+    }
+    .shoppinglistmanager .widget-icon-inner {
+        color: #666 !important;
+    }
+    .shoppinglistmanager .widget-icon-inner h4 {
+        color: #666 !important;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: lowercase;
+    }
+    div.editing-listitem {
+        width: 85%;
+    }
+    .button,
+    .button:visited,
+    a.button,
+    a.button:visited {
+        background: url("../../master/images/bg-button-savings.gif") no-repeat scroll 100% 50% #0FAC07;
+        font-size: 12px;
+    }
+    .button:hover,
+    a.button:hover {
+        background: url("../../master/images/bg-button-savings-hvr.gif") no-repeat scroll 100% 50% #0FAC07;
+    }
+    .shoppinglistmanager .hero {
+        display: none;
+    }
+    #clear-list-top,
+    #clear-list-bottom {
+        color: #54b948 !important;
+        text-transform: lowercase;
+    }
+    .sli-edit {
+        color: #54b948 !important;
+        text-transform: lowercase;
+    }
+    #shoppinglist-full-header h1 {
+        font-size: 36px;
+    }
+    #related-commands_bottom {
+        margin-top: -35px;
+    }
+    .related-commands {
+        margin-right: 10px;
+    }
+    table#shoppinglist-full.enhanced tbody tr:hover td.col_sli-order {
+        background: url('../../master/img/icn-move-vertical-green.png') center center no-repeat #0d9b08;
+    }
+}
+
+.sec-stores {}
+
+.sec-summer {}
+
+.sec-savings .coupon-options a.legalTerms {
+    margin-left: 120px;
+    margin-top: 6px;
+    width: inherit;
+    height: inherit;
+    float: right;
+    padding: 0;
+}

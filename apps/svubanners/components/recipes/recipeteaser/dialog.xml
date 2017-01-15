@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Recipe Teaser Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Feature Recipe Configuration"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <recipeId
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="the recipe id that will be displayed"
+                    fieldLabel="Recipe Id"
+                    name="./recipeId"
+                    xtype="textfield"/>
+                <recipeTitleColor
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Select the color code for the recipe title."
+                    fieldLabel="Recipe title color"
+                    name="./recipeTitleColor"
+                    options="$PATH.coloroptions.json"
+                    type="select"
+                    xtype="selection"/>
+                <overrideText
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="if specifed, this text will be displayed instead of the dynamic recipe description."
+                    fieldLabel="Override Text"
+                    name="./overrideText"
+                    xtype="textarea"/>
+                <teaserSelector
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="small"
+                    fieldDescription="Selector to specify the type of teaser, Small or Large.  &#xa;Author may only select one."
+                    fieldLabel="Small or Large"
+                    name="./teaserSelector"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <small
+                            jcr:primaryType="nt:unstructured"
+                            text="Small"
+                            value="small"/>
+                        <large
+                            jcr:primaryType="nt:unstructured"
+                            text="Large"
+                            value="large"/>
+                    </options>
+                </teaserSelector>
+                <viewRecipePath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path to the page for viewing the full recipe."
+                    fieldLabel="View Recipe Page Path"
+                    name="./viewRecipePath"
+                    xtype="pathfield"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./image/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+            </items>
+        </title>
+        <image
+            jcr:primaryType="cq:Widget"
+            cropParameter="./image/imageCrop"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            mapParameter="./image/imageMap"
+            name="./image/file"
+            requestSuffix="/image.img.png"
+            rotateParameter="./image/imageRotate"
+            sizeLimit="100"
+            title="Image"
+            uploadUrl="/tmp/upload/*"
+            xtype="smartimage"/>
+        <advanced
+            jcr:primaryType="cq:Widget"
+            title="Advanced Image Properties"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Title"
+                    name="./image/jcr:title"
+                    xtype="textfield"/>
+                <alt
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="(leave empty to use the title defined above)"
+                    fieldLabel="Alt Text"
+                    name="./image/alt"
+                    xtype="textfield"/>
+                <linkURL
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Drop files or pages from the Content Finder"
+                    fieldLabel="Link to"
+                    name="./image/linkURL"
+                    xtype="pathfield"/>
+                <size
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Size"
+                    heightParameter="./height"
+                    widthParameter="./image/width"
+                    xtype="sizefield"/>
+            </items>
+        </advanced>
+    </items>
+</jcr:root>

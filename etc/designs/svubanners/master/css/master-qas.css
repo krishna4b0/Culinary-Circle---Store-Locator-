@@ -1,0 +1,73 @@
+/*
+Syntax error: Undefined variable: "$text-color1".
+        on line 28 of C:/Users/jlon01u/AppData/Local/Temp/gulp-ruby-sass/master/scss/responsive/master-qas.scss
+
+23: 	padding: 0 0 0.3em;
+24: 	float: left;
+25: }
+26: 
+27: .QAS_RightDetails {
+28: 	border-left: 1px solid $text-color1;
+29: 	float: right;
+30: 	margin-top: 20px;
+31: 	padding-left: 20px;
+32: 	width: 294px;
+33: }
+
+Backtrace:
+C:/Users/jlon01u/AppData/Local/Temp/gulp-ruby-sass/master/scss/responsive/master-qas.scss:28
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/script/tree/variable.rb:49:in `_perform'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/script/tree/node.rb:50:in `perform'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/script/tree/list_literal.rb:62:in `block in _perform'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/script/tree/list_literal.rb:62:in `map'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/script/tree/list_literal.rb:62:in `_perform'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/script/tree/node.rb:50:in `perform'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:366:in `visit_prop'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/stack.rb:79:in `block in with_base'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/stack.rb:121:in `with_frame'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/stack.rb:79:in `with_base'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:152:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:389:in `map'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/stack.rb:79:in `block in with_base'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/stack.rb:121:in `with_frame'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/stack.rb:79:in `with_base'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:152:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:52:in `map'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/base.rb:36:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:151:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/visitors/perform.rb:8:in `visit'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/root_node.rb:36:in `css_tree'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/tree/root_node.rb:20:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/engine.rb:274:in `render'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/plugin/compiler.rb:414:in `update_stylesheet'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/plugin/compiler.rb:189:in `block in update_stylesheets'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/plugin/compiler.rb:186:in `each'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/plugin/compiler.rb:186:in `update_stylesheets'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/plugin.rb:82:in `update_stylesheets'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/exec.rb:489:in `watch_or_update'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/exec.rb:346:in `process_result'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/exec.rb:43:in `parse'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/lib/sass/exec.rb:22:in `parse!'
+c:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.3.5/bin/sass:13:in `<top (required)>'
+c:/Ruby193/bin/sass:23:in `load'
+c:/Ruby193/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$text-color1\".\A         on line 28 of C:/Users/jlon01u/AppData/Local/Temp/gulp-ruby-sass/master/scss/responsive/master-qas.scss\A \A 23: 	padding: 0 0 0.3em;\A 24: 	float: left;\A 25: }\A 26: \A 27: .QAS_RightDetails {\A 28: 	border-left: 1px solid $text-color1;\A 29: 	float: right;\A 30: 	margin-top: 20px;\A 31: 	padding-left: 20px;\A 32: 	width: 294px;\A 33: }"; }

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Recipe Browser Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <viewaditem
+            jcr:primaryType="cq:Widget"
+            title="View Circular Item"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <searchPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path where this search field is submitted to."
+                    fieldLabel="Search Results Page Path"
+                    name="./searchPath"
+                    xtype="pathfield"/>
+                <circularPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path where continue browsing link will go."
+                    fieldLabel="Circular Page Path"
+                    name="./circularPathh"
+                    xtype="pathfield"/>
+            </items>
+        </viewaditem>
+        <legalese
+            jcr:primaryType="cq:Widget"
+            title="Disclaimer"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <disclaimer
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Disclaimer Text"
+                    name="./disclaimerText"
+                    xtype="richtext"/>
+            </items>
+        </legalese>
+    </items>
+</jcr:root>

@@ -1,0 +1,67 @@
+/** main content area **/
+#content-primary {
+border-left: 2px dotted #EF4035;
+color: #424242;
+display: inline;
+float: left;
+margin: 9px 0 0 0;
+padding: 0 0 0 7px;
+position: relative;
+width: 543px;
+}
+.two-col-related #content-primary {
+border-left: none !important;
+width: 705px;
+}
+/** right column **/
+#content-related {
+color: #424242;
+display: inline;
+float: left;
+margin: 10px 0 0 10px;
+width: 235px;
+}
+
+
+/*Style for 2 columns (50%) 
+ Due to IE not rendering 50% we need to use 49.75% */
+.cq-colctrl-0-c0 {
+    float:left;
+    width:49.75%;
+}
+.cq-colctrl-0-c1 {
+    float:left;
+    width:49.75%;
+}
+
+/*Style for 2 columns (33%, 33%, 33%) */
+.cq-colctrl-1-c0 {
+    float:left;
+    width:33%;
+}
+.cq-colctrl-1-c1 {
+    float:left;
+    width:33%;
+}
+.cq-colctrl-1-c2 {
+    float:left;
+    width:33%;
+}
+
+/*Style for 4 columns (25%) */
+.cq-colctrl-2-c0 {
+    float:left;
+    width:25%;
+}
+.cq-colctrl-2-c1 {
+    float:left;
+    width:25%;
+}
+.cq-colctrl-2-c2 {
+    float:left;
+    width:25%;
+}
+.cq-colctrl-2-c3 {
+    float:left;
+    width:25%;
+}

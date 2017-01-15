@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="Promotion Container Page Template, container for promotion pages"
+    jcr:primaryType="cq:Template"
+    jcr:title="Promotion Container"
+    allowedPaths="[/content/promotions]"
+    ranking="{Long}1010">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="cq/personalization/components/campaignpage">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys"/>
+    </jcr:content>
+</jcr:root>

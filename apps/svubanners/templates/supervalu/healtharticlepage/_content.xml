@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="The Health Article Page Template is used to view articles from the aisle 7 content repository."
+    jcr:primaryType="cq:Template"
+    jcr:title="Health Article Page"
+    allowedPaths="[/content/svubanners/farmfresh(/.*)?,/content/svubanners/shopnsave(/.*)?,/content/svubanners/cub(/.*)?,/content/svubanners/hornbachers(/.*)?,/content/svubanners/shoppers(/.*)?,/content/svubanners/rainbowfoods(/.*)?,/content/svubanners/cmwa(/.*)?]"
+    ranking="{Long}50">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="svubanners/components/templates/supervalu/healtharticlepage"/>
+</jcr:root>

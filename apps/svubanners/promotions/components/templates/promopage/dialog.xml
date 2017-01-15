@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="420"
+    stateful="false"
+    title="Properties"
+    xtype="dialog">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabs
+            jcr:primaryType="cq:Widget"
+            xtype="tabpanel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tab
+                    jcr:primaryType="cq:Widget"
+                    title="Teaserpage"
+                    xtype="panel">
+                    <items jcr:primaryType="cq:WidgetCollection">
+                        <main
+                            jcr:primaryType="cq:Widget"
+                            collapsed="{Boolean}false"
+                            collapsible="{Boolean}false"
+                            title=""
+                            xtype="dialogfieldset">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <title
+                                    jcr:primaryType="nt:unstructured"
+                                    allowBlank="false"
+                                    fieldLabel="Title"
+                                    inputType="text"
+                                    name="./jcr:title"
+                                    validateOnBlur="true"
+                                    xtype="textfield"/>
+                                <tags
+                                    jcr:primaryType="cq:Widget"
+                                    cls="cq-propsdialog-tags"
+                                    fieldLabel="Tags/Keywords"
+                                    name="./cq:tags"
+                                    xtype="tags"/>
+                                <tagsHint
+                                    jcr:primaryType="cq:Widget"
+                                    ignoreData="{Boolean}true"
+                                    name="./cq:tags@TypeHint"
+                                    value="String[]"
+                                    xtype="hidden"/>
+                                <description
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Description"
+                                    name="./jcr:description"
+                                    xtype="textarea"/>
+                            </items>
+                        </main>
+                        <onofftime
+                            jcr:primaryType="cq:Widget"
+                            cls="cq-propsdialog-set-onofftime"
+                            collapsed="{Boolean}true"
+                            collapsible="{Boolean}true"
+                            title="On/Off Time"
+                            xtype="dialogfieldset">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <ontime
+                                    jcr:primaryType="cq:Widget"
+                                    ctCls="cq-propsdialog-ontime"
+                                    fieldLabel="On Time"
+                                    name="./onTime"
+                                    xtype="datetime"/>
+                                <offtime
+                                    jcr:primaryType="cq:Widget"
+                                    ctCls="cq-propsdialog-offtime"
+                                    fieldLabel="Off Time"
+                                    name="./offTime"
+                                    xtype="datetime"/>
+                                <onTimeHint
+                                    jcr:primaryType="cq:Widget"
+                                    ignoreData="{Boolean}true"
+                                    name="./onTime@TypeHint"
+                                    value="Date"
+                                    xtype="hidden"/>
+                                <offTimeHint
+                                    jcr:primaryType="cq:Widget"
+                                    ignoreData="{Boolean}true"
+                                    name="./offTime@TypeHint"
+                                    value="Date"
+                                    xtype="hidden"/>
+                            </items>
+                        </onofftime>
+                    </items>
+                </tab>
+                <image
+                    jcr:primaryType="cq:Widget"
+                    path="/libs/foundation/components/page/tab_image.infinity.json"
+                    xtype="cqinclude"/>
+                <tab3
+            jcr:primaryType="cq:Widget"
+            title="Targeting"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <storegroups
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Select the store groups for which this component applies."
+                    fieldLabel="Store Groups"
+                    name="./storeGroups"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        options="$PATH.displayoptions.json"
+                        type="select"
+                        width="200"
+                        xtype="selection"/>
+                </storegroups>
+                <matchtype
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="any"
+                    fieldLabel="Match Type"
+                    name="./matchType"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <all
+                            jcr:primaryType="nt:unstructured"
+                            text="Match All"
+                            value="all"/>
+                        <any
+                            jcr:primaryType="nt:unstructured"
+                            text="Match Any"
+                            value="any"/>
+                    </options>
+                </matchtype>
+            </items>
+        </tab3>
+            </items>
+        </tabs>
+    </items>
+</jcr:root>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="YouTube Video Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="YouTube Video"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The video's title "
+                    fieldLabel="Video Title"
+                    name="./title"
+                    xtype="textfield"/>
+                <videoId
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The video id on youtube "
+                    fieldLabel="Video ID"
+                    name="./videoId"
+                    xtype="textfield"/>
+                <videoDescription
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The video description to show below the video"
+                    fieldLabel="Video Description"
+                    name="./videoDescription"
+                    xtype="textarea"/>
+                <size
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Size of the player to embed, height and width. "
+                    fieldLabel="Video size"
+                    heightParameter="./height"
+                    heightSuffix=""
+                    widthParameter="./width"
+                    widthSuffix=""
+                    xtype="sizefield"/>
+                <showRelatedVideos
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Whether or not related videos should be shown.  This translates to the rel tag on the actual video embed. "
+                    fieldLabel="Show Related Videos"
+                    inputValue="true"
+                    name="./showRelatedVideos"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

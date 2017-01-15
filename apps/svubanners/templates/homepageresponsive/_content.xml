@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="The Responsive Homepage Template renders the homepage for a given banner site."
+    jcr:primaryType="cq:Template"
+    jcr:title="SVU Banner Site Responsive Homepage Template"
+    allowedPaths="[/content/svubanners/master/en,/content/svubanners/cub/en,/content/svubanners/cmwa/en,/content/svubanners/farmfresh/en,/content/svubanners/hornbachers/en,/content/svubanners/rainbowfoods/en,/content/svubanners/shopnsave/en,/content/svubanners/shoppers,/content/svubanners/shoppers/en]"
+    ranking="{Long}0">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="svubanners/components/templates/homepageresponsive"/>
+</jcr:root>

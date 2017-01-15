@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <login
+            jcr:primaryType="cq:Widget"
+            title="Login Form"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <forgotpasswordpath
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="{Boolean}false"
+                    fieldLabel="Forgot Password Page"
+                    name="./forgotPasswordPage"
+                    xtype="pathfield"/>
+            </items>
+        </login>
+        <signup
+            jcr:primaryType="cq:Widget"
+            title="Sign Up Benefits"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <profileBody
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Signup Benefits"
+                    name="./signupBenefits"
+                    xtype="richtext"/>
+            </items>
+        </signup>
+    </items>
+</jcr:root>

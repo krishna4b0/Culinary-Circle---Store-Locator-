@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Shopping List Widget"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <shoppingListWidget
+            jcr:primaryType="cq:Widget"
+            title="Shopping List Widget"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <emptyHeadline
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The headline to show when there is no shopping list."
+                    fieldLabel="Empty Shopping List Headline"
+                    name="./emptyHeadline"
+                    xtype="textfield"/>
+                <emptyText
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The text to show when there is no shopping list."
+                    fieldLabel="Empty Shopping List Text"
+                    height="150"
+                    name="./emptyText"
+                    xtype="richtext"/>
+                <viewListsPage
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path to the page for viewing and creating lists"
+                    fieldLabel="View/Create Lists Page"
+                    name="./viewListsPage"
+                    xtype="pathfield"/>
+            </items>
+        </shoppingListWidget>
+    </items>
+</jcr:root>

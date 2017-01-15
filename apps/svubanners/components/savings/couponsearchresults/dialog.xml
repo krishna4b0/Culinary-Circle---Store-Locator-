@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="coupon search results"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <tabl1
+            jcr:primaryType="cq:Widget"
+            title="Layout"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <layout
+                    jcr:primaryType="cq:Widget"
+                    allowBlank="false"
+                    fieldDescription="Select the layout for the coupons"
+                    fieldLabel="Layout"
+                    name="./layout"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <o1
+                            jcr:primaryType="nt:unstructured"
+                            text="List"
+                            value="List"/>
+                        <o2
+                            jcr:primaryType="nt:unstructured"
+                            text="Grid"
+                            value="Grid"/>
+                    </options>
+                </layout>
+            </items>
+        </tabl1>
+    </items>
+</jcr:root>

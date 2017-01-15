@@ -1,0 +1,3 @@
+SVU = {};
+
+SVU.widgets = {};

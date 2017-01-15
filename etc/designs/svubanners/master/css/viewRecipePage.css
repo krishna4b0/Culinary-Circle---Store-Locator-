@@ -1,0 +1,40 @@
+#content-primary {
+    float: left;
+    width: 775px !important;
+    padding-right: 0px;
+    margin: 11px 0 0;
+}
+
+#content-sidebar {
+    float:left;
+    width: 162px !important;
+    margin: 11px 0 0;
+}
+
+.recipe-detail-col1{
+    float:left;
+    width: 365px;
+    margin-left: 12px;
+    display: inline;
+    padding-right: 15px;
+    /**/
+}
+
+.recipe-detail-col2{
+    float: left;
+    width: 380px;
+}
+
+#wrapper-content {
+    padding-bottom: 0px !important;
+}
+
+.hideprint#store-name a {
+    color: #f58425;
+    font-size: 1em;
+}
+.hideprint#store-name a:hover {
+    color:  #CE5301;
+
+}
+

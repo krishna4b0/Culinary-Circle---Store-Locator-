@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="The holiday article list page."
+    jcr:primaryType="cq:Template"
+    jcr:title="SVU Banner Site Holiday Article List Template"
+    allowedPaths="[/content/svubanners/hornbachers(/.*)?,/content/svubanners/shoppers(/.*)?]"
+    ranking="{Long}25">
+    <jcr:content
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="svubanners/components/templates/HolidayArticleListPage"/>
+</jcr:root>

@@ -1,0 +1,198 @@
+#content-sidebar {
+display: inline;
+float: left;
+margin: 11px 0 0 0;
+width: 162px;
+}
+#content-primary {
+float: left;
+margin-left: 15px;
+padding-bottom: 40px;
+padding-left: 0;
+width: 765px;
+color: #424242;
+display: inline;
+position: relative;
+}
+#content-primary {
+border-left: none;
+font-family: Helvetica, Arial, sans-serif;
+width: 770px;
+margin: 0 0 0 12px;
+padding: 0;
+}
+
+#content-primary p, #content-primary li {
+
+font-size: 1em;
+line-height: 1.4em;
+}
+
+#content-primary li {
+    margin-bottom :10px;
+    }
+
+#content-primary h3, #content-primary h4, #content-primary h5 {
+	font-family: 'Clarendon BT W01 Heavy', 'Times New Roman', Times, serif;
+}
+.categorypageheader h2 {
+background: no-repeat scroll left top transparent;
+	font-family: 'Clarendon BT W01 Heavy', 'Times New Roman', Times, serif;
+line-height: 28px;
+margin-bottom: 5px;
+}
+
+#content-primary h3 {
+
+line-height: 1em;
+margin-bottom: 0.1em;
+}
+.categorypageheader h3 {
+
+padding-bottom: 10px;
+}
+.categorypageheader #section-1 {
+padding: 3px 20px 0 0;
+}
+.categorypageheader .image {
+    float: left;
+    clear: both;
+}
+.categorypageheader #section-1 .image {
+ clear: none;   
+}
+.categorypageheader .parsys_column .image {
+float: none;
+    }
+
+.quarter-width-image .parsys {
+    margin: 0 0 0 187px;
+}
+.centerpar .text.parbase.section p b {
+    color: #000 !important;
+}
+
+.half-width-image {
+    width: 100%;
+}
+
+.half-width-image .image {
+    margin-bottom: 5px;
+    width: 50%;
+}
+
+.half-width-image .parsys {
+    margin: 0 0 0 5px;
+}
+.categorypageheader .horizontal-carousel-outer img {
+    padding: 0px 0px 0px 0px; 
+}
+.categorypageheader .half-width-image img {
+float: left;
+padding: 0 0px 10px 0;
+width: 362px;
+}
+#content-primary .personnelprofilecontainer  .personnel-profiles img {
+width: auto;
+}
+
+.quarter-width-image img {
+   width: 173px;
+      
+}
+
+#content-primary #section-2 {
+float: left;
+margin-top: 0;
+padding-top: 25px;
+width: 745px;
+}
+
+
+/*Style for 2 columns (50%) */
+.cq-colcntrl-0-c0 {
+    clear: both;
+    float:left;
+    width:49.5%;
+}
+.cq-colcntrl-0-c1 {
+    float:left;
+    width:49.5%;
+}
+
+/*Style for 2 columns (75%, 25%) */
+.cq-colcntrl-1-c0 {
+    clear: both;
+    float:left;
+    width:75%;
+}
+.cq-colcntrl-1-c1 {
+    float:left;
+    width:25%;
+}
+
+/*Style for 3 columns (33%, 33%, 33%) */
+.cq-colcntrl-2-c0 {
+    clear: both;
+    float:left;
+    width:33%;
+}
+.cq-colcntrl-2-c1 {
+    float:left;
+    width:33%;
+}
+.cq-colcntrl-2-c2 {
+    float:left;
+    width:33%;
+}
+
+/*Style for 3 columns (25%, 50%, 25%) */
+.cq-colcntrl-3-c0 {
+    float:left;
+    width:25%;
+    clear: both;
+}
+.cq-colcntrl-3-c1 {
+    float:left;
+    width:50%;
+}
+.cq-colcntrl-3-c2 {
+    float:left;
+    width:25%;
+}
+
+/*Style for 4 columns (25%, 25%, 25%, 25%) */
+.cq-colcntrl-4-c0 {
+    float:left;
+    width:25%;
+    clear: both;
+}
+.cq-colcntrl-4-c1 {
+    float:left;
+    width:25%;
+}
+.cq-colcntrl-4-c2 {
+    float:left;
+    width:25%;
+}
+.cq-colcntrl-4-c3 {
+    float:left;
+    width:25%;
+}
+
+.cq-colcntrl-3-c1 .title.section {
+    clear: both;
+    
+    }
+.centerpar .text.parbase.section {
+    }    
+    
+ol li {
+    list-style-type: number;
+    list-style-image: none !important;
+}
+
+div#content-primary .categorypageheader .parsys i {
+    font-size: inherit;
+    }
+    

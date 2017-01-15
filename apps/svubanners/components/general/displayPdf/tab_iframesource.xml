@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Panel"
+    title="iFrame Source">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <siteconfig
+            jcr:primaryType="cq:Widget"
+            collapsed="{Boolean}false"
+            collapsible="{Boolean}false"
+            xtype="dialogfieldset">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <iframesource
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="iFrame Source"
+                    name="./iframesource"
+                    xtype="textfield"/>
+                <size
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Size of the iframae, height and width. "
+                    fieldLabel="iFrame size"
+                    heightParameter="./height"
+                    heightSuffix=""
+                    widthParameter="./width"
+                    widthSuffix=""
+                    xtype="sizefield"/>
+            </items>
+        </siteconfig>
+    </items>
+</jcr:root>

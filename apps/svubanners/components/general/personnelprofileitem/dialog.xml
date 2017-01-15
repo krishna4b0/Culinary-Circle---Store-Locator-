@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Personnel Profiles Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <basic
+            jcr:primaryType="cq:Widget"
+            title="Basic">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <name
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The name of the person being profiled"
+                    fieldLabel="Name"
+                    name="./name"
+                    xtype="textfield"/>
+                <location
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Location of the person being profiled"
+                    fieldLabel="Location"
+                    name="./location"
+                    xtype="textfield"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./image/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+            </items>
+        </basic>
+        <image
+            jcr:primaryType="cq:Widget"
+            cropParameter="./image/imageCrop"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            mapParameter="./image/imageMap"
+            name="./image/file"
+            requestSuffix="/image.img.png"
+            rotateParameter="./image/imageRotate"
+            sizeLimit="100"
+            title="Image"
+            uploadUrl="/tmp/upload/*"
+            xtype="smartimage"/>
+        <advanced
+            jcr:primaryType="cq:Widget"
+            title="Advanced Image Properties"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The title attribute of the image."
+                    fieldLabel="Image Title"
+                    name="./image/jcr:title"
+                    xtype="textfield"/>
+                <alt
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The alt attribute of the image"
+                    fieldLabel="Alt Text"
+                    name="./image/alt"
+                    xtype="textfield"/>
+                <linkURL
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Where the image should link to"
+                    fieldLabel="Link to"
+                    name="./image/linkURL"
+                    xtype="pathfield"/>
+                <size
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The size to display the image, height and width. "
+                    fieldLabel="Size"
+                    heightParameter="./image/height"
+                    heightSuffix=""
+                    widthParameter="./image/width"
+                    widthSuffix=""
+                    xtype="sizefield"/>
+            </items>
+        </advanced>
+        <profile
+            jcr:primaryType="cq:Widget"
+            title="Profile"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <profileBody
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="the text to include in the profile"
+                    fieldLabel="Body Text"
+                    name="./profileBody"
+                    xtype="richtext"/>
+            </items>
+        </profile>
+    </items>
+</jcr:root>

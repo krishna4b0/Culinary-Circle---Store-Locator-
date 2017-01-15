@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Saved List Widget"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Saved List Widget"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The text to use as the widget title (default : &quot;Saved Lists&quot;)"
+                    fieldLabel="Widget Title"
+                    name="title"
+                    xtype="textfield"/>
+                <shoppingListPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path to the page for viewing a single shopping list.  the path will be linked to along with a listId parameter"
+                    fieldLabel="View Shopping List Path"
+                    name="shoppingListPath"
+                    xtype="pathfield"/>
+                <newListPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path to the page for creating a new shopping list"
+                    fieldLabel="New Shopping List Path"
+                    name="newListPath"
+                    xtype="pathfield"/>
+                <viewAllListsPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path to the page for viewing all shopping lists"
+                    fieldLabel="View All Shopping Lists Path"
+                    name="viewAllListsPath"
+                    xtype="pathfield"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

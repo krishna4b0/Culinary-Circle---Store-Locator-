@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="My eCoupons Widget"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <ecouponswidget
+            jcr:primaryType="cq:Widget"
+            title="eCoupons Widget"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <ecouponsPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path where the view eCoupons button links to."
+                    fieldLabel="View eCoupons Page Path"
+                    name="./ecouponsPath"
+                    xtype="pathfield"/>
+            </items>
+        </ecouponswidget>
+    </items>
+</jcr:root>

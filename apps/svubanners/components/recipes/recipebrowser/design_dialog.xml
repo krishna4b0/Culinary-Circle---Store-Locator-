@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Recipe Browser (Design)"
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <titleColors
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Hex color codes available for author to choose. Include the hash(#) symbol e.g #F0F0F0"
+            fieldLabel="Title Colors"
+            name="./titleColors"
+            xtype="multifield"/>
+        <categoryColors
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Hex color codes available for author to choose. Include the hash(#) symbol e.g #F0F0F0"
+            fieldLabel="Category Colors"
+            name="./categoryColors"
+            xtype="multifield"/>
+    </items>
+</jcr:root>

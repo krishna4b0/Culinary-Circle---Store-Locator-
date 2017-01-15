@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="CTA Button Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="CTA Button"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <label
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The button's label"
+                    fieldLabel="Button Label"
+                    name="./label"
+                    xtype="textfield"/>
+                <link
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The button's link target"
+                    fieldLabel="Button Link Path"
+                    name="./link"
+                    xtype="pathfield"/>
+                <style
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="button"
+                    fieldDescription="The button's style.  options: Button, Link"
+                    fieldLabel="Button Style"
+                    name="./style"
+                    type="select"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <button
+                            jcr:primaryType="nt:unstructured"
+                            text="Button"
+                            value="button"/>
+                        <link
+                            jcr:primaryType="nt:unstructured"
+                            text="Link"
+                            value="link"/>
+                    </options>
+                </style>
+                <color
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Select the color code for the Button."
+                    fieldLabel="Button color"
+                    name="./buttonColor"
+                    options="$PATH.coloroptions.json"
+                    type="select"
+                    xtype="selection"/>
+                <newwindow
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Select if the link is opened in a new window"
+                    fieldLabel="Open in new window"
+                    inputValue="true"
+                    name="./newwindow"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

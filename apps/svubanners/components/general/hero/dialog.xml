@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Hero Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Title"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <tabTitle
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Label for the tab at the top of the hero.  Default: The Page's Title"
+                    fieldLabel="Tab Label"
+                    name="./jcr:title"
+                    xtype="textfield"/>
+                <headline
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Text to display as the hero's headline"
+                    fieldLabel="Headline"
+                    name="./headline"
+                    xtype="textfield"/>
+                <hideTab
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Hide Tab"
+                    name="./hideTab"
+                    type="checkbox"
+                    xtype="selection"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./image/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+                <height
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The height of the hero component"
+                    fieldLabel="Height"
+                    name="./height"
+                    xtype="numberfield"/>
+            </items>
+        </title>
+        <body
+            jcr:primaryType="cq:Widget"
+            title="Hero Text"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <whiteBox
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="White Box Behind Copy?"
+                    name="./whiteBox"
+                    type="checkbox"
+                    xtype="selection"/>
+                <profileBody
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Text to display in the hero's body"
+                    fieldLabel="Hero Text"
+                    name="./text"
+                    xtype="richtext"/>
+            </items>
+        </body>
+        <image
+            jcr:primaryType="cq:Widget"
+            cropParameter="./image/imageCrop"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            mapParameter="./image/imageMap"
+            name="./image/file"
+            requestSuffix="/image.img.png"
+            rotateParameter="./image/imageRotate"
+            sizeLimit="100"
+            title="Image"
+            uploadUrl="/tmp/upload/*"
+            xtype="smartimage"/>
+    </items>
+</jcr:root>

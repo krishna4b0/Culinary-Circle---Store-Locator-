@@ -1,0 +1,42 @@
+/** Content **/
+
+#homepanel01 .options .button-option a,
+#homepanel01 .options .button-option button {
+    display: block;
+    text-indent: -9999px;
+    width: 289px;
+    height: 77px;
+    margin: 0 auto 10px;
+}
+
+#homepanel01 .options .button-option {
+    float: left;
+}
+
+/*
+
+.orbit-slides-container{
+    height: auto !important;
+}
+
+.orbit-container .orbit-slides-container li.active{
+    position:static;
+}
+*/
+
+
+.orbit-bullets {
+    display: block !important;
+}  
+
+.orbit-container .orbit-prev > span {
+    border-right-color: #aaa !important;
+}
+
+.orbit-container .orbit-next > span {
+    border-left-color: #aaa !important;
+}
+
+#homepanel02 .parbase.image.section {
+    text-align: center;
+}

@@ -1,0 +1,16 @@
+/* MENU ADJUSTMENTS */
+
+#nav-primary li a {
+    color: #E51837 !important;
+}
+#nav-primary li a:hover {
+     background-color:#BE142E !important;   
+     color: #fff !important;
+}
+#nav-primary li ul li a {
+    color: #fff !important;
+    background-color:  #E51837 !important;
+} 
+#nav-primary li ul li a:hover {
+    background-color: #BE142E !important;
+}

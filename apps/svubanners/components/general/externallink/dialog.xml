@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="External Link"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <link
+            jcr:primaryType="cq:Widget"
+            title="External Link"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <externalLink
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The full url, including http and extension"
+                    fieldLabel="External Link URL"
+                    name="./externalLink"
+                    xtype="textfield"/>
+                <externalLinkId
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The link id, used to know which external link will show in this page based on a selector value."
+                    fieldLabel="External Link Id"
+                    name="./externalLinkId"
+                    xtype="textfield"/>
+            </items>
+        </link>
+    </items>
+</jcr:root>

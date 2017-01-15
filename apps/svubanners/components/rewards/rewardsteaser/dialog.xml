@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Rewards Teaser Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <preferredSavings
+            jcr:primaryType="cq:Widget"
+            title="Preferred Savings"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <savingsHeadline
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Headline for the users with preferred savings"
+                    fieldLabel="Headline"
+                    name="./savingsHeadline"
+                    xtype="textfield"/>
+                <savingsDescription
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="A description for users with preferred savings"
+                    fieldLabel="Description"
+                    name="./savingsDescription"
+                    xtype="textarea"/>
+                <savingsLink
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The url to redirect to from the preferred savings"
+                    fieldLabel="Link"
+                    name="./savingsLink"
+                    xtype="pathfield"/>
+            </items>
+        </preferredSavings>
+        <preferredRewardsNoCard
+            jcr:primaryType="cq:Widget"
+            title="Preferred Rewards - No Card"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <preferredHeadlineNC
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="A headline for user with preferred rewards with no card."
+                    fieldLabel="Headline"
+                    name="./preferredHeadlineNC"
+                    xtype="textfield"/>
+                <preferredDescriptionNC
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The description for user with preferred rewards with no card."
+                    fieldLabel="Description"
+                    name="./preferredDescriptionNC"
+                    xtype="textarea"/>
+                <preferredLinkNC
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The url to redirect to from the preferred rewards with no card."
+                    fieldLabel="Link"
+                    name="./preferredLinkNC"
+                    xtype="pathfield"/>
+            </items>
+        </preferredRewardsNoCard>
+        <preferredRewardsWithCard
+            jcr:primaryType="cq:Widget"
+            title="Preferred Rewards - With Card"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <preferredHeadline
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Headline for user with preferred rewards with card."
+                    fieldLabel="Headline"
+                    name="./preferredHeadline"
+                    xtype="textfield"/>
+            </items>
+        </preferredRewardsWithCard>
+    </items>
+</jcr:root>

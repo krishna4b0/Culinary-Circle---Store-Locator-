@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Rewards Teaser Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <basic
+            jcr:primaryType="cq:Widget"
+            title="Basic"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <blankText
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The text to be displayed in the case of an empty shopping list."
+                    fieldLabel="Empty List Text"
+                    name="./blankText"
+                    xtype="textfield"/>
+                <printText
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The description text for printing or emailing shopping lists. (&quot;print out your list and take it with you...&quot;)"
+                    fieldLabel="Print Text"
+                    name="./printText"
+                    xtype="textfield"/>
+                <printListPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Path to the Page to be used for printing a shopping list"
+                    fieldLabel="Print List Page Path"
+                    name="./printListPath"
+                    xtype="pathfield"/>
+                <allListsPath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path to the page for viewing all lists"
+                    fieldLabel="View All Lists Page Path"
+                    name="./allListsPath"
+                    xtype="pathfield"/>
+                <recipePagePath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path to the page for viewing recipe items added to the list."
+                    fieldLabel="View Recipe Page Path"
+                    name="./recipePage"
+                    xtype="pathfield"/>
+            </items>
+        </basic>
+    </items>
+</jcr:root>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Shopping List Carousel"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <carousel
+            jcr:primaryType="cq:Widget"
+            title="Carousel Configuration"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The carousel's title."
+                    fieldLabel="Carousel Title"
+                    name="./title"
+                    xtype="textfield"/>
+                <verticalLayout
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Whether the carousel should be rendered vertically or horizontally."
+                    fieldLabel="Vertical Layout"
+                    inputValue="true"
+                    name="./verticalLayout"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </carousel>
+        <carouselslides
+            jcr:primaryType="cq:Widget"
+            ddGroups="[media]"
+            fieldDescription="The Images, Titles, and Descriptions for the Item's to be included in the carousel."
+            fileReferencePrefix="./images$"
+            title="Carousel Items"
+            xtype="carousel"/>
+    </items>
+</jcr:root>

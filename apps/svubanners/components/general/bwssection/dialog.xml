@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Beer, Wine &amp; Spirits Section"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <basic
+            jcr:primaryType="cq:Widget"
+            title="Basic"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <headline
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Text to display as the promotion body headline"
+                    fieldLabel="Headline"
+                    name="./headline"
+                    xtype="textfield"/>
+                <text
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The Text to display in the hero's body"
+                    fieldLabel="Promotion text"
+                    name="./text"
+                    xtype="richtext"/>
+                <resType
+                    jcr:primaryType="cq:Widget"
+                    ignoreData="{Boolean}true"
+                    name="./image/sling:resourceType"
+                    value="foundation/components/image"
+                    xtype="hidden"/>
+            </items>
+        </basic>
+        <image
+            jcr:primaryType="cq:Widget"
+            cropParameter="./image/imageCrop"
+            ddGroups="[media]"
+            fileNameParameter="./image/fileName"
+            fileReferenceParameter="./image/fileReference"
+            mapParameter="./image/imageMap"
+            name="./image/file"
+            requestSuffix="/image.img.png"
+            rotateParameter="./image/imageRotate"
+            sizeLimit="100"
+            title="Image"
+            uploadUrl="/tmp/upload/*"
+            xtype="smartimage"/>
+        <links
+            jcr:primaryType="cq:Widget"
+            title="Links"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <pages
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new link"
+                    fieldLabel="Linked Pages"
+                    name="./pages"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="155"
+                        xtype="pathfield"/>
+                </pages>
+            </items>
+        </links>
+    </items>
+</jcr:root>

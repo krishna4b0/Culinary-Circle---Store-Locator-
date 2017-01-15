@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#List"
+    manageTabs="function(tab,noSwitch){var tabs=['props','children','static','search','querybuilder'];var index=tabs.indexOf(tab);if(index==-1) return;for(var i=1;i&lt;tabs.length;i++){if(index==i){this.unhideTabStripItem(i);}else{this.hideTabStripItem(i);}}this.doLayout();if(!noSwitch)this.activate(index);}"
+    title="List"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <list
+            jcr:primaryType="cq:Widget"
+            title="List"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <listFrom
+                    jcr:primaryType="cq:Widget"
+                    defaultValue=""
+                    fieldLabel="Build list using"
+                    name="./listFrom"
+                    type="select"
+                    xtype="selection">
+                    <listeners
+                        jcr:primaryType="nt:unstructured"
+                        loadcontent="function(){this.findParentByType('tabpanel').manageTabs(this.getValue(),true);}"
+                        selectionchanged="function(box,value){box.findParentByType('tabpanel').manageTabs(value);}"/>
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <children
+                            jcr:primaryType="nt:unstructured"
+                            text="Child pages"
+                            value="children"/>
+                        <static
+                            jcr:primaryType="nt:unstructured"
+                            text="Fixed list"
+                            value="static"/>
+                    </options>
+                </listFrom>
+                <orderBy
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Enter a property like 'jcr:created'"
+                    fieldLabel="Order by"
+                    name="./orderBy"
+                    type="combobox"
+                    xtype="selection">
+                    <options jcr:primaryType="cq:WidgetCollection">
+                        <title
+                            jcr:primaryType="nt:unstructured"
+                            value="jcr:title"/>
+                        <created
+                            jcr:primaryType="nt:unstructured"
+                            value="jcr:created"/>
+                        <modified
+                            jcr:primaryType="nt:unstructured"
+                            value="cq:lastModified"/>
+                        <template
+                            jcr:primaryType="nt:unstructured"
+                            value="cq:template"/>
+                    </options>
+                </orderBy>
+                <limit
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Maximum number of items displayed in list"
+                    fieldLabel="Limit"
+                    name="./limit"
+                    xtype="numberfield"/>
+                <feed
+                    jcr:primaryType="cq:Widget"
+                    defaultValue="{Boolean}false"
+                    fieldLabel="Enable Feed"
+                    name="./feedEnabled"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </list>
+        <children
+            jcr:primaryType="cq:Widget"
+            title="Child pages"
+            xtype="panel">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(1); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <parentPage
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Leave empty to use current page"
+                    fieldLabel="Parent page"
+                    name="./parentPage"
+                    xtype="pathfield"/>
+            </items>
+        </children>
+        <static
+            jcr:primaryType="cq:Widget"
+            title="Fixed list"
+            xtype="panel">
+            <listeners
+                jcr:primaryType="nt:unstructured"
+                render="function() { this.findParentByType('tabpanel').hideTabStripItem(2); }"/>
+            <items jcr:primaryType="cq:WidgetCollection">
+                <pages
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Click the '+' to add a new page"
+                    fieldLabel="Pages"
+                    name="./pages"
+                    xtype="multifield">
+                    <fieldConfig
+                        jcr:primaryType="cq:Widget"
+                        width="155"
+                        xtype="pathfield"/>
+                </pages>
+            </items>
+        </static>
+    </items>
+</jcr:root>

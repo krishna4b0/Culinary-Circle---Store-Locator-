@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Recipe Search Form Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <title
+            jcr:primaryType="cq:Widget"
+            title="Recipe Search Form"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <viewRecipePath
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The path to the page for viewing search results."
+                    fieldLabel="Search Results Page Path"
+                    name="./resultsPath"
+                    xtype="pathfield"/>
+                <backgroundColor
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Select the color code for the background"
+                    fieldLabel="Background color"
+                    name="./backgroundColor"
+                    options="$PATH.coloroptions.json"
+                    type="select"
+                    xtype="selection"/>
+            </items>
+        </title>
+    </items>
+</jcr:root>

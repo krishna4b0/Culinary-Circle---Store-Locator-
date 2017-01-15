@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Parbase"
+    title="Create Account Form Component"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <removeCard
+            jcr:primaryType="cq:Widget"
+            title="Remove Rewards Card Form"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="Path to the My Account Page.  This page is redirected to upon success or cancellation."
+                    fieldLabel="My Account Page Path"
+                    name="./viewAccountPath"
+                    xtype="pathfield"/>
+            </items>
+        </removeCard>
+    </items>
+</jcr:root>

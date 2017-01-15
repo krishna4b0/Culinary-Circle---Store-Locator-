@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <slideshow
+            jcr:primaryType="cq:Widget"
+            title="Slideshow Configuration"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <backgroundcss
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The theme to use for styling the slideshow"
+                    fieldLabel="Slideshow Theme"
+                    name="./backgroundCssId"
+                    xtype="textfield"/>
+                <size
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Image Size"
+                    heightParameter="./slideshowHeight"
+                    widthParameter="./slideshowWidth"
+                    xtype="sizefield"/>
+                <seconds
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Slide interval (seconds)"
+                    name="./showPanels"
+                    xtype="numberfield"/>
+                <superimposeControls
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Superimpose Controls"
+                    inputValue="true"
+                    name="./verticalLayout"
+                    type="checkbox"
+                    xtype="selection"/>
+            </items>
+        </slideshow>
+        <carouselslides
+            jcr:primaryType="cq:Widget"
+            ddGroups="[media]"
+            fileReferencePrefix="./images$"
+            title="Slideshow Slides"
+            xtype="carousel"/>
+    </items>
+</jcr:root>

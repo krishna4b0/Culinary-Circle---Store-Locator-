@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <carousel
+            jcr:primaryType="cq:Widget"
+            title="Carousel Configuration"
+            xtype="panel">
+            <items jcr:primaryType="cq:WidgetCollection">
+                <title
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Carousel Title"
+                    name="./title"
+                    xtype="textfield"/>
+                <backgroundcss
+                    jcr:primaryType="cq:Widget"
+                    fieldDescription="The theme to use for styling this carousel."
+                    fieldLabel="Carousel Theme"
+                    name="./backgroundCssId"
+                    xtype="textfield"/>
+                <verticalLayout
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Vertical Layout"
+                    inputValue="true"
+                    name="./verticalLayout"
+                    type="checkbox"
+                    xtype="selection"/>
+                <size
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Image Size"
+                    heightParameter="./slideshowHeight"
+                    widthParameter="./slideshowWidth"
+                    xtype="sizefield"/>
+                <showpanels
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Number of Panels"
+                    name="./showPanels"
+                    xtype="numberfield"/>
+            </items>
+        </carousel>
+        <carouselslides
+            jcr:primaryType="cq:Widget"
+            ddGroups="[media]"
+            fileReferencePrefix="./images$"
+            title="Carousel Slides"
+            xtype="carousel"/>
+    </items>
+</jcr:root>
